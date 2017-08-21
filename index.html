@@ -1,63 +1,104 @@
 <!DOCTYPE html>
 <html>
-        <head>
-        <title>St. Francis Institute of Technology</title>
-        
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        </head>
-<body>
-    <!-- updated by Tanmay..    linked bootstrap-->
-    <!--Main Division containing everything-->
-    <div>
-        <header>
-            <div class="container">
-            	<div class=row >
-                	<ul class="nav nav-tabs">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Messages</a></li>
-                
-                        <li><a href="#"  typeid="drop" data-toggle="dropdown">Location<span class="caret"></span></a>
-                        <ul class="dropdown-menu" aria-labelled-by="drop">
-                            <li><a href="#">Mumbai</a></li>
-                            <li><a href="#">Delhi</a></li>
-                            <li><a href="#">Chennai</a></li>
-                        </ul>
-                      </li>
-                    
-                </ul>
-            	</div> 
-            </div>
-        </header>
-   
-        
-           <!------------------------------caraosal---------------->   
-            <div class="container-fluid">
-                <div class="row" >
-                    <img src="images/mat.png" height="400px" width="100%">
-                </div>    
-            </div>
-		 <!------------------------------caraosal end---------------->   
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 col-xs-12 bg-danger" ><h3>Vision</h3> <p>"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love.”</p></div>
-				<div class="col-sm-4 col-xs-12 bg-success" ><h3>Mission</h3><p> For UG programme:-  “To churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care.”	</p></div>
-				<div class="col-sm-4 col-xs-12 bg-warning" ><h3>Quality policy</h3><p>“To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes,  meeting ISO 9001-2008 statutory and regulatory requirements.”</p></div>
-        
-            </div>
-        </div>
-    </div>  
+
+    <head>
+    <title>St. Francis Institute of Technology</title>
     
-    
-    
-    
-    <!--JS-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
-  
-    
-</body>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!--Pranav: adding parallax -->
+    <style>
+		.parallax {
+		    /* The image used */
+		    background-image: url("images/Nature-View.jpg");
+
+		    /* Set a specific height */
+		    min-height: 500px; 
+
+		    /* Create the parallax scrolling effect */
+		    background-attachment: fixed;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		}
+	</style>
+
+
+    </head>
+
+	<body>
+	    
+	    <!-- updated by Tanmay..    linked bootstrap-->
+	    <!--Main Division containing everything-->
+	    
+	    <div>
+
+	        <header>
+	            <div class="container">
+	            	<div class=row >
+	                	<ul class="nav nav-tabs">
+	                    <li><a href="#">Home</a></li>
+	                    <li><a href="#">Profile</a></li>
+	                    <li><a href="#">Messages</a></li>
+	                
+	                        <li><a href="#"  typeid="drop" data-toggle="dropdown">Location<span class="caret"></span></a>
+	                        <ul class="dropdown-menu" aria-labelled-by="drop">
+	                            <li><a href="#">Mumbai</a></li>
+	                            <li><a href="#">Delhi</a></li>
+	                            <li><a href="#">Chennai</a></li>
+	                        </ul>
+	                      </li>
+	                    
+	                </ul>
+	            	</div> 
+	            </div>
+	        </header>
+	   
+	        
+	        <!------------------------------caraosal---------------->   
+	        <div class="container-fluid">
+	        	<div class="row" >
+	            	<img src="images/mat.png" height="400px" width="100%">
+	            </div>    
+	         </div>
+			 <!------------------------------caraosal end---------------->   
+	        
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-4 col-xs-12 bg-danger" ><h3>Vision</h3> <p>"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love.”</p></div>
+					<div class="col-sm-4 col-xs-12 bg-success" ><h3>Mission</h3><p> For UG programme:-  “To churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care.”	</p></div>
+					<div class="col-sm-4 col-xs-12 bg-warning" ><h3>Quality policy</h3><p>“To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes,  meeting ISO 9001-2008 statutory and regulatory requirements.”</p></div>
+	        
+	            </div>
+	        </div>
+
+	        <!-- ----X----X---- -->
+
+	        <!-- Pranav: The parallax -->
+	        <div class = "parallax"></div>
+
+	        <div style="height:250px;background-color:white;font-size:36px; padding-top: 50px;">
+				Scroll Up and Down this page to see the parallax scrolling effect.
+				This div is just here to enable scrolling.
+				Tip: Try to remove the background-attachment property to remove the scrolling effect.
+			</div>
+
+	        <div class = "parallax"></div>
+
+
+
+
+	    </div>  
+	    
+	    
+	    
+	    
+	    <!--JS-->
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    
+	  
+	    
+	</body>
 </html>
