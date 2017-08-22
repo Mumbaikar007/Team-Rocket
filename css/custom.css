@@ -17,7 +17,8 @@
 		    background-position: center;
 		    background-repeat: no-repeat;
 		    background-size: cover;
-}
+
+		}
 
 /* Pranav: Footer*/
 .site-footer{
@@ -55,4 +56,10 @@
 .footer-nav a:hover{
 	color: #fff;
 	text-decoration: none;
+
+}
+
+/*Tanmay */
+.eqcol{
+	display: flex;
 }
