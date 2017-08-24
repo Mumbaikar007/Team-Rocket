@@ -10,14 +10,15 @@
 		    background-image: url("../images/Nature-View.jpg");
 
 		    /* Set a specific height */
-		    min-height: 500px; 
+		    min-height: 300px; 
 
 		    /* Create the parallax scrolling effect */
 		    background-attachment: fixed;
 		    background-position: center;
 		    background-repeat: no-repeat;
 		    background-size: cover;
-}
+
+		}
 
 /* Pranav: Footer*/
 .site-footer{
@@ -55,4 +56,10 @@
 .footer-nav a:hover{
 	color: #fff;
 	text-decoration: none;
+
+}
+
+/*Tanmay */
+.eqcol{
+	display: flex;
 }
