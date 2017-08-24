@@ -2,26 +2,35 @@
 <html>
       <head>
         <title>St. Francis Institute of Technology</title>
-        
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+
+
 		
 		<!-- --------Custom css--------- -->
 		 <link rel="stylesheet" href="css/custom.css">
-		
+
+     <!---------ImageSliderJS updated: Jeson---------->
+    <link href="js/4/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="js/4/js-image-slider.js" type="text/javascript"></script>
+
+
         </head>
 
 
 	<body>
-	    
+
 	    <!-- updated by Tanmay..    linked bootstrap-->
 	    <!--Main Division containing everything-->
-	    
+
 	    <div>
 
 	      	        <header>
 	            <div class="container">
 	            	<div class=row >
+
 						<div class="col-lg-5">
 	                	<ul class="nav nav-pills nav-justified">
 	                    <li class="active"><a href="home.html">Home</a></li>
@@ -49,31 +58,56 @@
 	                            <li><a href="#">Chennai</a></li>
 	                        </ul>
 	                      </li>
-				
-	             			
-	                    
-	                		</ul>
-						
-						</div>
-					</div> 
+
+
+	                </ul>
+	            	</div>
 	            </div>
 	        </header>
-	   
-	        
-	        <!--  ----------------------------caraosal--------------   -->   
-	        <div class="container-fluid">
-	        	<div class="row" >
-	            	<img src="images/mat.png" height="400px" width="100%">
-	            </div>    
-	         </div>
-			 <!-- ----------------------------caraosal end-------------- -->   
-	        
+
+
+         <!------------------------------ImageSlider updated: Jeson---------------->
+       <div id="sliderFrame">
+       <div id="slider">
+           <img src="images/slider/1.jpg" />
+           <img src="images/slider/2.jpg" />
+           <img src="images/slider/3.jpg" />
+           <img src="images/slider/4.jpg" />
+       </div>
+       <!--Custom navigation buttons on both sides-->
+       <div class="group1-Wrapper">
+           <a onclick="imageSlider.previous()" class="group1-Prev"></a>
+           <a onclick="imageSlider.next()" class="group1-Next"></a>
+       </div>
+       <!--nav bar-->
+       <div style="text-align:center;padding:20px;z-index:20;">
+           <a onclick="imageSlider.previous()" class="group2-Prev"></a>
+           <a id='auto' onclick="switchAutoAdvance()"></a>
+           <a onclick="imageSlider.next()" class="group2-Next"></a>
+       </div>
+     </div>
+     <script type="text/javascript">
+         //The following script is for the group 2 navigation buttons.
+         function switchAutoAdvance() {
+             imageSlider.switchAuto();
+             switchPlayPauseClass();
+         }
+         function switchPlayPauseClass() {
+             var auto = document.getElementById('auto');
+             var isAutoPlay = imageSlider.getAuto();
+             auto.className = isAutoPlay ? "group2-Pause" : "group2-Play";
+             auto.title = isAutoPlay ? "Pause" : "Play";
+         }
+         switchPlayPauseClass();
+     </script>
+     <!------------------------------ImageSlider ENDS---------------->
+
 	        <div class="container">
 	            <div class="row ">
 	                <div class="col-sm-4 col-xs-12 bg-danger" ><h3>Vision</h3> <p>"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love.”</p></div>
 					<div class="col-sm-4 col-xs-12 bg-success" ><h3>Mission</h3><p> For UG programme:-  “To churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care.”	</p></div>
 					<div class="col-sm-4 col-xs-12 bg-warning" ><h3>Quality policy</h3><p>“To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes,  meeting ISO 9001-2008 statutory and regulatory requirements.”</p></div>
-	        
+
 	            </div>
 	        </div>
 
@@ -93,27 +127,64 @@
 
 
 
-	    </div>  
-	    
+	    </div>
+
 
 
 	    <!-- Pranav: Footer -->
 	    <footer class = "site-footer">
-	  
+
 	    	<div class="container">
-	  
+
 	    		<div class = "row">
-	    			<div class = "col-md-5">
+	    			
+	    			<div class = "col-md-3 right">
 	    				<h4>Contact</h4>
 	    				<address>
-	    					Santoshi Mata Rd, Mandapeshwar,<br> 
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
 	    					Dahisar West, Mumbai, Maharashtra<br>
 	    					400103.
 
 	    				</address>
 	    			</div>
+	    		
+	    			<div class="col-md-2 right" >
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+	    			<div class="col-md-2 right">
+	    				<img src="images/Gery1.png">
+	    			</div>
+
+	    			<div class = "col-md-2 right">
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+	    		
+	    			<div class="col-md-3 right">
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+
 	    		</div>
-	  	
+
 	    		<div class = "bottom-footer">
 	    			<div class = "col-md-5">Copyright</div>
 	    			<div class = "col-md-7">
@@ -134,8 +205,9 @@
 	    <!--JS-->
 	    <script src="js/jquery.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
-	    
-	  
-	    
+
+
+
+
 	</body>
 </html>
