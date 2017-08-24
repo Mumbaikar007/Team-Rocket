@@ -59,6 +59,10 @@
 
 }
 
+.right{
+	border-right: 1px solid #b2b2b2;
+}
+
 /*Tanmay */
 .eqcol{
 	display: flex;
