@@ -4,22 +4,9 @@
 	
 }
 
-/* Pranav: Parallax*/
-.parallax {
-    /* The image used */
-    background-image: url("../images/Nature-View.jpg");
 
-    /* Set a specific height */
-    min-height: 300px; 
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
+/*For tablets and mobiles*/
 @media screen and (max-width: 991px) {
 	.large-device-only{
 		display: none;
@@ -45,13 +32,14 @@
 		margin-top: 10px;
 		padding-top: 10px;
 		color: #b2b2b2; 
+		
 	}
 
-
-	.footer-nav{
-		text-align: center;
-		list-style: none;
+	.footer-nav ul {
+    	list-style: none;
+    	padding-left:0;
 	}
+
 	.footer-nav a{
 		color: #b2b2b2;
 	}
@@ -69,68 +57,86 @@
 	}
 
 
-/* Pranav: Header edits*/
-.navbar-brand {
-  transform: translateX(-50%);
-  left: 50%;
-  position: absolute;
-}
-/*
-.navbar-brand {
-  padding: 0px;
-}
-.navbar-brand>img {
-  height: 100%;
-  width: auto;
-  padding: 7px 14px;
-}
-*/
+	/* Pranav: Header edits*/
+	.navbar-brand {
+	  transform: translateX(-50%);
+	  left: 50%;
+	  position: absolute;
+	}
+	/*
+	.navbar-brand {
+	  padding: 0px;
+	}
+	.navbar-brand>img {
+	  height: 100%;
+	  width: auto;
+	  padding: 7px 14px;
+	}
+	*/
+
+	/* Pranav: Parallax*/
+	.parallax {
+	    /* The image used */
+	    background-image: url("../images/Nature-View.jpg");
+
+	    /* Set a specific height */
+	    min-height: 300px; 
+
+	    /* Create the parallax scrolling effect */
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+
+	}
 
 
-/* Pranav: Footer*/
-.site-footer{
-	background-color: #222;
-	color: #fff;
-	padding-top: 30px;
+	/* Pranav: Footer*/
+	.site-footer{
+		background-color: #222;
+		color: #fff;
+		padding-top: 30px;
 
-}
+	}
 
-.bottom-footer{
-	border-top: 1px solid #b2b2b2;
-	margin-top: 10px;
-	padding-top: 10px;
-	color: #b2b2b2; 
-}
+	.bottom-footer{
+		border-top: 1px solid #b2b2b2;
+		margin-top: 10px;
+		padding-top: 10px;
+		color: #b2b2b2; 
+	}
 
 
-.footer-nav{
-	text-align: right;
-	list-style: none;
-}
-.footer-nav li{
-	display: inline;
-	padding: 0px 10px;
-}
+	.footer-nav{
+		text-align: right;
+		list-style: none;
+	}
+	.footer-nav li{
+		display: inline;
+		padding: 0px 10px;
+	}
 
-.footer-nav li:not(:first-child):before{
-	content: '|';
-	padding: 0px 10px;
-}
+	.footer-nav li:not(:first-child):before{
+		content: '|';
+		padding: 0px 10px;
+	}
 
-.footer-nav a{
-	color: #b2b2b2;
-}
-.footer-nav a:hover{
-	color: #fff;
-	text-decoration: none;
+	.footer-nav a{
+		color: #b2b2b2;
+	}
+	.footer-nav a:hover{
+		color: #fff;
+		text-decoration: none;
 
-}
+	}
 
-.right{
-	border-right: 1px solid #b2b2b2;
-}
+	.right{
+		border-right: 1px solid #b2b2b2;
+	}
 
-/*Tanmay */
-.eqcol{
-	display: flex;
+	/*Tanmay */
+	.eqcol{
+		display: flex;
+	}
+
 }
