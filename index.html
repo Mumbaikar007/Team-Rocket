@@ -1,25 +1,223 @@
 <!DOCTYPE html>
 <html>
-        <head>
+      
+    <head>
+        
         <title>St. Francis Institute of Technology</title>
-        
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        </head>
-<body>
-    <!-- updated by Tanmay..    linked bootstrap-->
-    <div class="container">
-        <div class="row">
-            Hey
-        
-        </div>
-    </div>
-    
-    <!--JS-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
-    
-    
-</body>
+
+        <!-- Pranav: Animations -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <!-- For Mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		
+		<!-- --------Custom css--------- -->
+		 <link rel="stylesheet" href="css/custom.css">
+
+     	<!---------ImageSliderJS updated: Jeson---------->
+    	<link href="js/4/js-image-slider.css" rel="stylesheet" type="text/css" />
+    	<script src="js/4/js-image-slider.js" type="text/javascript"></script>
+
+
+    </head>
+
+
+	<body>
+
+	    <!-- updated by Tanmay..    linked bootstrap-->
+	    <!--Main Division containing everything-->
+
+	    <div>
+
+	      	 <header>
+				 <nav class="navbar navbar-inverse navbar-fixed-top ">
+  					<div class="container-fluid">
+    					<div class="navbar-header">
+      						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span> 
+							</button>
+							<!-- Pranav: MobileHeader -->
+							<a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>Sfit2</a>
+    					</div>
+    					<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="profile.html">Profile</a></li>
+								<li><a href="message.html">Messages</a></li> 
+								<li><a href="#">Staff</a></li> 
+							</ul>
+
+							<!-- Pranav: header -->
+							<a class="navbar-brand large-device-only " href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>Sfit</a>
+
+						 	<ul class="nav navbar-nav navbar-right">
+								  <!-- Dropdown -->
+								<li><a href="#"  typeid="drop" data-toggle="dropdown">Location<span class="caret"></span></a>
+									<ul class="dropdown-menu" aria-labelled-by="drop">
+										<li><a href="#">Mumbai</a></li>
+										<li><a href="#">Delhi</a></li>
+										<li><a href="#">Chennai</a></li>
+	                        		</ul>
+							 	</li>
+								<!-- Dropdown end -->
+								<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+							</ul>
+						</div>
+  					</div>
+				</nav>
+			
+	        </header>
+
+
+        <!------------------------------ImageSlider updated: Jeson---------------->
+	       <div id="sliderFrame">
+	       <div id="slider">
+	           <img src="images/slider/1.jpg" />
+	           <img src="images/slider/2.jpg" />
+	           <img src="images/slider/3.jpg" />
+	           <img src="images/slider/4.jpg" />
+	       </div>
+	       <!--Custom navigation buttons on both sides-->
+	       <div class="group1-Wrapper">
+	           <a onclick="imageSlider.previous()" class="group1-Prev"></a>
+	           <a onclick="imageSlider.next()" class="group1-Next"></a>
+	       </div>
+	       <!--nav bar-->
+	       <div style="text-align:center;padding:20px;z-index:20;">
+	           <a onclick="imageSlider.previous()" class="group2-Prev"></a>
+	           <a id='auto' onclick="switchAutoAdvance()"></a>
+	           <a onclick="imageSlider.next()" class="group2-Next"></a>
+	       </div>
+	     </div>
+	     <script type="text/javascript">
+	         //The following script is for the group 2 navigation buttons.
+	         function switchAutoAdvance() {
+	             imageSlider.switchAuto();
+	             switchPlayPauseClass();
+	         }
+	         function switchPlayPauseClass() {
+	             var auto = document.getElementById('auto');
+	             var isAutoPlay = imageSlider.getAuto();
+	             auto.className = isAutoPlay ? "group2-Pause" : "group2-Play";
+	             auto.title = isAutoPlay ? "Pause" : "Play";
+	         }
+	         switchPlayPauseClass();
+	     </script>
+	     <!------------------------------ImageSlider ENDS---------------->
+
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-4 col-xs-12 bg-danger animated slideInUp " ><h3>Vision</h3> <p>"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love.”</p></div>
+					<div class="col-sm-4 col-xs-12 bg-success animated slideInUp " ><h3>Mission</h3><p> For UG programme:-  “To churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care.”	</p></div>
+					<div class="col-sm-4 col-xs-12 bg-warning animated slideInUp " ><h3>Quality policy</h3><p>“To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes,  meeting ISO 9001-2008 statutory and regulatory requirements.”</p></div>
+
+	            </div>
+	        </div>
+
+	        <!-- ----X----X---- -->
+
+	        <!-- Pranav: The parallax -->
+	        <div class = "parallax large-device-only"></div>
+
+	        <div class = "" style="height:100px;background-color:white;font-size:18px; padding-top: 30px;">
+				Scroll Up and Down this page to see the parallax scrolling effect.
+				This div is just here to enable scrolling.
+				Tip: Try to remove the background-attachment property to remove the scrolling effect.
+			</div>
+
+	        <div class = "parallax large-device-only"></div>
+
+
+
+
+	    </div>
+
+
+
+	    <!-- Pranav: Footer -->
+	    <footer class = "site-footer">
+
+	    	<div class="container">
+
+	    		<div class = "row">
+	    			
+	    			<div class = "col-md-3 col-xs-12 right divs-on-mob">
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+	    		
+	    			<div class="col-md-2 right large-device-only " >
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+	    			<div class="col-md-2 right large-device-only">
+	    				<img src="images/Gery1.png">
+	    			</div>
+
+	    			<div class = "col-md-2 right large-device-only">
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+	    		
+	    			<div class="col-md-3 col-xs-12 divs-on-mob">
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+
+	    		</div>
+
+	    		<div class = "bottom-footer divs-on-mob">
+	    			<div class = "col-md-5 col-xs-12">Copyright</div>
+		    		
+		    			<div class = "col-md-7 col-xs-12 ">
+		    				<ul class = "footer-nav" style="list-style: none;">
+		    					<li><a href="#">Home </a></li>
+		    					<li><a href="#">About </a></li>
+		    					<li><a href="#">FAQ </a></li>
+		    					<li><a href="#">Baki bacha wo </a></li>
+		    				</ul>
+		    			
+		    		</div>
+	    		</div>
+
+	    	</div>
+
+		</footer>
+
+
+	    <!--JS-->
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+	</body>
 </html>
