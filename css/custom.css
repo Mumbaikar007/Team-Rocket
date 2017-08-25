@@ -12,11 +12,15 @@
 		display: none;
 	}
 	.mobile-only{
-		display: inline;
+		display: block;
 	}
 
 	.divs-on-mob{
 		text-align: center;
+	}
+
+	.right{
+		border-right: 1px solid #b2b2b2;
 	}
 
 
@@ -24,7 +28,7 @@
 		background-color: #222;
 		color: #fff;
 		padding-top: 30px;
-
+		margin-top: 40px;
 	}
 
 	.bottom-footer{
@@ -74,6 +78,22 @@
 	}
 	*/
 
+	.cards{
+		margin-top: 20px;
+	}
+	
+	{
+		text-align: center;
+	}
+
+	ul.nav-tabs {
+	  text-align: center;
+	}
+	ul.nav-tabs li {
+	  float: none;
+	  display: inline-block;
+	}
+
 	/* Pranav: Parallax*/
 	.parallax {
 	    /* The image used */
@@ -96,7 +116,7 @@
 		background-color: #222;
 		color: #fff;
 		padding-top: 30px;
-
+		margin-top: 40px;
 	}
 
 	.bottom-footer{
