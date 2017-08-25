@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-      
+
     <head>
-        
+
         <title>St. Francis Institute of Technology</title>
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -13,14 +13,67 @@
         <!-- For Mobile -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		
+    	    <!--JS-->
+    	    <script src="js/jquery.min.js"></script>
+    	    <script src="js/bootstrap.min.js"></script>
+
+          <!---------ImageSliderJS updated: Jeson---------->
+          <script src="js/js-image-slider.js" type="text/javascript"></script>
+
 		<!-- --------Custom css--------- -->
 		 <link rel="stylesheet" href="css/custom.css">
 
-     	<!---------ImageSliderJS updated: Jeson---------->
-    	<link href="js/4/js-image-slider.css" rel="stylesheet" type="text/css" />
-    	<script src="js/4/js-image-slider.js" type="text/javascript"></script>
+     <!-----internalcss---->
+     <style type="text/css">
 
+    /*CSS for img-slider*/
+       .re{
+         margin: 0;
+         padding: 0;
+         max-width: 100%;
+       }
+       .cycle-slideshow {
+	        width: 100%;
+	          max-width: 960px;
+	         display: block;
+	         position: relative;
+	         margin: auto;
+	         overflow: hidden;
+        }
+        .cycle-prev, .cycle-next {
+	         font-size: 200%;
+	         color: #FFF;
+	         display: block;
+	         position: absolute;
+	         top: 50%;
+	         margin-top: -16px;
+	         z-index: 9999;
+	         cursor: pointer;
+        }
+        .cycle-prev {left: 10%;}
+        .cycle-next {right: 10%;}
+        .cycle-pager {
+	         width: 100%;
+	         position: absolute;
+	         top: 20px;
+	         text-align: center;
+	         z-index: 9999;
+	         cursor: pointer;
+        }
+        .cycle-pager span {
+	         text-indent: 100%;
+	         white-space: nowrap;
+	         width: 10px;
+	         height: 10px;
+	         display: inline-block;
+	         border: 1px solid #FFF;
+	         border-radius: 50%;
+	         margin: 0 10px;
+        }
+        .cycle-pager .cycle-pager-active { background: #FFF;}
+       /*End img-slider*/
+
+     </style>
 
     </head>
 
@@ -39,7 +92,7 @@
       						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
-								<span class="icon-bar"></span> 
+								<span class="icon-bar"></span>
 							</button>
 							<!-- Pranav: MobileHeader -->
 							<a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>Sfit2</a>
@@ -48,8 +101,8 @@
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="#">Home</a></li>
 								<li><a href="profile.html">Profile</a></li>
-								<li><a href="message.html">Messages</a></li> 
-								<li><a href="#">Staff</a></li> 
+								<li><a href="message.html">Messages</a></li>
+								<li><a href="#">Staff</a></li>
 							</ul>
 
 							<!-- Pranav: header -->
@@ -70,44 +123,19 @@
 						</div>
   					</div>
 				</nav>
-			
+
 	        </header>
-
-
+          <p>&emsp;</p>
         <!------------------------------ImageSlider updated: Jeson---------------->
-	       <div id="sliderFrame">
-	       <div id="slider">
-	           <img src="images/slider/1.jpg" />
-	           <img src="images/slider/2.jpg" />
-	           <img src="images/slider/3.jpg" />
-	           <img src="images/slider/4.jpg" />
+	       <div class="cycle-slideshow">
+             <span class="cycle-prev">&#9001;</span>
+             <span class="cycle-next">&#9002;</span>
+             <span class="cycle-pager"></span>
+	           <img class="re" src="images/slider/1.jpg" />
+	           <img class="re" src="images/slider/2.jpg" />
+	           <img class="re" src="images/slider/3.jpg" />
+	           <img class="re" src="images/slider/4.jpg" />
 	       </div>
-	       <!--Custom navigation buttons on both sides-->
-	       <div class="group1-Wrapper">
-	           <a onclick="imageSlider.previous()" class="group1-Prev"></a>
-	           <a onclick="imageSlider.next()" class="group1-Next"></a>
-	       </div>
-	       <!--nav bar-->
-	       <div style="text-align:center;padding:20px;z-index:20;">
-	           <a onclick="imageSlider.previous()" class="group2-Prev"></a>
-	           <a id='auto' onclick="switchAutoAdvance()"></a>
-	           <a onclick="imageSlider.next()" class="group2-Next"></a>
-	       </div>
-	     </div>
-	     <script type="text/javascript">
-	         //The following script is for the group 2 navigation buttons.
-	         function switchAutoAdvance() {
-	             imageSlider.switchAuto();
-	             switchPlayPauseClass();
-	         }
-	         function switchPlayPauseClass() {
-	             var auto = document.getElementById('auto');
-	             var isAutoPlay = imageSlider.getAuto();
-	             auto.className = isAutoPlay ? "group2-Pause" : "group2-Play";
-	             auto.title = isAutoPlay ? "Pause" : "Play";
-	         }
-	         switchPlayPauseClass();
-	     </script>
 	     <!------------------------------ImageSlider ENDS---------------->
 
 	        <div class="container">
@@ -145,7 +173,7 @@
 	    	<div class="container">
 
 	    		<div class = "row">
-	    			
+
 	    			<div class = "col-md-3 col-xs-12 right divs-on-mob">
 	    				<h4>Contact</h4>
 	    				<address>
@@ -155,7 +183,7 @@
 
 	    				</address>
 	    			</div>
-	    		
+
 	    			<div class="col-md-2 right large-device-only " >
 	    				<h4>Contact</h4>
 	    				<address>
@@ -179,7 +207,7 @@
 
 	    				</address>
 	    			</div>
-	    		
+
 	    			<div class="col-md-3 col-xs-12 divs-on-mob">
 	    				<h4>Contact</h4>
 	    				<address>
@@ -195,7 +223,7 @@
 
 	    		<div class = "bottom-footer divs-on-mob">
 	    			<div class = "col-md-5 col-xs-12">Copyright</div>
-		    		
+
 		    			<div class = "col-md-7 col-xs-12 ">
 		    				<ul class = "footer-nav" style="list-style: none;">
 		    					<li><a href="#">Home </a></li>
@@ -203,7 +231,7 @@
 		    					<li><a href="#">FAQ </a></li>
 		    					<li><a href="#">Baki bacha wo </a></li>
 		    				</ul>
-		    			
+
 		    		</div>
 	    		</div>
 
@@ -211,10 +239,6 @@
 
 		</footer>
 
-
-	    <!--JS-->
-	    <script src="js/jquery.min.js"></script>
-	    <script src="js/bootstrap.min.js"></script>
 
 
 
