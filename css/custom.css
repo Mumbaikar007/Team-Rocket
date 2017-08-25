@@ -6,19 +6,60 @@
 
 /* Pranav: Parallax*/
 .parallax {
-		    /* The image used */
-		    background-image: url("../images/Nature-View.jpg");
+    /* The image used */
+    background-image: url("../images/Nature-View.jpg");
 
-		    /* Set a specific height */
-		    min-height: 300px; 
+    /* Set a specific height */
+    min-height: 300px; 
 
-		    /* Create the parallax scrolling effect */
-		    background-attachment: fixed;
-		    background-position: center;
-		    background-repeat: no-repeat;
-		    background-size: cover;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-		}
+}
+
+@media screen and (max-width: 991px) {
+	.large-device-only{
+		display: none;
+	}
+	.mobile-only{
+		display: inline;
+	}
+
+	.divs-on-mob{
+		text-align: center;
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+	.mobile-only {
+		display: none;
+	}
+	.large-device-only{
+		display: inline;
+	}
+}
+
+/* Pranav: Header edits*/
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+//*
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+  padding: 7px 14px;
+}
+*/
+
 
 /* Pranav: Footer*/
 .site-footer{
