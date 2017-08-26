@@ -82,10 +82,6 @@
 		margin-top: 20px;
 	}
 	
-	{
-		text-align: center;
-	}
-
 	ul.nav-tabs {
 	  text-align: center;
 	}
@@ -110,13 +106,23 @@
 
 	}
 
+	#mission{
+		background-color: #80ced6;
+
+	}
+
+	#DynamicTabs{
+		background-color: #b5e7a0;
+		color: #405d27;
+		padding-top: 10px;	
+	}
 
 	/* Pranav: Footer*/
 	.site-footer{
-		background-color: #222;
-		color: #fff;
+		background-color: black;
+		color: #b2b2b2;
 		padding-top: 30px;
-		margin-top: 40px;
+	
 	}
 
 	.bottom-footer{
