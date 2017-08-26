@@ -86,6 +86,16 @@
 	  display: inline-block;
 	}
 
+	.semi-circle {
+	  	border-bottom-left-radius: 160px;
+	  	border-bottom-right-radius: 160px;
+	    height: 80px;
+  		width: 160px;
+  		background-color: blue;
+  		text-align: center;
+	}
+
+
 	/* Pranav: Parallax*/
 	.parallax {
 	    /* The image used */
@@ -103,12 +113,12 @@
 	}
 
 	#mission{
-		background-color: #80ced6;
+		background-color: #001a66;
 
 	}
 
 	#DynamicTabs{
-		background-color: #b5e7a0;
+		background-color: #b3ffb3;
 		color: #405d27;
 		padding-top: 10px;	
 	}
