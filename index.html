@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-      
+
     <head>
-        
+
         <title>St. Francis Institute of Technology</title>
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -13,14 +13,67 @@
         <!-- For Mobile -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		
+    	    <!--JS-->
+    	    <script src="js/jquery.min.js"></script>
+    	    <script src="js/bootstrap.min.js"></script>
+
+          <!---------ImageSliderJS updated: Jeson---------->
+          <script src="js/js-image-slider.js" type="text/javascript"></script>
+
 		<!-- --------Custom css--------- -->
 		 <link rel="stylesheet" href="css/custom.css">
 
-     	<!---------ImageSliderJS updated: Jeson---------->
-    	<link href="js/4/js-image-slider.css" rel="stylesheet" type="text/css" />
-    	<script src="js/4/js-image-slider.js" type="text/javascript"></script>
+     <!-----internalcss---->
+     <style type="text/css">
 
+    /*CSS for img-slider*/
+       .re{
+         margin: 0;
+         padding: 0;
+         max-width: 100%;
+       }
+       .cycle-slideshow {
+	        width: 100%;
+	          max-width: 960px;
+	         display: block;
+	         position: relative;
+	         margin: auto;
+	         overflow: hidden;
+        }
+        .cycle-prev, .cycle-next {
+	         font-size: 200%;
+	         color: #FFF;
+	         display: block;
+	         position: absolute;
+	         top: 50%;
+	         margin-top: -16px;
+	         z-index: 9999;
+	         cursor: pointer;
+        }
+        .cycle-prev {left: 10%;}
+        .cycle-next {right: 10%;}
+        .cycle-pager {
+	         width: 100%;
+	         position: absolute;
+	         top: 20px;
+	         text-align: center;
+	         z-index: 9999;
+	         cursor: pointer;
+        }
+        .cycle-pager span {
+	         text-indent: 100%;
+	         white-space: nowrap;
+	         width: 10px;
+	         height: 10px;
+	         display: inline-block;
+	         border: 1px solid #FFF;
+	         border-radius: 50%;
+	         margin: 0 10px;
+        }
+        .cycle-pager .cycle-pager-active { background: #FFF;}
+       /*End img-slider*/
+
+     </style>
 
     </head>
 
@@ -29,7 +82,6 @@
 
 	    <!-- updated by Tanmay..    linked bootstrap-->
 	    <!--Main Division containing everything-->
-
 	    <div>
 
 	      	 <header>
@@ -39,7 +91,7 @@
       						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
-								<span class="icon-bar"></span> 
+								<span class="icon-bar"></span>
 							</button>
 							<!-- Pranav: MobileHeader -->
 							<a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>Sfit2</a>
@@ -48,8 +100,8 @@
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="#">Home</a></li>
 								<li><a href="profile.html">Profile</a></li>
-								<li><a href="message.html">Messages</a></li> 
-								<li><a href="#">Staff</a></li> 
+								<li><a href="message.html">Messages</a></li>
+								<li><a href="#">Staff</a></li>
 							</ul>
 
 							<!-- Pranav: header -->
@@ -70,53 +122,33 @@
 						</div>
   					</div>
 				</nav>
-			
-	        </header>
 
+	        </header>
+          <p>&emsp;</p>
 
         <!------------------------------ImageSlider updated: Jeson---------------->
-	       <div id="sliderFrame">
-	       <div id="slider">
-	           <img src="images/slider/1.jpg" />
-	           <img src="images/slider/2.jpg" />
-	           <img src="images/slider/3.jpg" />
-	           <img src="images/slider/4.jpg" />
-	       </div>
-	       <!--Custom navigation buttons on both sides-->
-	       <div class="group1-Wrapper">
-	           <a onclick="imageSlider.previous()" class="group1-Prev"></a>
-	           <a onclick="imageSlider.next()" class="group1-Next"></a>
-	       </div>
-	       <!--nav bar-->
-	       <div style="text-align:center;padding:20px;z-index:20;">
-	           <a onclick="imageSlider.previous()" class="group2-Prev"></a>
-	           <a id='auto' onclick="switchAutoAdvance()"></a>
-	           <a onclick="imageSlider.next()" class="group2-Next"></a>
-	       </div>
-	     </div>
-	     <script type="text/javascript">
-	         //The following script is for the group 2 navigation buttons.
-	         function switchAutoAdvance() {
-	             imageSlider.switchAuto();
-	             switchPlayPauseClass();
-	         }
-	         function switchPlayPauseClass() {
-	             var auto = document.getElementById('auto');
-	             var isAutoPlay = imageSlider.getAuto();
-	             auto.className = isAutoPlay ? "group2-Pause" : "group2-Play";
-	             auto.title = isAutoPlay ? "Pause" : "Play";
-	         }
-	         switchPlayPauseClass();
-	     </script>
+	        
+		       <div class="cycle-slideshow" >
+		         <span class="cycle-prev">&#9001;</span>
+		         <span class="cycle-next">&#9002;</span>
+		         <span class="cycle-pager"></span>
+		           <img class="re" src="images/slider/1.jpg" />
+		           <img class="re" src="images/slider/2.jpg" />
+		           <img class="re" src="images/slider/3.jpg" />
+		           <img class="re" src="images/slider/4.jpg" />
+		       </div>
+		     
 	     <!------------------------------ImageSlider ENDS---------------->
 
+
 	       <div class="container" style="padding-bottom: 30px">
-	            <div class="row">
-					
-	                <div class="col-sm-4 col-xs-12 animated slideInUp " ><div class="cardcontainer ccard"><h3 class="cardhead">Vision</h3> <p class="cardbody">"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love.”</p></div>
-					</div>
-					<div class="col-sm-4 col-xs-12 animated slideInUp " ><div class="cardcontainer ccard"><h3 class="cardhead">Mission</h3><p class="cardbody"> For UG programme:-  “To churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care.”	</p></div></div>
-					<div class="col-sm-4 col-xs-12 animated slideInUp " ><div class="cardcontainer ccard"><h3 class="cardhead">Quality policy</h3><p class="cardbody">“To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes,  meeting ISO 9001-2008 statutory and regulatory requirements.”</p></div></div>
+
+	    	<div id = "mission" class="container-fluid cards" >
+	            <div class="row animated fadeIn">
+	                <div class="col-sm-4 col-xs-12 bg-danger  " ><h3>Vision</h3> <p>"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love.”</p></div>
+					<div class="col-sm-4 col-xs-12 bg-success " ><h3>Mission</h3><p> For UG programme:-  “To churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care.”	</p></div>
+					<div class="col-sm-4 col-xs-12 bg-warning " ><h3>Quality policy</h3><p>“To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes,  meeting ISO 9001-2008 statutory and regulatory requirements.”</p></div>
+
 
 	            </div>
 	      
@@ -124,32 +156,73 @@
 
 	        <!-- ----X----X---- -->
 
-	        <!-- Pranav: The parallax -->
-	        <div class = "parallax large-device-only"></div>
-
-	        <div class = "" style="height:100px;background-color:white;font-size:18px; padding-top: 30px;">
-				Scroll Up and Down this page to see the parallax scrolling effect.
-				This div is just here to enable scrolling.
-				Tip: Try to remove the background-attachment property to remove the scrolling effect.
-			</div>
-
-	        <div class = "parallax large-device-only"></div>
-
-
-
-
 	    </div>
 
+	    <!-- Pranav: Dynamic Tabs -->
+	    <div id = "DynamicTabs" class="container-fluid animated fadeIn" >
+		  	
+			  <ul class="nav nav-tabs "> <!-- nav-justified -->
+				    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+				    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+				    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+				    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+			  </ul>
 
+			  <div class="tab-content">
+				    <div id="home" class="tab-pane fade in active" align="center">
+				      
+						<!--Card-->
+						<div class="card card-cascade" style="width: 20rem;" >
+
+						    <!--Card image-->
+						    <div class="view gradient-card-header blue-gradient">
+						        <h2 class="h2-responsive">Heading</h2>
+						        <p>Subheading</p>
+						    </div>
+						    <!--/Card image-->
+
+						    <!--Card content-->
+						    <div class="card-body text-center">
+
+						        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi
+						            sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus non quos laudantium
+						            veritatis sequi.Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+						            laboriosam.</p>
+						    </div>
+						    <!--/.Card content-->
+
+						</div>
+						<!--/.Card-->
+
+				    </div>
+				    <div id="menu1" class="tab-pane fade" align="center">
+				      <h3>Menu 1</h3>
+				      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				    </div>
+				    <div id="menu2" class="tab-pane fade" align="center">
+				      <h3>Menu 2</h3>
+				      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				    </div>
+				    <div id="menu3" class="tab-pane fade" align="center">
+				      <h3>Menu 3</h3>
+				      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				    </div>
+			  </div>
+		</div>
+		<!-- Dynamic Tabs Done -->
 
 	    <!-- Pranav: Footer -->
 	    <footer class = "site-footer">
 
-	    	<div class="container">
+	    	<div class="container-fluid">
 
 	    		<div class = "row">
-	    			
-	    			<div class = "col-md-3 col-xs-12 right divs-on-mob">
+
+	    			<div class="col-md-4 right mobile-only" style = "text-align: center;">
+	    				<img src="images/SFIT_Black.jpeg" height="200px" width="200px" style="margin-bottom: 15px;">
+	    			</div>
+
+	    			<div class = "col-md-2 col-xs-6 right divs-on-mob" style = "text-align: right;">
 	    				<h4>Contact</h4>
 	    				<address>
 	    					Santoshi Mata Rd, Mandapeshwar,<br>
@@ -158,8 +231,8 @@
 
 	    				</address>
 	    			</div>
-	    		
-	    			<div class="col-md-2 right large-device-only " >
+
+	    			<div class="col-md-2 right large-device-only " style = "text-align: right;">
 	    				<h4>Contact</h4>
 	    				<address>
 	    					Santoshi Mata Rd, Mandapeshwar,<br>
@@ -169,11 +242,11 @@
 	    				</address>
 	    			</div>
 
-	    			<div class="col-md-2 right large-device-only">
-	    				<img src="images/Gery1.png">
+	    			<div class="col-md-4 right large-device-only " style = "text-align: center;">
+	    				<img src="images/SFIT_Black.jpeg" height="150px" width="150px">
 	    			</div>
 
-	    			<div class = "col-md-2 right large-device-only">
+	    			<div class = "col-md-2 right large-device-only" >
 	    				<h4>Contact</h4>
 	    				<address>
 	    					Santoshi Mata Rd, Mandapeshwar,<br>
@@ -182,8 +255,8 @@
 
 	    				</address>
 	    			</div>
-	    		
-	    			<div class="col-md-3 col-xs-12 divs-on-mob">
+
+	    			<div class="col-md-2 col-xs-6" >
 	    				<h4>Contact</h4>
 	    				<address>
 	    					Santoshi Mata Rd, Mandapeshwar,<br>
@@ -196,31 +269,23 @@
 
 	    		</div>
 
-	    		<div class = "bottom-footer divs-on-mob">
-	    			<div class = "col-md-5 col-xs-12">Copyright</div>
-		    		
-		    			<div class = "col-md-7 col-xs-12 ">
+	    		<div class = "bottom-footer divs-on-mob" >
+	    			<div class = "col-md-5 col-xs-12"> © 2017 St. Francis Institute of Technology. All Rights Reserved</div>
+
+		    			<div class = "col-md-7 col-xs-12 large-device-only">
 		    				<ul class = "footer-nav" style="list-style: none;">
 		    					<li><a href="#">Home </a></li>
 		    					<li><a href="#">About </a></li>
 		    					<li><a href="#">FAQ </a></li>
 		    					<li><a href="#">Baki bacha wo </a></li>
 		    				</ul>
-		    			
+
 		    		</div>
 	    		</div>
 
 	    	</div>
 
 		</footer>
-
-
-	    <!--JS-->
-	    <script src="js/jquery.min.js"></script>
-	    <script src="js/bootstrap.min.js"></script>
-
-
-
 
 	</body>
 </html>

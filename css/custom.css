@@ -8,11 +8,15 @@
 		display: none;
 	}
 	.mobile-only{
-		display: inline;
+		display: block;
 	}
 
 	.divs-on-mob{
 		text-align: center;
+	}
+
+	.right{
+		border-right: 1px solid #b2b2b2;
 	}
 
 
@@ -20,7 +24,7 @@
 		background-color: #222;
 		color: #fff;
 		padding-top: 30px;
-
+		margin-top: 40px;
 	}
 
 	.bottom-footer{
@@ -70,6 +74,18 @@
 	}
 	*/
 
+	.cards{
+		margin-top: 20px;
+	}
+	
+	ul.nav-tabs {
+	  text-align: center;
+	}
+	ul.nav-tabs li {
+	  float: none;
+	  display: inline-block;
+	}
+
 	/* Pranav: Parallax*/
 	.parallax {
 	    /* The image used */
@@ -86,13 +102,23 @@
 
 	}
 
+	#mission{
+		background-color: #80ced6;
+
+	}
+
+	#DynamicTabs{
+		background-color: #b5e7a0;
+		color: #405d27;
+		padding-top: 10px;	
+	}
 
 	/* Pranav: Footer*/
 	.site-footer{
-		background-color: #222;
-		color: #fff;
+		background-color: black;
+		color: #b2b2b2;
 		padding-top: 30px;
-
+	
 	}
 
 	.bottom-footer{
