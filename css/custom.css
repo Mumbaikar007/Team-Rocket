@@ -74,10 +74,9 @@
 	}
 	*/
 
-	.cards{
-		margin-top: 20px;
+	.ccard-deck{
+		display: inline;
 	}
-	
 	ul.nav-tabs {
 	  text-align: center;
 	}
