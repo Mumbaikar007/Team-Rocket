@@ -110,6 +110,11 @@
 	    background-size: cover;
 
 	}
+	
+	.parallax-title{
+		text-align: center;
+		color: white;
+	}
 
 	#mission{
 		background-color: #001a66;
