@@ -84,6 +84,26 @@
          /*End img-slider*/
      </style>
 
+
+     <!-- Basic Animations -->
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $(window).scroll(function() {
+
+          if ($(this).scrollTop()>0)
+           {
+              $('.semi-circle').fadeOut();
+           }
+          else
+           {
+            $('.semi-circle').fadeIn();
+           }
+       });
+
+      $('.opening-hours li').eq(new Date().getDay()).addClass('today');
+      });
+     </script>
+
     </head>
 
 
@@ -170,7 +190,7 @@
 
 
 
-                    <!------------Jeson: Tiles---------------------->
+          <!------------Jeson: Tiles---------------------->
           <div class="container-fluid dynamicTile">
           <div class="row ">
 
@@ -398,6 +418,29 @@
 			  </div>
 		</div>
 		<!-- Dynamic Tabs Done -->
+
+    <!-- Divs Optional -->
+        <div class="container-fluid demo-bg">
+          <div class="row">
+            <div class="col-sm-4"></div>
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4">
+              <div class="business-hours">
+              <h2 class="title">Opening Hours</h2>
+                <ul class="list-unstyled opening-hours">
+                <li>Sunday <span class="pull-right">Closed</span></li>
+                <li>Monday <span class="pull-right">9:00-22:00</span></li>
+                <li>Tuesday <span class="pull-right">9:00-22:00</span></li>
+                <li>Wednesday <span class="pull-right">9:00-22:00</span></li>
+                <li>Thursday <span class="pull-right">9:00-22:00</span></li>
+                <li>Friday <span class="pull-right">9:00-23:30</span></li>
+                <li>Saturday <span class="pull-right">14:00-23:30</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Optional Divs End -->
 
 	    <!-- Pranav: Footer -->
 	    <footer class = "site-footer">
