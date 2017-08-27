@@ -28,7 +28,6 @@
 
      <!-----internalcss---->
      <style type="text/css">
-
     /*CSS for img-slider*/
        .re{
          margin: 0;
@@ -56,24 +55,28 @@
         .cycle-prev {left: 10%;}
         .cycle-next {right: 10%;}
         .cycle-pager {
-	         width: 100%;
-	         position: absolute;
-	         top: 20px;
-	         text-align: center;
-	         z-index: 9999;
-	         cursor: pointer;
+            width: 100%;
+            text-align: center;
+            display: block;
+            position: absolute;
+            bottom: 20px;
+            z-index: 999;
+            cursor: pointer;
         }
         .cycle-pager span {
-	         text-indent: 100%;
-	         white-space: nowrap;
-	         width: 10px;
-	         height: 10px;
-	         display: inline-block;
-	         border: 1px solid #FFF;
-	         border-radius: 50%;
-	         margin: 0 10px;
+            text-indent: 100%;
+            white-space: nowrap;
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            border: 1px solid #FFF;
+            border-radius: 50%;
+            margin: 0 10px;
+            overflow: hidden;
         }
-        .cycle-pager .cycle-pager-active { background: #FFF;}
+        .cycle-pager .cycle-pager-active {
+            background-color: #FFF;
+        }
        /*End img-slider*/
 
      </style>
@@ -130,22 +133,22 @@
 	        </header>
           <p>&emsp;</p>
         <!------------------------------ImageSlider updated: Jeson---------------->
-	       <div class="cycle-slideshow">
+	       <div class="cycle-slideshow" width="100%">
              <span class="cycle-prev">&#9001;</span>
              <span class="cycle-next">&#9002;</span>
-             <span class="cycle-pager"></span>
 	           <img class="re" src="images/slider/1.jpg" />
 	           <img class="re" src="images/slider/2.jpg" />
 	           <img class="re" src="images/slider/3.jpg" />
 	           <img class="re" src="images/slider/4.jpg" />
+             <span class="cycle-pager"></span>
 	       </div>
 	     <!------------------------------ImageSlider ENDS---------------->
 
 	        <div class="container">
 	            <div class="row">
-	                <div class="col-sm-4 col-xs-12 bg-danger animated slideInUp " ><h3>Vision</h3> <p>"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love.”</p></div>
-					<div class="col-sm-4 col-xs-12 bg-success animated slideInUp " ><h3>Mission</h3><p> For UG programme:-  “To churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care.”	</p></div>
-					<div class="col-sm-4 col-xs-12 bg-warning animated slideInUp " ><h3>Quality policy</h3><p>“To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes,  meeting ISO 9001-2008 statutory and regulatory requirements.”</p></div>
+	        <div class="col-sm-4 col-xs-12 bg-danger animated slideInUp " style="height: 250px" ><h3>Vision</h3> <p>"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love.”</p></div>
+					<div class="col-sm-4 col-xs-12 bg-success animated slideInUp " style="height: 250px" ><h3>Mission</h3><p> For UG programme:-  “To churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care.”	</p></div>
+					<div class="col-sm-4 col-xs-12 bg-warning animated slideInUp " style="height: 250px" ><h3>Quality policy</h3><p>“To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes,  meeting ISO 9001-2008 statutory and regulatory requirements.”</p></div>
 
 	            </div>
 	        </div>
@@ -156,7 +159,7 @@
           <div class="container dynamicTile">
           <div class="row ">
 
-              <div class="col-sm-4 col-xs-8">
+              <div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
               	<div id="tile1" class="tile">
                    <div class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
@@ -177,7 +180,7 @@
               	</div>
           	</div>
           <a href="#">
-          	<div class="col-sm-4 col-xs-8">
+          	<div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
           		<div id="tile2" class="tile">
                    <div class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
@@ -197,7 +200,7 @@
           </a>
 
           <a href="#">
-          	<div class="col-sm-4 col-xs-8">
+          	<div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
           		<div id="tile3" class="tile">
                   <div class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
@@ -219,7 +222,7 @@
 
           <a href="#">
           <div class="row">
-          	<div class="col-sm-4 col-xs-8">
+          	<div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
           		<div id="tile4" class="tile">
                   <div class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
@@ -242,7 +245,7 @@
           </a>
 
           <a href="#">
-          	<div class="col-sm-4 col-xs-8">
+          	<div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
           		<div id="tile5" class="tile">
                     <div class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
@@ -260,7 +263,7 @@
           	</div>
           </a>
 
-            <div class="col-sm-4 col-xs-8">
+            <div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
           		<div id="tile6" class="tile">
                      <div class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
