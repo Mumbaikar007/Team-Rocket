@@ -7,74 +7,102 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/tiles.css">
 
         <!-- Pranav: Animations -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <!-- For Mobile -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    	    <!--JS-->
-    	    <script src="js/jquery.min.js"></script>
-    	    <script src="js/bootstrap.min.js"></script>
-    	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      	<!--JS-->
+      	<script src="js/jquery.min.js"></script>
+    	   <script src="js/bootstrap.min.js"></script>
 
-          <!---------ImageSliderJS updated: Jeson---------->
-          <script src="js/js-image-slider.js" type="text/javascript"></script>
+        <script src="js/tiles.js"></script>
 
-		<!-- --------Custom css--------- -->
-		 <link rel="stylesheet" href="css/custom.css">
+    	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-     <!-----internalcss---->
-     <style type="text/css">
 
-    /*CSS for img-slider*/
-       .re{
-         margin: 0;
-         padding: 0;
-         max-width: 100%;
-       }
-       .cycle-slideshow {
-	        width: 100%;
-	          max-width: 960px;
-	         display: block;
-	         position: relative;
-	         margin: auto;
-	         overflow: hidden;
-        }
-        .cycle-prev, .cycle-next {
-	         font-size: 200%;
-	         color: #FFF;
-	         display: block;
-	         position: absolute;
-	         top: 50%;
-	         margin-top: -16px;
-	         z-index: 9999;
-	         cursor: pointer;
-        }
-        .cycle-prev {left: 10%;}
-        .cycle-next {right: 10%;}
-        .cycle-pager {
-	         width: 100%;
-	         position: absolute;
-	         top: 20px;
-	         text-align: center;
-	         z-index: 9999;
-	         cursor: pointer;
-        }
-        .cycle-pager span {
-	         text-indent: 100%;
-	         white-space: nowrap;
-	         width: 10px;
-	         height: 10px;
-	         display: inline-block;
-	         border: 1px solid #FFF;
-	         border-radius: 50%;
-	         margin: 0 10px;
-        }
-        .cycle-pager .cycle-pager-active { background: #FFF;}
-       /*End img-slider*/
+        <!---------ImageSliderJS updated: Jeson---------->
+        <script src="js/js-image-slider.js" type="text/javascript"></script>
 
+		    <!-- --------Custom css--------- -->
+		    <link rel="stylesheet" href="css/custom.css">
+
+        <!-----internalcss---->
+        <style type="text/css">
+        /*CSS for img-slider*/
+        .re{
+           margin: 0;
+           padding: 0;
+           max-width: 100%;
+         }
+         .cycle-slideshow {
+  	        width: 100%;
+  	          max-width: 960px;
+  	         display: block;
+  	         position: relative;
+  	         margin: auto;
+  	         overflow: hidden;
+          }
+          .cycle-prev, .cycle-next {
+  	         font-size: 200%;
+  	         color: #FFF;
+  	         display: block;
+  	         position: absolute;
+  	         top: 50%;
+  	         margin-top: -16px;
+  	         z-index: 9999;
+  	         cursor: pointer;
+          }
+          .cycle-prev {left: 10%;}
+          .cycle-next {right: 10%;}
+          .cycle-pager {
+              width: 100%;
+              text-align: center;
+              display: block;
+              position: absolute;
+              bottom: 20px;
+              z-index: 999;
+              cursor: pointer;
+          }
+          .cycle-pager span {
+              text-indent: 100%;
+              white-space: nowrap;
+              width: 12px;
+              height: 12px;
+              display: inline-block;
+              border: 1px solid #FFF;
+              border-radius: 50%;
+              margin: 0 10px;
+              overflow: hidden;
+          }
+          .cycle-pager .cycle-pager-active {
+              background-color: #FFF;
+          }
+         /*End img-slider*/
      </style>
+
+
+     <!-- Basic Animations -->
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $(window).scroll(function() {
+
+          if ($(this).scrollTop()>0)
+           {
+              $('.semi-circle').fadeOut();
+           }
+          else
+           {
+            $('.semi-circle').fadeIn();
+           }
+       });
+
+      $('.opening-hours li').eq(new Date().getDay()).addClass('today');
+      });
+     </script>
 
     </head>
 
@@ -85,30 +113,33 @@
 	    <!--Main Division containing everything-->
 	    <div>
 
-	      	 <header>
+	      <header>
 				 <nav class="navbar navbar-inverse navbar-fixed-top ">
   					<div class="container-fluid">
     					<div class="navbar-header">
       						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<!-- Pranav: MobileHeader -->
-							<a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>Sfit2</a>
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+							     </button>
+
+    							<!-- Pranav: MobileHeader -->
+    							<a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>Sfit2</a>
+
     					</div>
+
     					<div class="collapse navbar-collapse" id="myNavbar">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="#">Home</a></li>
-								<li><a href="profile.html">Profile</a></li>
-								<li><a href="message.html">Messages</a></li>
-								<li><a href="#">Staff</a></li>
-							</ul>
+  							<ul class="nav navbar-nav">
+  								<li class="active"><a href="#">Home</a></li>
+  								<li><a href="profile.html">Profile</a></li>
+  								<li><a href="message.html">Messages</a></li>
+  								<li><a href="#">Staff</a></li>
+  							</ul>
 
 							<!-- Pranav: header -->
 							
 							<a class="navbar-brand large-device-only " href="#">
-								<center>Sfit</center><span><div class="semi-circle"><img src="images/sfit.png" height="35px" width="40px"></span></div>
+								<center>Sfit</center> <span><div class="semi-circle"><img src="images/sfit.png" height="35px" width="40px"></span></div>
 							</a>
 							
 						 	<ul class="nav navbar-nav navbar-right">
@@ -118,43 +149,195 @@
 										<li><a href="#">Mumbai</a></li>
 										<li><a href="#">Delhi</a></li>
 										<li><a href="#">Chennai</a></li>
-	                        		</ul>
+	                 </ul>
 							 	</li>
 								<!-- Dropdown end -->
-								<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+								  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 							</ul>
+
 						</div>
   					</div>
 				</nav>
-
-	        </header>
-          <p>&emsp;</p>
+        
+	     </header>
+          <p>&emsp;</p> 
 
         <!------------------------------ImageSlider updated: Jeson---------------->
-	        
-		       <div class="cycle-slideshow" >
-		         <span class="cycle-prev">&#9001;</span>
-		         <span class="cycle-next">&#9002;</span>
-		         <span class="cycle-pager"></span>
-		           <img class="re" src="images/slider/1.jpg" />
-		           <img class="re" src="images/slider/2.jpg" />
-		           <img class="re" src="images/slider/3.jpg" />
-		           <img class="re" src="images/slider/4.jpg" />
-		       </div>
-		     
+
+	       <div class="cycle-slideshow" width="100%">
+             <span class="cycle-prev">&#9001;</span>
+             <span class="cycle-next">&#9002;</span>
+	           <img class="re" src="images/slider/1.jpg" />
+	           <img class="re" src="images/slider/2.jpg" />
+	           <img class="re" src="images/slider/3.jpg" />
+	           <img class="re" src="images/slider/4.jpg" />
+             <span class="cycle-pager"></span>
+	       </div>
 	     <!------------------------------ImageSlider ENDS---------------->
 
+	     <div id = "mission" class="container-fluid" style="padding-bottom: 30px">
 
-	       <div id = "mission" class="container-fluid" style="padding-bottom: 30px">
-
-	    	<div class="container cards" >
+	    	  <div class="container cards" >
 	            <div class="row animated fadeIn">
 	                <div class="col-sm-4 col-xs-12 bg-danger  " ><h3>Vision</h3> <p>"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love.”</p></div>
-					<div class="col-sm-4 col-xs-12 bg-success " ><h3>Mission</h3><p> For UG programme:-  “To churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care.”	</p></div>
-					<div class="col-sm-4 col-xs-12 bg-warning " ><h3>Quality policy</h3><p>“To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes,  meeting ISO 9001-2008 statutory and regulatory requirements.”</p></div>
+					       <div class="col-sm-4 col-xs-12 bg-success " ><h3>Mission</h3><p> For UG programme:-  “To churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care.”	</p></div>
+					       <div class="col-sm-4 col-xs-12 bg-warning " ><h3>Quality policy</h3><p>“To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes,  meeting ISO 9001-2008 statutory and regulatory requirements.”</p></div>
+              </div>
+            </div>
+       </div>
+
+       <!-- Please Take care ... -->
 
 
-	            </div>
+
+          <!------------Jeson: Tiles---------------------->
+          <div class="container-fluid dynamicTile">
+          <div class="row ">
+
+              <div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
+              	<div id="tile1" class="tile">
+                   <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                         <img src="images/tile/map.jpg" class="img-responsive"/>
+                      </div>
+                      <div class="item">
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.8928828889925!2d72.85328041434126!3d19.24349958699204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b13affffffff%3A0xfd071f1d3a7844ef!2sSt.Francis+Institute+Of+Technology!5e0!3m2!1sen!2sin!4v1503757915579" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
+                      <!--                Add futher items
+                      <div class="item">
+                        <img src="" class="img-responsive"/>
+                      </div>
+                      -->
+                    </div>
+                  </div>
+              	</div>
+          	</div>
+          <a href="#">
+          	<div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
+          		<div id="tile2" class="tile">
+                   <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="images/tile/event.jpg" class="img-responsive"/>
+                      </div>
+                      <!--                Add futher items
+                      <div class="item">
+                        <img src="#" class="img-responsive"/>
+                      </div>
+                      -->
+                    </div>
+                  </div>
+          		</div>
+          	</div>
+          </a>
+
+          <a href="#">
+          	<div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
+          		<div id="tile3" class="tile">
+                  <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                         <img src="images/tile/admission.jpg" class="img-responsive"/>
+                      </div>
+                      <!--                Add futher items
+                      <div class="item">
+                        <img src="#" class="img-responsive"/>
+                      </div>
+                      -->
+                      </div>
+                   </div>
+          		</div>
+          	</div>
+          </div>
+          </a>
+
+          <a href="#">
+          <div class="row">
+          	<div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
+          		<div id="tile4" class="tile">
+                  <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="images/tile/new1.jpg" class="img-responsive"/>
+                      </div>
+                      <div class="item">
+                        <img src="images/tile/new2.jpg" class="img-responsive"/>
+                      </div>
+                      <!--                Add futher items
+                      <div class="item">
+                        <img src="#" class="img-responsive"/>
+                      </div>
+                      -->
+                    </div>
+                  </div>
+          		</div>
+          	</div>
+          </a>
+
+          <a href="#">
+          	<div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
+          		<div id="tile5" class="tile">
+                    <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <h3 class="tilecaption">EXAM RESULTS</h3>
+                      </div>
+                      <div class="item">
+                        <img src="images/tile/result.jpg" class="img-responsive"/>
+                      </div>
+                    </div>
+                  </div>
+
+          		</div>
+          	</div>
+          </a>
+
+            <div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
+          		<div id="tile6" class="tile">
+                     <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <h3 class="tilecaption">Customize your tiles</h3>
+                      </div>
+                      <div class="item">
+                        <h3 class="tilecaption">Text, Icons, Images</h3>
+                      </div>
+                      <div class="item">
+                        <h3 class="tilecaption">Combine them and create your metro style</h3>
+                      </div>
+
+                    </div>
+                  </div>
+            	</div>
+            </div>
+
+
+          	        <!-- Pranav: The parallax
+          	        <div class = "parallax large-device-only"></div>
+
+          	        <div class = "" style="height:100px;background-color:white;font-size:18px; padding-top: 30px;">
+          				Scroll Up and Down this page to see the parallax scrolling effect.
+          				This div is just here to enable scrolling.
+          				Tip: Try to remove the background-attachment property to remove the scrolling effect.
+          			</div>
+
+          	        <div class = "parallax large-device-only"></div>
+
+                      ---->
+
+
+          	    </div>
+          <div>
+            <p>&emsp;</p>
+          </div>
+        </div>
 	      
 			  </div>
 
@@ -177,34 +360,35 @@
 			  </ul>
 
 			  <div class="tab-content">
-				    <div id="home" class="tab-pane fade in active" align="center">
-				      
-					<div class="ccard-deck">
-					  <div class="ccard">
-					    <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap">
-					    <div class="ccard-block">
-					      <h4 class="ccard-title">Card title</h4>
-					      <p class="ccard-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					      <p class="ccard-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					    </div>
-					  </div>
-					  <div class="ccard">
-					    <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap">
-					    <div class="ccard-block">
-					      <h4 class="ccard-title">Card title</h4>
-					      <p class="ccard-text">This card has supporting text below as a natural lead-in to additional content.</p>
-					      <p class="ccard-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					    </div>
-					  </div>
-					  <div class="ccard">
-					    <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap">
-					    <div class="ccard-block">
-					      <h4 class="ccard-title">Card title</h4>
-					      <p class="ccard-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-					      <p class="ccard-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					    </div>
-					  </div>
-					</div>
+				    
+            <div id="home" class="tab-pane fade in active" align="center">
+
+                <div class="ccard" style="width: 20rem;">
+                  <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap">
+                  <div class="ccard-block">
+                    <h4 class="ccard-title">Card title</h4>
+                    <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                
+                <div class="ccard" style="width: 20rem;">
+                  <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap">
+                  <div class="ccard-block">
+                    <h4 class="ccard-title">Card title</h4>
+                    <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+                <div class="ccard" style="width: 20rem;">
+                  <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap">
+                  <div class="ccard-block">
+                    <h4 class="ccard-title">Card title</h4>
+                    <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
 
 
 				    </div>
@@ -212,13 +396,14 @@
 				    <div id="menu1" class="tab-pane fade" align="center">
 				    
 				    	<div class="ccard" style="width: 20rem;">
-						  <img class="ccard-img-top" src="..." alt="Card image cap">
+						  <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap">
 						  <div class="ccard-block">
 						    <h4 class="ccard-title">Card title</h4>
 						    <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 						    <a href="#" class="btn btn-primary">Go somewhere</a>
 						  </div>
 						</div>
+
 
 				    </div>
 				    
@@ -233,6 +418,29 @@
 			  </div>
 		</div>
 		<!-- Dynamic Tabs Done -->
+
+    <!-- Divs Optional -->
+        <div class="container-fluid demo-bg">
+          <div class="row">
+            <div class="col-sm-4"></div>
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4">
+              <div class="business-hours">
+              <h2 class="title">Opening Hours</h2>
+                <ul class="list-unstyled opening-hours">
+                <li>Sunday <span class="pull-right">Closed</span></li>
+                <li>Monday <span class="pull-right">9:00-22:00</span></li>
+                <li>Tuesday <span class="pull-right">9:00-22:00</span></li>
+                <li>Wednesday <span class="pull-right">9:00-22:00</span></li>
+                <li>Thursday <span class="pull-right">9:00-22:00</span></li>
+                <li>Friday <span class="pull-right">9:00-23:30</span></li>
+                <li>Saturday <span class="pull-right">14:00-23:30</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Optional Divs End -->
 
 	    <!-- Pranav: Footer -->
 	    <footer class = "site-footer">

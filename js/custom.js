@@ -1,7 +1,14 @@
 $(document).ready(function(){
-  $(document).scroll(function(){
-    if($(document	).scrollTop() > 200){
-      $('.semi-circle').hide();
-    }
-  });
+   $(window).scroll(function() {
+
+    if ($(this).scrollTop()>0)
+     {
+        $('.semi-circle').fadeOut();
+     }
+    else
+     {
+      $('.semi-circle').fadeIn();
+     }
+ });
+
 });

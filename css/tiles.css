@@ -1,0 +1,25 @@
+/*CSS for Tile*/
+.dynamicTile .col-sm-4.col-xs-8{
+   padding:5px;
+}
+
+.tilecaption{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    margin:0!important;
+    text-align: center;
+    color:white;
+    font-family: Segoe UI;
+    font-weight: lighter;
+}
+
+/*Back-ground color of any tile can be changed by using id*/
+#tile5{
+    background: rgb(0,93,233);
+}
+#tile6{
+    background: rgb(209,70,37);
+}
