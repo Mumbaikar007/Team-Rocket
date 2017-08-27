@@ -170,6 +170,10 @@
 		border-right: 1px solid #b2b2b2;
 	}
 
+	.tab-content {
+		padding-top: 25px;
+	}
+
 	/*Tanmay */
 	.eqcol{
 		display: flex;
@@ -181,12 +185,12 @@
 	}
 
 	/* On mouse-over, add a deeper shadow */
-		.ccard:hover {
-			box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
-		}
-		.cardcontainer{
-			padding:10px;
-		}
+	.ccard:hover {
+		box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
+	}
+	.cardcontainer{
+		padding:10px;
+	}
 	.cardhead{
 
 		height: 40%;
@@ -196,13 +200,13 @@
 		height: 60%;
 	}
 	.card-table {
-    display: table; /* Make the container element behave like a table */
-    width: 100%; /* Set full-width to expand the whole page */
-}
+    	display: table; /* Make the container element behave like a table */
+    	width: 100%; /* Set full-width to expand the whole page */
+	}
 
-.card-col {
-    display: table-cell; /* Make elements inside the container behave like table cells */
-}
+	.card-col {
+    	display: table-cell; /* Make elements inside the container behave like table cells */
+	}
 
 
 }
