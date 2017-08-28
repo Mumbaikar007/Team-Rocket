@@ -5,68 +5,412 @@
         
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-		
+
+        <!-- Lightbox -->
+        <link href="css/lightbox.css" rel="stylesheet">
+        
+
+        <!-- W3CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+
 		<!-- --------Custom css--------- -->
 		 <link rel="stylesheet" href="css/custom.css">
 		
+		 <style type="text/css">
+		 	.thumbnail img{
+		 		width: 350px;
+		 		height: 200px;
+		 	}
+
+		 	.photos {
+		 		margin-bottom: 
+		 	}
+		 </style>
+
+	     <script>
+	       $(document).ready(function(){
+	         
+	         $(window).scroll(function() {
+
+	          if ($(this).scrollTop()>0)
+	           {
+	              $('.semi-circle').fadeOut();
+	           }
+	          else
+	           {
+	            $('.semi-circle').fadeIn();
+	           }
+	       });
+	         
+	     </script>
+
+
+
         </head>
 
 
 	<body>
 	    <div>
 
-	        <header>
-	            <div class="container">
-	            	<div class=row >
-						<div class="col-lg-5">
-	                	<ul class="nav nav-pills nav-justified">
-	                    <li><a href="index.html">Home</a></li>
-	                    <li class="active"><a href="#">Profile</a></li>
-	                    <li><a href="message.html">Messages</a></li>
-	                
+	         <header>
+				 <nav class="navbar navbar-inverse navbar-fixed-top ">
+  					<div class="container-fluid">
+    					<div class="navbar-header">
+      						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+							     </button>
 
-	                    
-	                	</ul>
+    							<!-- Pranav: MobileHeader -->
+    							<a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>Sfit2</a>
+
+    					</div>
+
+    					<div class="collapse navbar-collapse" id="myNavbar">
+  							<ul class="nav navbar-nav">
+  								<li class="active"><a href="#">Home</a></li>
+  								<li><a href="profile.html">Profile</a></li>
+  								<li><a href="message.html">Messages</a></li>
+  								<li><a href="#">Staff</a></li>
+  							</ul>
+
+							<!-- Pranav: header -->
+							
+							<a class="navbar-brand large-device-only " href="#">
+								<center>Sfit</center> <span><div class="semi-circle"><img src="images/sfit.png" height="35px" width="40px"></span></div>
+							</a>
+							
+						 	<ul class="nav navbar-nav navbar-right">
+								  <!-- Dropdown -->
+								<li><a href="#"  typeid="drop" data-toggle="dropdown">Location<span class="caret"></span></a>
+									<ul class="dropdown-menu" aria-labelled-by="drop">
+										<li><a href="#">Mumbai</a></li>
+										<li><a href="#">Delhi</a></li>
+										<li><a href="#">Chennai</a></li>
+	                 </ul>
+							 	</li>
+								<!-- Dropdown end -->
+								  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+							</ul>
+
 						</div>
-			<!-- ----------------------LOGO ANIMATION-------------- -->
-						<div class="col-lg-2">
-						
-						</div>
-			<!-- ----------------------LOGO ANIMATION END-------------- -->
-						<div class="col-lg-5">
-							<ul class="nav nav-pills nav-justified" >
-	                
-	                    	<li><a href="#">Staff</a></li>
-	                    	<li><a href="#">Events</a></li>
-	                        <li><a href="#"  typeid="drop" data-toggle="dropdown">Location<span class="caret"></span></a>
-	                        <ul class="dropdown-menu" aria-labelled-by="drop">
-	                            <li><a href="#">Mumbai</a></li>
-	                            <li><a href="#">Delhi</a></li>
-	                            <li><a href="#">Chennai</a></li>
-	                        </ul>
-	                      </li>
-				
-	             			
-	                    
-	                		</ul>
-						
-						</div>
-					</div> 
-	            </div>
-	        </header>
-			
-			<div class="jumbotron">This profile tab</div>
+  					</div>
+				</nav>
+        
+	     </header>
 	   
 	      
 	    </div>  
 	    
+	    <!-- Pranav: Parallax -->
+	    <div class = "parallax" style="padding-top: 100px;background-image: url('images/LAB.jpg');" >
+		    	
+		    <div>
+					<div style="color: #ffffff	; text-align: center; font-size: 100px;"Comic Sans MS", cursive, sans-serif">Gallery</div>    	
+		    </div>
+
+	    </div>
+
+
+	    <!-- Pranav: Image Album -->
+
+<!-- 	    <div class="w3-container w3-teal">
+		  <h1>Summer 2015</h1>
+		</div>
+
+		<div class="w3-row-padding w3-margin-top">
+		  <div class="w3-third">
+		    <div class="w3-card-2">
+		      <img src="images/slider/1.jpg" style="width:100% " class="w3-opacity w3-hover-opacity-off" alt="Norway">
+		      <div class="w3-container">
+		        <h5>5 Terre</h5>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="w3-third">
+		    <div class="w3-card-2">
+		      <img src="images/slider/1.jpg" style="width:100%" class="w3-opacity w3-hover-opacity-off" alt="Norway">
+		      <div class="w3-container">
+		        <h5>Monterosso</h5>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="w3-third">
+		    <div class="w3-card-2">
+		      <img src="images/slider/1.jpg" style="width:100%" class="w3-opacity w3-hover-opacity-off" alt="Norway">
+		      <div class="w3-container">
+		        <h5>Vernazza</h5>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="w3-row-padding w3-margin-top">
+		  <div class="w3-third">
+		    <div class="w3-card-2">
+		      <img src="images/slider/1.jpg" style="width:100%" class="w3-opacity w3-hover-opacity-off" alt="Norway">
+		      <div class="w3-container">
+		        <h5>Manarola</h5>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="w3-third">
+		    <div class="w3-card-2">
+		      <img src="images/slider/1.jpg" style="width:100%" class="w3-opacity w3-hover-opacity-off" alt="Norway">
+		      <div class="w3-container">
+		        <h5>Corniglia</h5>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="w3-third">
+		    <div class="w3-card-2">
+		      <img src="images/slider/1.jpg" style="width:100%" class="w3-opacity w3-hover-opacity-off" alt="Norway">
+		      <div class="w3-container">
+		        <h5>Riomaggiore</h5>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+ -->
+	
+ 		<div class = "container photos">
+	 		<div class = "page-header">
+	 			<h3> Photo Gallery </h3>
+	 		</div>
+
+	 		<div class = "row">
+
+	 			<div class = "col-md-4">
+	 				<a href ="images/slider/1.jpg" data-lightbox = "gallery" class = "thumbnail">
+	 				<img src="images/slider/1.jpg">
+	 				</a>
+	 			</div>
+
+	 			<div class = "col-md-4">
+	 				<a href ="images/slider/2.jpg" data-lightbox = "gallery" class = "thumbnail">
+	 				<img src="images/slider/2.jpg">
+	 				</a>
+	 			</div>
+	 			<div class = "col-md-4">
+	 				<a href ="images/slider/3.jpg" data-lightbox = "gallery" class = "thumbnail">
+	 				<img src="images/slider/3.jpg">
+	 				</a>
+	 			</div>
+
+	 			<div class = "col-md-4">
+	 				<a href ="images/slider/4.jpg" data-lightbox = "gallery" class = "thumbnail">
+	 				<img src="images/slider/4.jpg">
+	 				</a>
+	 			</div>
+
+	 			<div class = "col-md-4">
+	 				<a href ="images/slider/1.jpg" data-lightbox = "gallery" class = "thumbnail">
+	 				<img src="images/slider/1.jpg">
+	 				</a>
+	 			</div>
+	 			<div class = "col-md-4">
+	 				<a href ="images/slider/1.jpg" data-lightbox = "gallery" class = "thumbnail">
+	 				<img src="images/slider/1.jpg">
+	 				</a>
+	 			</div>
+
+	 			<div class = "col-md-4">
+	 				<a href ="images/slider/1.jpg" data-lightbox = "gallery" class = "thumbnail">
+	 				<img src="images/slider/1.jpg">
+	 				</a>
+	 			</div>
+
+	 			<div class = "col-md-4">
+	 				<a href ="images/slider/1.jpg" data-lightbox = "gallery" class = "thumbnail">
+	 				<img src="images/slider/1.jpg">
+	 				</a>
+	 			</div>
+	 			<div class = "col-md-4">
+	 				<a href ="images/slider/1.jpg" data-lightbox = "gallery" class = "thumbnail">
+	 				<img src="images/slider/1.jpg">
+	 				</a>
+	 			</div>
+
+	 		</div> 	
+
+	 	</div>
+
+
+	 	<div class="container" style="margin-top:10px;">
+			<div class="row form-group">
+		        <div class="col-xs-12 col-md-6">
+		            <div class="panel panel-default">
+		                <div class="panel-image">
+		                    <img src="http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52d09387ae003_1.JPG" class="panel-image-preview" />
+		                    <label for="toggle-1"></label>
+		                </div>
+		                <input type="checkbox" id="toggle-1" class-"panel-image-toggle">
+		                <div class="panel-body">
+		                    <h4>Title of Image</h4>
+		                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper et.</p>
+		                </div>
+		                <div class="panel-footer text-center">
+		                    <a href="#download"><span class="glyphicon glyphicon-download"></span></a>
+		                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+		                    <a href="#twitter"><span class="fa fa-twitter"></span></a>
+		                    <a href="#share"><span class="glyphicon glyphicon-share-alt"></span></a>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="col-xs-12 col-md-6">
+		            <div class="panel panel-default">
+		                <div class="panel-image hide-panel-body">
+		                    <img src="http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52cf9489095e8_1.JPG" class="panel-image-preview" />
+		                    <label for="toggle-2"></label>
+		                </div>
+		                <input type="checkbox" id="toggle-2" class-"panel-image-toggle">
+		                <div class="panel-body">
+		                    <h4>Title of Image</h4>
+		                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper et.</p>
+		                </div>
+		                <div class="panel-footer text-center">
+		                    <a href="#download"><span class="glyphicon glyphicon-download"></span></a>
+		                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+		                    <a href="#twitter"><span class="fa fa-twitter"></span></a>
+		                    <a href="#share"><span class="glyphicon glyphicon-share-alt"></span></a>
+		                </div>
+		            </div>
+		        </div>
+			</div>
+		    
+		    <div class="row form-group">
+		        <div class="col-xs-12 col-md-6">
+		            <div class="panel panel-default">
+		                <div class="panel-heading">
+		                    <h3 class="panel-title">You can even have a Panel Title</h3>
+		                </div>
+		                <div class="panel-image hide-panel-body">
+		                    <img src="http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52c470899a2e1_1.JPG" class="panel-image-preview" />
+		                    <label for="toggle-3"></label>
+		                </div>
+		                <input type="checkbox" id="toggle-3" class-"panel-image-toggle">
+		                <div class="panel-body">
+		                    <h4>Title of Image</h4>
+		                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper et.</p>
+		                </div>
+		                <div class="panel-footer text-center">
+		                    <a href="#download"><span class="glyphicon glyphicon-download"></span></a>
+		                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+		                    <a href="#twitter"><span class="fa fa-twitter"></span></a>
+		                    <a href="#share"><span class="glyphicon glyphicon-share-alt"></span></a>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="col-xs-12 col-md-6">
+		            <div class="panel panel-default">
+		                <div class="panel-image">
+		                    <img src="http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52cd36aac6bed_1.JPG" class="panel-image-preview" />
+		                    <label for="toggle-4"></label>
+		                </div>
+		                <input type="checkbox" id="toggle-4" checked class-"panel-image-toggle">
+		                <div class="panel-body">
+		                    <h4>Show the Description by default!</h4>
+		                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper et.</p>
+		                </div>
+		                <div class="panel-footer text-center">
+		                    <a href="#download"><span class="glyphicon glyphicon-download"></span></a>
+		                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+		                    <a href="#twitter"><span class="fa fa-twitter"></span></a>
+		                    <a href="#share"><span class="glyphicon glyphicon-share-alt"></span></a>
+		                </div>
+		            </div>
+		        </div>
+			</div>
+		</div>
+	 	 
+	    <!-- Image Album Ends -->
 	    
-	    
-	    
+	    	    <!-- Pranav: Footer -->
+	    <footer class = "site-footer">
+
+	    	<div class="container-fluid">
+
+	    		<div class = "row">
+
+	    			<div class="col-md-4 right mobile-only" style = "text-align: center;">
+	    				<img src="images/SFIT_Black.jpeg" height="200px" width="200px" style="margin-bottom: 15px;">
+	    			</div>
+
+	    			<div class = "col-md-2 col-xs-6 right divs-on-mob" style = "text-align: right;">
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+	    			<div class="col-md-2 right large-device-only " style = "text-align: right;">
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+	    			<div class="col-md-4 right large-device-only " style = "text-align: center;">
+	    				<img src="images/SFIT_Black.jpeg" height="150px" width="150px">
+	    			</div>
+
+	    			<div class = "col-md-2 right large-device-only" >
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+	    			<div class="col-md-2 col-xs-6" >
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+
+	    		</div>
+
+	    		<div class = "bottom-footer divs-on-mob" >
+	    			<div class = "col-md-5 col-xs-12"> © 2017 St. Francis Institute of Technology. All Rights Reserved</div>
+
+		    			<div class = "col-md-7 col-xs-12 large-device-only">
+		    				<ul class = "footer-nav" style="list-style: none;">
+		    					<li><a href="#">Home </a></li>
+		    					<li><a href="#">About </a></li>
+		    					<li><a href="#">FAQ </a></li>
+		    					<li><a href="#">Baki bacha wo </a></li>
+		    				</ul>
+
+		    		</div>
+	    		</div>
+
+	    	</div>
+
+		</footer>
 	    <!--JS-->
 	    <script src="js/jquery.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
-	    
+	    <script src="js/lightbox.js"></script>
 	  
 	    
 	</body>
