@@ -112,10 +112,11 @@
 
 	    <!-- updated by Tanmay..    linked bootstrap-->
 	    <!--Main Division containing everything-->
-	    <div>
 
-	      <header>
-				 <nav class="navbar navbar-inverse navbar-fixed-top ">
+			
+
+<header>
+	 <nav class="navbar navbar-inverse navbar-fixed-top ">
   					<div class="container-fluid">
     					<div class="navbar-header">
       						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -168,7 +169,7 @@
 
 
         <!------------------------------ImageSlider updated: Jeson---------------->
-
+<div class="container-fluid">
 	       <div class="cycle-slideshow" width="100%">
              <span class="cycle-prev">&#9001;</span>
              <span class="cycle-next">&#9002;</span>
@@ -178,6 +179,7 @@
 	           <img class="re" src="images/slider/4.jpg" />
              <span class="cycle-pager"></span>
 	       </div>
+		</div>
 	     <!------------------------------ImageSlider ENDS---------------->
 
 	   <!-- Pranav: About us -->
@@ -277,11 +279,11 @@
 
        <div id = "mission" class="container-fluid" style="padding-bottom: 30px">
 
-	    	  <div class="container cards" >
+	    	  <div class="frame" style="color: aliceblue" >
 	            <div class="row animated fadeIn">
-	                <div class="col-sm-4 col-xs-12 bg-danger  " ><h3>Vision</h3> <p>"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love.”</p></div>
-					       <div class="col-sm-4 col-xs-12 bg-success " ><h3>Mission</h3><p> For UG programme:-  “To churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care.”	</p></div>
-					       <div class="col-sm-4 col-xs-12 bg-warning " ><h3>Quality policy</h3><p>“To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes,  meeting ISO 9001-2008 statutory and regulatory requirements.”</p></div>
+	                <div class="col-sm-4 col-xs-12" ><h3>Vision</h3> <p>"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love.”</p></div>
+					       <div class="col-sm-4 col-xs-12" ><h3>Mission</h3><p> For UG programme:-  “To churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care.”	</p></div>
+					       <div class="col-sm-4 col-xs-12" ><h3>Quality policy</h3><p>“To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes,  meeting ISO 9001-2008 statutory and regulatory requirements.”</p></div>
               </div>
             </div>
        </div>
@@ -450,7 +452,7 @@
 	    </div>
 
 	    <!-- Pranav: Dynamic Tabs -->
-	    <div id = "DynamicTabs" class="container-fluid animated fadeIn" >
+	    <div id = "DynamicTabs" class="container-fluid animated fadeIn frame" >
 		  	
 			  <ul class="nav nav-tabs "> <!-- nav-justified -->
 				    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
@@ -458,12 +460,12 @@
 				    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
 				    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
 			  </ul>
-
+			<div class="row">
 			  <div class="tab-content">
 				    
             <div id="home" class="tab-pane fade in active" align="center">
 
-                <div class="ccard" style="width: 20rem;">
+                <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                   <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap">
                   <div class="ccard-block">
                     <h4 class="ccard-title">Card title</h4>
@@ -472,7 +474,7 @@
                   </div>
                 </div>
                 
-                <div class="ccard" style="width: 20rem;">
+                <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                   <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap">
                   <div class="ccard-block">
                     <h4 class="ccard-title">Card title</h4>
@@ -481,7 +483,7 @@
                   </div>
                 </div>
 
-                <div class="ccard" style="width: 20rem;">
+                <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                   <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap">
                   <div class="ccard-block">
                     <h4 class="ccard-title">Card title</h4>
@@ -516,6 +518,7 @@
 				      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 				    </div>
 			  </div>
+	</div>
 		</div>
 		<!-- Dynamic Tabs Done -->
 
