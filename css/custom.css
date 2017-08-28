@@ -19,6 +19,11 @@
 		border-right: 1px solid #b2b2b2;
 	}
 
+	.parallax{
+		background-color: red;
+		padding-top:20px;
+		height: 300px;
+	}
 
 	.site-footer{
 		background-color: #222;
@@ -35,13 +40,13 @@
 		
 	}
 
-	ul.nav-tabs {
+/*	ul.nav-tabs {
 	  text-align: center;
 	}
 	ul.nav-tabs li {
 	  float: none;
 	  display: inline-block;
-	}	
+	}	*/
 	.tab-content {
 		padding-top: 15px;
 	}
@@ -83,13 +88,13 @@
 	.ccard-deck{
 		display: inline;
 	}
-	ul.nav-tabs {
+/*	ul.nav-tabs {
 	  text-align: center;
 	}
 	ul.nav-tabs li {
 	  float: none;
 	  display: inline-block;
-	}
+	}*/
 
 	.semi-circle {
 	  	border-bottom-left-radius: 160px;
@@ -107,7 +112,7 @@
 	    background-image: url("../images/Nature-View.jpg");
 
 	    /* Set a specific height */
-	    min-height: 300px; 
+	    min-height: 350px; 
 
 	    /* Create the parallax scrolling effect */
 	    background-attachment: fixed;
@@ -128,8 +133,6 @@
 	}
 
 	#DynamicTabs{
-/*		background-color: #b3ffb3;*/
-/*		color: #405d27;*/
 		padding-top: 10px;	
 		padding-bottom: 20px;
 	}
