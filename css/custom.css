@@ -96,7 +96,7 @@
 	  	border-bottom-right-radius: 160px;
 	    height: 80px;
   		width: 160px;
-  		background-color: blue;
+  		background-color:#2E2E2E;
   		text-align: center;
 	}
 
@@ -123,13 +123,13 @@
 	}
 
 	#mission{
-		background-color: #001a66;
+/*		background-color: #001a66;*/
 
 	}
 
 	#DynamicTabs{
-		background-color: #b3ffb3;
-		color: #405d27;
+/*		background-color: #b3ffb3;*/
+/*		color: #405d27;*/
 		padding-top: 10px;	
 		padding-bottom: 20px;
 	}
@@ -141,6 +141,7 @@
 		padding-top: 30px;
 	
 	}
+	
 
 	.bottom-footer{
 		border-top: 1px solid #b2b2b2;
@@ -307,5 +308,14 @@
 
 
 }
+  .frame{
+  		margin:10px;
+  		padding:20px;
+  		background-color:#0F1A26;
+    	border-style: solid;
+		border-color: #00E2B6;
+    	border-width: 15px;
+    
+    }
 
 
