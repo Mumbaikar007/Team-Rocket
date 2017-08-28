@@ -10,80 +10,343 @@
 		 <link rel="stylesheet" href="css/custom.css">
 		
 
+		 <style type="text/css">
+		 	
+		 	body{
+			    font-family: 'Quicksand', sans-serif;
+			}
+			.team{
+			    padding:75px 0;
+			}
+			h6.description{
+				font-weight: bold;
+				letter-spacing: 2px;
+				color: #999;
+				border-bottom: 1px solid rgba(0, 0, 0,0.1);
+				padding-bottom: 5px;
+			}
+			.profile{
+				margin-top: 25px;
+			}
+			.profile h1{
+				font-weight: normal;
+				font-size: 20px;
+				margin:10px 0 0 0;
+			}
+			.profile h2{
+				font-size: 14px;
+				font-weight: lighter;
+				margin-top: 5px;
+			}
+			.profile .img-box{
+				opacity: 1;
+				display: block;
+				position: relative;
+			}
+			.profile .img-box:after{
+				content:"";
+				opacity: 0;
+				background-color: rgba(0, 0, 0, 0.75);
+				position: absolute;
+				right: 0;
+				left: 0;
+				top: 0;
+				bottom: 0;
+			}
+			.img-box ul{
+				position: absolute;
+				z-index: 2;
+				bottom: 50px;
+				text-align: center;
+				width: 100%;
+				padding-left: 0px;
+				height: 0px;
+				margin:0px;
+				opacity: 0;
+			}
+			.profile .img-box:after, .img-box ul, .img-box ul li{
+				-webkit-transition: all 0.5s ease-in-out 0s;
+			    -moz-transition: all 0.5s ease-in-out 0s;
+			    transition: all 0.5s ease-in-out 0s;
+			}
+			.img-box ul i{
+				font-size: 20px;
+				letter-spacing: 10px;
+			}
+			.img-box ul li{
+				width: 30px;
+			    height: 30px;
+			    text-align: center;
+			    border: 1px solid #88C425;
+			    margin: 2px;
+			    padding: 5px;
+				display: inline-block;
+			}
+			.img-box a{
+				color:#fff;
+			}
+			.img-box:hover:after{
+				opacity: 1;
+			}
+			.img-box:hover ul{
+				opacity: 1;
+			}
+			.img-box ul a{
+				-webkit-transition: all 0.3s ease-in-out 0s;
+				-moz-transition: all 0.3s ease-in-out 0s;
+				transition: all 0.3s ease-in-out 0s;
+			}
+			.img-box a:hover li{
+				border-color: #fff;
+				color: #88C425;
+			}
+			a{
+			    color:#88C425;
+			}
+			a:hover{
+			    text-decoration:none;
+			    color:#519548;
+			}
+			i.red{
+			    color:#BC0213;
+			}
 
+
+		 </style>
 
 
         </head>
 
 
 	<body>
-	    <div>
+	   <header>
+	 		<nav class="navbar navbar-inverse navbar-fixed-top ">
+					<div class="container-fluid">
+					<div class="navbar-header">
+  						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+						     </button>
 
-	        <header>
-	            <div class="container">
-	            	<div class=row >
-						<div class="col-lg-5">
-	                	<ul class="nav nav-pills nav-justified">
-	                    <li><a href="index.html">Home</a></li>
-	                    <li><a href="profile.html">Profile</a></li>
-	                    <li class="active"><a href="message.html">Messages</a></li>
-	                
+							<!-- Pranav: MobileHeader -->
+							<a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>Sfit2</a>
 
-	                    
-	                	</ul>
-						</div>
-			<!-- ----------------------LOGO ANIMATION-------------- -->
-						<div class="col-lg-2">
+					</div>
+
+					<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">Institute</a></li>
+								<li><a href="profile.html">Campus</a></li>
+								<li><a href="message.html">Administation</a></li>
+								<li><a href="#">Student Info</a></li>
+							</ul>
+
+						<!-- Pranav: header -->
 						
-						</div>
-			<!-- ----------------------LOGO ANIMATION END-------------- -->
-						<div class="col-lg-5">
-							<ul class="nav nav-pills nav-justified" >
-	                
-	                    	<li><a href="#">Staff</a></li>
-	                    	<li><a href="#">Events</a></li>
-	                        <li><a href="#"  typeid="drop" data-toggle="dropdown">Location<span class="caret"></span></a>
-	                        <ul class="dropdown-menu" aria-labelled-by="drop">
-	                            <li><a href="#">Mumbai</a></li>
-	                            <li><a href="#">Delhi</a></li>
-	                            <li><a href="#">Chennai</a></li>
-	                        </ul>
-	                      </li>
-				
-	             			
-	                    
-	                		</ul>
+						<a class="navbar-brand large-device-only " href="#">
+							<center> St. Francis Institute of Technology</center> <span><div class="semi-circle"><img src="images/sfit.png" height="35px" width="40px"></span></div>
+						</a>
 						
-						</div>
-					</div> 
-	            </div>
-	        </header>
-	      
-	    </div>  
+					 	<ul class="nav navbar-nav navbar-right">
+							  <!-- Dropdown -->
+							<li><a href="#"  typeid="drop" data-toggle="dropdown">Location<span class="caret"></span></a>
+								<ul class="dropdown-menu" aria-labelled-by="drop">
+									<li><a href="#">Mumbai</a></li>
+									<li><a href="#">Delhi</a></li>
+									<li><a href="#">Chennai</a></li>
+                 </ul>
+						 	</li>
+							<!-- Dropdown end -->
+							  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
+						</ul>
+
+					</div>
+					</div>
+			</nav>
+        
+	     </header>
+
+
+	    <!-- Pranav: Parallax -->
+	    <div class = "parallax grayscale" style="padding-top: 100px;background-image: url('images/LAB.jpg');" >
+		    	
+		    <div>
+					<div style="color: #ffffff	; text-align: center; font-size: 80px;font-family: 'Comic Sans MS', cursive, sans-serif">Computer Department</div>    	
+		    </div>
+
+	    </div>
+
 	    
-     	<!-- Pranav: The parallax -->
-        <!-- <div class = "parallax large-device-only"> 
- -->
-        	<div class = "jumbotron parallax">
-			  <div class = "parallax-title">
-			    <h3>Slide 3</h3>
-			  </div>
-			  <div class = "parallax-content">
-			    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
-			  </div>
-			</div>
-
-  <!--       </div>
- -->
-
-        <div class = "" style="height:100px;background-color:white;font-size:18px; padding-top: 30px;">
-			Scroll Up and Down this page to see the parallax scrolling effect.
-			This div is just here to enable scrolling.
-			Tip: Try to remove the background-attachment property to remove the scrolling effect.
-		</div>
-
-        <div class = "parallax large-device-only"></div>
-
+ 		<section class="team">
+		  <div class="container">
+		    <div class="row">
+		      <div class="col-md-10 col-md-offset-1">
+		        <div class="col-lg-12">
+		          <h6 class="description">OUR TEAM</h6>
+		          <div class="row pt-md">
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="http://nabeel.co.in/files/bootsnipp/team/1.jpg" class="img-responsive">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>Marrie Doi</h1>
+		              <h2>Co-founder/ Operations</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="http://nabeel.co.in/files/bootsnipp/team/2.jpg" class="img-responsive">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>Christopher Di</h1>
+		              <h2>Co-founder/ Projects</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="http://nabeel.co.in/files/bootsnipp/team/3.jpg" class="img-responsive">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>Heather H</h1>
+		              <h2>Co-founder/ Marketing</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="http://nabeel.co.in/files/bootsnipp/team/4.jpg" class="img-responsive">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>John Doe</h1>
+		              <h2>Designer</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="http://nabeel.co.in/files/bootsnipp/team/5.jpg" class="img-responsive">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>Peter John</h1>
+		              <h2>Web Developer</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="http://nabeel.co.in/files/bootsnipp/team/6.jpg" class="img-responsive">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>Cherry John</h1>
+		              <h2>Fullstack Developer</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="http://nabeel.co.in/files/bootsnipp/team/7.jpg" class="img-responsive">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>Frank Martin</h1>
+		              <h2>Co-founder/ Operations</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="http://nabeel.co.in/files/bootsnipp/team/8.jpg" class="img-responsive">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>Christopher Di</h1>
+		              <h2>Co-founder/ Projects</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="http://nabeel.co.in/files/bootsnipp/team/9.jpg" class="img-responsive">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>Heather H</h1>
+		              <h2>Co-founder/ Marketing</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="http://nabeel.co.in/files/bootsnipp/team/10.jpg" class="img-responsive">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>Nancy Doe</h1>
+		              <h2>Designer</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="http://nabeel.co.in/files/bootsnipp/team/11.jpg" class="img-responsive">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>Stella John</h1>
+		              <h2>Web Developer</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="http://nabeel.co.in/files/bootsnipp/team/12.jpg" class="img-responsive">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>Cherry John</h1>
+		              <h2>Fullstack Developer</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</section>
 	    
 		<!-- Pranav: Footer -->
 	    <footer class = "site-footer">

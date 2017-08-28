@@ -88,13 +88,13 @@
 	.ccard-deck{
 		display: inline;
 	}
-/*	ul.nav-tabs {
+	ul.nav-tabs {
 	  text-align: center;
 	}
 	ul.nav-tabs li {
 	  float: none;
 	  display: inline-block;
-	}*/
+	}
 
 	.semi-circle {
 	  	border-bottom-left-radius: 160px;
@@ -103,6 +103,8 @@
   		width: 160px;
   		background-color:#2E2E2E;
   		text-align: center;
+  		margin-left: 50px;
+  		margin-top: 15px;
 	}
 
 
@@ -112,7 +114,7 @@
 	    background-image: url("../images/Nature-View.jpg");
 
 	    /* Set a specific height */
-	    min-height: 350px; 
+	    min-height: 500px; 
 
 	    /* Create the parallax scrolling effect */
 	    background-attachment: fixed;
@@ -126,6 +128,12 @@
 		text-align: center;
 		color: white;
 	}
+
+    /*Parallax*/
+ 	.grayscale {
+       -webkit-filter: grayscale(50%);
+	}
+
 
 	#mission{
 /*		background-color: #001a66;*/
