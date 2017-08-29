@@ -29,23 +29,24 @@
 		 	}
 		 </style>
 
-	     <script>
-	       $(document).ready(function(){
-	         
-	         $(window).scroll(function() {
+    <!-- Basic Animations -->
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $(window).scroll(function() {
 
-	          if ($(this).scrollTop()>0)
-	           {
-	              $('.semi-circle').fadeOut();
-	           }
-	          else
-	           {
-	            $('.semi-circle').fadeIn();
-	           }
-	       });
-	         
-	     </script>
+          if ($(this).scrollTop()>0)
+           {
+              $('.semi-circle').fadeOut();
+           }
+          else
+           {
+            $('.semi-circle').fadeIn();
+           }
+       });
 
+      $('.opening-hours li').eq(new Date().getDay()).addClass('today');
+      });
+     </script>
 
 
         </head>
@@ -55,7 +56,7 @@
 	    <div>
 
 	         <header>
-				 <nav class="navbar navbar-inverse navbar-fixed-top ">
+	 <nav class="navbar navbar-custom navbar-fixed-top ">
   					<div class="container-fluid">
     					<div class="navbar-header">
       						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -71,16 +72,16 @@
 
     					<div class="collapse navbar-collapse" id="myNavbar">
   							<ul class="nav navbar-nav">
-  								<li class="active"><a href="#">Home</a></li>
-  								<li><a href="profile.html">Profile</a></li>
-  								<li><a href="message.html">Messages</a></li>
-  								<li><a href="#">Staff</a></li>
+  								<li class="active"><a href="#">Institute</a></li>
+  								<li><a href="profile.html">Student Info</a></li>
+  								<li><a href="message.html">Administation</a></li>
+  								<li><a href="#">Campus</a></li>
   							</ul>
 
 							<!-- Pranav: header -->
 							
 							<a class="navbar-brand large-device-only " href="#">
-								<center>Sfit</center> <span><div class="semi-circle"><img src="images/sfit.png" height="35px" width="40px"></span></div>
+								<center> St. Francis Institute of Technology</center> <span><div class="semi-circle"><img src="images/sfit.png" height="70px" width="70px"></span></div>
 							</a>
 							
 						 	<ul class="nav navbar-nav navbar-right">
@@ -93,7 +94,7 @@
 	                 </ul>
 							 	</li>
 								<!-- Dropdown end -->
-								  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+								  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
 							</ul>
 
 						</div>

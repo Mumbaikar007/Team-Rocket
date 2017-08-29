@@ -1,9 +1,8 @@
 
 
 
-
 /*For tablets and mobiles*/
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1100px) {
 	.large-device-only{
 		display: none;
 	}
@@ -19,14 +18,18 @@
 		border-right: 1px solid #b2b2b2;
 	}
 
-	.parallax{
-		background-color: red;
-		padding-top:20px;
-		height: 300px;
+     .parallax {
+     	background-image: url("../images/Nature-View.jpg");
+        background-attachment: scroll;
+        min-height: 500px;
+        background-size: cover;
+    }
+    .grayscale {
+       -webkit-filter: grayscale(50%);
 	}
 
 	.site-footer{
-		background-color: #222;
+		background-color: black;
 		color: #fff;
 		padding-top: 30px;
 		margin-top: 40px;
@@ -62,7 +65,7 @@
 
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1101px) {
 	.mobile-only {
 		display: none;
 	}
@@ -101,9 +104,9 @@
 	  	border-bottom-right-radius: 160px;
 	    height: 80px;
   		width: 160px;
-  		background-color:#33aa33;
+  		background-color:#b3ffb3;
   		text-align: center;
-  		margin-left: 50px;
+  		margin-left: 70px;
   		margin-top: 15px;
 	}
 
@@ -134,6 +137,32 @@
        -webkit-filter: grayscale(50%);
 	}
 
+
+	/*Zoom in Image on hover*/
+	.item {
+	  position: relative;
+	  -moz-box-sizing: border-box;
+	  -webkit-box-sizing: border-box;
+	  box-sizing: border-box;
+	  margin: 0;
+	  padding: 0;
+	  margin: 2%;
+	  overflow: hidden;
+	  width: 250px;
+	}
+
+	.item img {
+	  max-width: 100%;
+	   border-radius: 8px;
+	  -moz-transition: all 0.3s;
+	  -webkit-transition: all 0.3s;
+	  transition: all 0.3s;
+	}
+	.item:hover img {
+	  -moz-transform: scale(1.1);
+	  -webkit-transform: scale(1.1);
+	  transform: scale(1.1);
+	}
 
 	#mission{
 /*		background-color: #001a66;*/
@@ -246,21 +275,21 @@
 	margin-top: 15px;
 	}
 	.business-hours {
-	background: #222; 
-	padding: 40px 14px;
-	margin-top: -15px;
-	position: relative;
+		background: #222; 
+		padding: 40px 14px;
+		margin-top: -15px;
+		position: relative;
 	}
 	.business-hours:before{
-	content: '';
-	width: 23px;
-	height: 23px;
-	background: #111;
-	position: absolute;
-	top: 5px;
-	left: -12px;
-	transform: rotate(-45deg);
-	z-index: -1;
+		content: '';
+		width: 23px;
+		height: 23px;
+		background: #111;
+		position: absolute;
+		top: 5px;
+		left: -12px;
+		transform: rotate(-45deg);
+		z-index: -1;
 	}
 	.business-hours .title {
 	font-size: 20px;
@@ -320,7 +349,7 @@
 
 }
   .frame{
-  		margin:10px;
+  			
   		padding:20px;
   		background-color:#0F1A26;
     	border-style: solid;
