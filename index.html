@@ -6,6 +6,11 @@
         <title>St. Francis Institute of Technology</title>
         <link rel="shortcut icon" href="images/favicon.png" type="image/png">
         
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -88,7 +93,13 @@
           }
          /*End img-slider*/
 
- 
+         @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+          }
+
 
      </style>
 
@@ -190,7 +201,7 @@
 	     <!--=============ImageSlider ENDS===================-->
 
 	   <!-- Pranav: About us -->
-      <section class = "Intro" style="padding: 50px 30px 50px 40px;background-color: #FBE8A6;">
+      <section class = "Intro" style="padding: 50px 30px 50px 40px;background-color: #ffffe6;">
         <div class = "container">
 
           <div class = "row">
@@ -198,7 +209,7 @@
 
               <div class="col-lg-6 col-md-6 col-sm-12">
 
-                  <h2 class="titile">Welcome</h2>
+                  <h2 class="titile" style="font-size: 50px;">Welcome</h2>
                   <div style = "left: 0;bottom: 0px;width: 50px;    height: 5px;background-color: #78adc9;"></div>
                   <br> <br>
                   <p>St. Francis Institute of Technology (SFIT) was established in 1999 with a view to create an Engineering Degree Institute to fulfill the long felt public need of an Institute of Excellence in Borivli.<br/><br>
@@ -371,20 +382,32 @@
        <div id = "mission" class="container-fluid parallax " style="padding-bottom: 30px;background-image: url('images/bg1.jpg');">
 
           <div>
-            <h3 style="color: #ffffff ; text-align: center; font-size: 80px;font-family: 'Comic Sans MS', cursive, sans-serif; margin-bottom: 15px;margin-top: 35px;">WHY SFIT</h3>
+            <div style="color: #ffffff ; text-align: center; font-size: 60px; margin-bottom: 15px;margin-top: 35px; font-weight: 100;font-family: 'Raleway', sans-serif;">Why <b>SFIT</b></div>
           </div>  
 
 
 
 	    	  <div class = "container" style="color: aliceblue" >
 	            <div class="row">
-	                <div class="col-sm-4 col-xs-12" ><h3 >Vision</h3> <p>"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love.”</p></div>
 
+	                <div class="col-sm-4 col-xs-12" style="margin-bottom: 20px;">
+                    <div style="border: 1px solid grey;" >
+                    <h2 align="center"><b>Vision</b></h2>
+                     <p style=" padding: 0px 10px 10px 20px; font-size: 16px;">"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love."</p></div>
+                  </div>
 
-                 <div class="col-sm-4 col-xs-12" ><h3 style = "margin-top: 55px;">Mission</h3><p> For UG programme:-  “To churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care.”	</p></div>
+                    <div class="col-sm-4 col-xs-12" style="margin-bottom: 20px;">
+                    <div style="border: 1px solid grey;" >
+                    <h2 align="center"><b>Quality policy</b></h2>
+                     <p style=" padding: 0px 10px 10px 20px; font-size: 16px;">"To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes, meeting ISO 9001-2008 statutory and regulatory requirements."</p></div>
+                  </div>
 
+                 <div class="col-sm-4 col-xs-12" style="margin-bottom: 20px;">
+                    <div style="border: 1px solid grey;" >
+                    <h2 align="center"><b>Mission</b></h2>
+                     <p style=" padding: 0px 10px 10px 20px; font-size: 16px;">"For UG programme:- â€œTo churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care."</p></div>
+                  </div>
 
-					       <div class="col-sm-4 col-xs-12" style = "margin-top: 70px;"><h3>Quality policy</h3><p>"To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes,  meeting ISO 9001-2008 statutory and regulatory requirements.”</p></div>
               </div>
            </div>
        </div>
@@ -396,7 +419,7 @@
         
 
 	    <!--=========== DYNAMIC TABS SECTION ================--> 
-	    <div id = "DynamicTabs" class="container-fluid animated fadeIn frame" >
+	    <div id = "DynamicTabs" class="container-fluid animated fadeIn" style="background-color: #D2F25F;" >
 		  	
 			  <ul class="nav nav-tabs "> <!-- nav-justified -->
 				    <li class="active"><a data-toggle="tab" href="#homeB">Home</a></li>
@@ -653,7 +676,7 @@
 	    		</div>
 
 	    		<div class = "bottom-footer divs-on-mob" >
-	    			<div class = "col-md-5 col-xs-12"> © 2017 St. Francis Institute of Technology. All Rights Reserved.</div>
+	    			<div class = "col-md-5 col-xs-12">2017 St. Francis Institute of Technology. All Rights Reserved.</div>
 
 		    			<div class = "col-md-7 col-xs-12 large-device-only">
 		    				<ul class = "footer-nav" style="list-style: none;">
