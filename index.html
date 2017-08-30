@@ -93,13 +93,21 @@
        $(document).ready(function(){
          $(window).scroll(function() {
 
-          if ($(this).scrollTop()>0)
+         /* if ($(this).scrollTop()>0)
            {
               $('.semi-circle').fadeOut();
            }
           else
            {
             $('.semi-circle').fadeIn();
+           }*/
+	      if ($(this).scrollTop()>0)
+           {
+              $('.navhide').slideUp();
+           }
+          else
+           {
+            $('.navhide').slideDown();
            }
        });
 
@@ -120,6 +128,8 @@
 <header>
 	 <nav class="navbar navbar-custom navbar-fixed-top ">
   					<div class="container-fluid">
+						<div style="large-device-only">
+						<div style="font-size: 30px" class="navhide"><center>	<img src="images/sfit.png" width="40px" height="40px">St. Francis Institue Of Technology</center></div></div>
     					<div class="navbar-header">
       						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
     								<span class="icon-bar"></span>
@@ -143,7 +153,7 @@
 							<!-- Pranav: header -->
 							
 							<a class="navbar-brand large-device-only " href="#">
-								<center> St. Francis Institute of Technology</center> <span><div class="semi-circle"><img src="images/sfit.png" height="70px" width="70px"></span></div>
+								<center> St. Francis Institute of Technology</center> <!--span><div class="semi-circle"><img src="images/sfit.png" height="70px" width="70px"></span></div-->
 							</a>
 							
 						 	<ul class="nav navbar-nav navbar-right">
@@ -364,13 +374,13 @@
        
        <!--=========== START MISSION SECTION ================--> 
 
-       <div id = "mission" class="container-fluid frame" style="padding-bottom: 30px">
+       <div id = "mission" class="container-fluid framem" style="padding-bottom: 30px">
 
 	    	  <div class = "container" style="color: aliceblue" >
 	            <div class="row animated fadeIn">
-	                <div class="col-sm-4 col-xs-12" ><h3>Vision</h3> <p>"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love.”</p></div>
-					       <div class="col-sm-4 col-xs-12" ><h3>Mission</h3><p> For UG programme:-  “To churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care.”	</p></div>
-					       <div class="col-sm-4 col-xs-12" ><h3>Quality policy</h3><p>"To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes,  meeting ISO 9001-2008 statutory and regulatory requirements.”</p></div>
+					<div class="col-sm-4 col-xs-12" style="padding-top: 20px"><div><img src="images/vision.png" width="40px" height="40px"> </div><h3>Vision</h3> <p>"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love.”</p></div>
+					       <div class="col-sm-4 col-xs-12" style="padding-top: 20px"><div><img src="images/mission.png" width="40px" height="40px"></div> <h3>Mission</h3><p> For UG programme:-  “To churn highly competent engineering graduates with a commitment to result oriented work, a perennial zest for learning, a quest for excellence, an open mind and the universal values of honesty, dignity and mutual care.”	</p></div>
+							   <div class="col-sm-4 col-xs-12" style="padding-top: 20px"><div><img src="images/quality.png" width="40px" height="40px"></div> <h3>Quality policy</h3><p>"To be the most preferred Institute of Engineering and Technology equipped with state-of-the-art facilities, to develop technically qualified techno-entrepreneurial class of value based global industry leaders, imparting comprehensive technical education, through highly competent and dedicated staff, ensuring continual improvement of QMS processes,  meeting ISO 9001-2008 statutory and regulatory requirements.”</p></div>
               </div>
            </div>
        </div>
