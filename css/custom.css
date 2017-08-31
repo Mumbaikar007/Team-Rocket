@@ -100,6 +100,7 @@
 	}
 
 	.semi-circle {
+		
 	  	border-bottom-left-radius: 160px;
 	  	border-bottom-right-radius: 160px;
 	    height: 80px;
@@ -107,7 +108,7 @@
   		background-color:#b3ffb3;
   		text-align: center;
   		margin-left: 70px;
-  		margin-top: 15px;
+  		margin-top: -15px;
 	}
 
 
@@ -360,6 +361,17 @@
 
     
     }
+  .framem{
+  			
+/*  		padding:20px;*/
+  		background-image: url("../images/booksb.jpg");
+/*    	border-style: solid;*/
+/*		border-color: #00E2B6;*/
+/*    	border-width: 15px;*/
+	  background-repeat: no-repeat;
+	  background-size: cover;
+    
+    }
 
 /*CUSTOM NAV*/
 .navbar-custom {
@@ -413,3 +425,9 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+/*daimond*/
+
+
+
+
+/*dia end*/
