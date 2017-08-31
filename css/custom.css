@@ -19,7 +19,7 @@
 	}
 
      .parallax {
-     	background-image: url("../images/Nature-View.jpg");
+     	/*background-image: url("../images/Nature-View.jpg");*/
         background-attachment: scroll;
         min-height: 500px;
         background-size: cover;
@@ -115,7 +115,7 @@
 	/* Pranav: Parallax*/
 	.parallax {
 	    /* The image used */
-	    background-image: url("../images/Nature-View.jpg");
+	    /*background-image: url("../images/Nature-View.jpg");*/
 
 	    /* Set a specific height */
 	    min-height: 500px; 
@@ -150,6 +150,7 @@
 	  margin: 2%;
 	  overflow: hidden;
 	  width: 250px;
+	  border-radius: 8px;
 	}
 
 	.item img {
@@ -173,6 +174,7 @@
 	#DynamicTabs{
 		padding-top: 10px;	
 		padding-bottom: 20px;
+		height: 500px;
 	}
 
 	/* Pranav: Footer*/
@@ -293,22 +295,22 @@
 		z-index: -1;
 	}
 	.business-hours .title {
-	font-size: 20px;
-	color: #BBB;
-	text-transform: uppercase;
-	padding-left: 5px;
-	border-left: 4px solid #ffac0c; 
+		font-size: 20px;
+		color: #BBB;
+		text-transform: uppercase;
+		padding-left: 5px;
+		border-left: 4px solid #ffac0c; 
 	}
 	.business-hours li {
-	color: #888;
-	line-height: 30px;
-	border-bottom: 1px solid #333; 
+		color: #888;
+		line-height: 30px;
+		border-bottom: 1px solid #333; 
 	}
 	.business-hours li:last-child {
-	border-bottom: none; 
+		border-bottom: none; 
 	}
 	.business-hours .opening-hours li.today {
-	color: #ffac0c; 
+		color: #ffac0c; 
 	}
 	/* ----- */
 
@@ -354,8 +356,9 @@
   		padding:20px;
   		background-color:#0F1A26;
     	border-style: solid;
-		border-color: #00E2B6;
+		border-color:  #B4DFE5;
     	border-width: 15px;
+
     
     }
   .framem{
