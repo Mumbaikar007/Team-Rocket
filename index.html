@@ -120,15 +120,19 @@
 	      if ($(this).scrollTop()>0)
            {
               $('.navhide').slideUp();
+             /* $('.notnavhide').slideDown();
+              $('.notnavhide').css("display", "block");*/
            }
           else
            {
             $('.navhide').slideDown();
+            /*$('.notnavhide').slideUp();
+            $('.notnavhide').css("display", "none");*/
            }
        });
 
-      $('.opening-hours li').eq(new Date().getDay()).addClass('today');
-      });
+        $('.opening-hours li').eq(new Date().getDay()).addClass('today');
+        });
      </script>
 
     </head>
@@ -142,8 +146,8 @@
 			
 
       <header>
-      	 <nav class="navbar navbar-custom navbar-fixed-top ">
-  					<div class="container-fluid">
+      	 <nav class="navbar navbar-custom navbar-fixed-top" >
+  					<div >
 						
 						
 						
@@ -162,7 +166,7 @@
 
     					<div class="collapse navbar-collapse" id="myNavbar">
 							
-							<div class="nav navhide" style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;">&nbsp;
+							<div class="nav navhide " style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;display: block;">&nbsp;
 								<ul class="nav navbar-nav navbar-right">
 								 
 								  	<li><a href="#">Home</a></li>
@@ -172,27 +176,39 @@
 									<li><a href="#">Parents Corner</a></li>
 									<li><a href="#">Contact Us</a></li>
 									<li><a href="#">Archive</a></li>
+                <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
+                  <ul class="dropdown-menu" aria-labelled-by="drop">
+                    <li><a href="#">Alumini Corner</a></li>
+                    <li><a href="#">Alumini Associstion</a></li>
+                    <li><a href="#">Alumini Website</a></li>
+                    <li><a href="#">Alumini Feedback Form</a></li>
+                   </ul>
+                </li>
+                <!-- Dropdown end -->
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
 							</ul>
 							</div>
 							
 							
 							
 									
-										<div class="large-device-only">
+						    <div class="large-device-only">
 											
-											<div style="padding-top: 10px" class="navhide"><center>	<img src="images/sfithead.png" width="400px" height="130px"></center></div></div>
-  							<ul class="nav navbar-nav">
-  								<li class="active"><a href="#">Institute</a></li>
-  								<li><a href="profile.html">Student Info</a></li>
-  								<li><a href="message.html">Administation</a></li>
-  								<li><a href="#">Campus</a></li>
-								<li><a href="#">Placement</a></li>
-								<li><a href="#">R&D</a></li>
-								<li><a href="#">E-Cell</a></li>
-								<li><a href="#">Department</a></li>
-								<li><a href="#">Admission</a></li>
-								<li><a href="#">Events</a></li>
-  							</ul>
+											<div style="padding-top: 10px" class="navhide"><center><br><img src="images/sfithead.png" width="400px" height="130px"></center> <br></div></div>
+    						
+                  <ul class="nav navbar-nav " >
+    								<li class="active"><a href="#">Institute</a></li>
+    								<li><a href="profile.html">Student Info</a></li>
+    								<li><a href="message.html">Administation</a></li>
+    								<li><a href="#">Campus</a></li>
+  								<li><a href="#">Placement</a></li>
+  								<li><a href="#">R&D</a></li>
+  								<li><a href="#">E-Cell</a></li>
+  								<li><a href="#">Department</a></li>
+  								<li><a href="#">Admission</a></li>
+  								<li><a href="#">Events</a></li>
+    							</ul>
+
 
 							<!-- Pranav: header -->
 							
@@ -200,8 +216,8 @@
 								<center> St. Francis Institute of Technology</center> <!--span><div class="semi-circle"><img src="images/sfit.png" height="70px" width="70px"></span></div>
 							</ -->
 							
-						 	<ul class="nav navbar-nav navbar-right">
-								  <!-- Dropdown -->
+<!-- 						 	<ul class="nav navbar-nav navbar-right">
+								  
 								<li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
 									<ul class="dropdown-menu" aria-labelled-by="drop">
 										<li><a href="#">Alumini Corner</a></li>
@@ -210,21 +226,20 @@
 										<li><a href="#">Alumini Feedback Form</a></li>
 	                 </ul>
 							 	</li>
-								<!-- Dropdown end -->
+								
 								  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
-							</ul>
+							</ul> -->
 
 						</div>
   					</div>
 				</nav>
         
 	     </header>
-      <p>&emsp;</p> 
 
     <!--=========== END HEADER SECTION ================--> 
 
-
-
+    <div class = "navhide" style = "height: 200px;"></div>
+    <!-- <div class = "notnavhide" style = "height: 100px;display: none;"></div> -->
       <!--=========ImageSlider updated: Jeson==========-->
     <div>
 	       <div class="cycle-slideshow" width="100%">
