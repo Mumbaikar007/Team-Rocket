@@ -14,6 +14,9 @@
 
 		<!-- --------Custom css--------- -->
 		 <link rel="stylesheet" href="css/custom.css">
+		  	    <!--JS-->
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
 		
 
 		 <style type="text/css">
@@ -127,11 +130,11 @@
 
           if ($(this).scrollTop()>0)
            {
-              $('.semi-circle').fadeOut();
+              $('.navhide').slideUp();
            }
           else
            {
-            $('.semi-circle').fadeIn();
+            $('.navhide').slideDown();
            }
        });
 
@@ -144,9 +147,12 @@
 
 
 	<body>
-	  <header>
-	 <nav class="navbar navbar-custom navbar-fixed-top ">
-  					<div class="container-fluid">
+	 	<header>
+      	 <nav class="navbar navbar-custom navbar-fixed-top" >
+  					<div >
+						
+						
+						
     					<div class="navbar-header">
       						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
     								<span class="icon-bar"></span>
@@ -155,36 +161,84 @@
 							     </button>
 
     							<!-- Pranav: MobileHeader -->
-    							<a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>Sfit2</a>
+    							<a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>SFIT</a>
 
     					</div>
+					
 
     					<div class="collapse navbar-collapse" id="myNavbar">
-  							<ul class="nav navbar-nav">
-  								<li class="active"><a href="#">Institute</a></li>
-  								<li><a href="profile.html">Student Info</a></li>
-  								<li><a href="message.html">Administation</a></li>
-  								<li><a href="#">Campus</a></li>
-  							</ul>
+							
+							<div class="nav navhide" style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;display: block;">&nbsp;
+								
+								<ul class="large-device-only nav navbar-nav navbar-left" style="padding-left:20px;padding-top: 5px ">
+											
+											<img src="images/sfithead.png" width="120px" height="39px">
+								</ul>
+								
+								
+								
+								
+								<ul class="nav navbar-nav navbar-right">
+								 
+								  	<li><a href="index.html">Home</a></li>
+									<li><a href="#">Mandatory Disclosure</a></li>
+									<li><a href="#">Careers</a></li>
+									<li><a href="#">Library</a></li>
+									<li><a href="#">Parents Corner</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Archive</a></li>
+                <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
+                  <ul class="dropdown-menu" aria-labelled-by="drop">
+                    <li><a href="#">Alumini Corner</a></li>
+                    <li><a href="#">Alumini Associstion</a></li>
+                    <li><a href="#">Alumini Website</a></li>
+                    <li><a href="#">Alumini Feedback Form</a></li>
+                   </ul>
+                </li>
+                <!-- Dropdown end -->
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
+							</ul>
+							</div>
+							
+							
+							
+									
+						    
+    						
+                  <ul class="nav navbar-nav " >
+    								<li class="active"><a href="index.html">Institute</a></li>
+    								<li><a href="profile.html">Student Info</a></li>
+    								<li><a href="message.html">Administation</a></li>
+    								<li><a href="#">Campus</a></li>
+  								<li><a href="#">Placement</a></li>
+  								<li><a href="#">R&D</a></li>
+  								<li><a href="#">E-Cell</a></li>
+  								<li><a class="custom-nav-active" href="#">Department</a></li>
+  								<li><a href="#">Admission</a></li>
+  								<li><a href="#">Events</a></li>
+					  			<li><a href="gallery.html">Gallery</a></li>
+    							</ul>
+
 
 							<!-- Pranav: header -->
 							
-							<a class="navbar-brand large-device-only " href="#">
-								<center> St. Francis Institute of Technology</center> <span><!-- <div class="semi-circle"><img src="images/sfit.png" height="70px" width="70px"></span></div> -->
-							</a>
+						<!--	<a class="navbar-brand large-device-only " href="#">
+								<center> St. Francis Institute of Technology</center> <!--span><div class="semi-circle"><img src="images/sfit.png" height="70px" width="70px"></span></div>
+							</ -->
 							
-						 	<ul class="nav navbar-nav navbar-right">
-								  <!-- Dropdown -->
-								<li><a href="#"  typeid="drop" data-toggle="dropdown">Location<span class="caret"></span></a>
+<!-- 						 	<ul class="nav navbar-nav navbar-right">
+								  
+								<li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
 									<ul class="dropdown-menu" aria-labelled-by="drop">
-										<li><a href="#">Mumbai</a></li>
-										<li><a href="#">Delhi</a></li>
-										<li><a href="#">Chennai</a></li>
+										<li><a href="#">Alumini Corner</a></li>
+										<li><a href="#">Alumini Associstion</a></li>
+										<li><a href="#">Alumini Website</a></li>
+										<li><a href="#">Alumini Feedback Form</a></li>
 	                 </ul>
 							 	</li>
-								<!-- Dropdown end -->
+								
 								  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
-							</ul>
+							</ul> -->
 
 						</div>
   					</div>
@@ -192,6 +246,10 @@
         
 	     </header>
 
+		
+		
+		
+		
 	    <!-- ===============Pranav: Parallax===================== -->
 	    <div class = "parallax grayscale" style="padding-top: 100px;background-image: url('images/bg1.jpg');" >
 		    	
@@ -200,6 +258,19 @@
 		    </div>
 
 	    </div>
+		
+		<div class="nav" style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;">&nbsp;
+							<ul class="nav navbar-nav navbar-right">
+								 
+								  	<li><a href="#">Objectives and Outcome</a></li>
+									<li><a href="#">Department Calender</a></li>
+									<li><a href="#">HOD</a></li>
+									<li><a href="#">Faculty</a></li>
+									<li><a href="#">Non-Teaching staff</a></li>
+									<li><a href="#">Laboratories</a></li>
+									<li><a href="#">Timetable</a></li>
+							</ul>
+							</div>
 
 	    
  		<section class="team">
@@ -450,9 +521,7 @@
 
 
 
-	    <!--JS-->
-	    <script src="js/jquery.min.js"></script>
-	    <script src="js/bootstrap.min.js"></script>
+
 	    
 	  
 	    
