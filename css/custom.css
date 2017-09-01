@@ -32,7 +32,7 @@
 		background-color: black;
 		color: #fff;
 		padding-top: 30px;
-		margin-top: 40px;
+		
 	}
 
 	.bottom-footer{
@@ -54,10 +54,10 @@
 		padding-top: 15px;
 	}
 
-	.footer-nav a{
+	.footer-nav2 a{
 		color: #b2b2b2;
 	}
-	.footer-nav a:hover{
+	.footer-nav2 a:hover{
 		color: #fff;
 		text-decoration: none;
 
@@ -166,16 +166,6 @@
 	  transform: scale(1.1);
 	}
 
-	#mission{
-/*		background-color: #001a66;*/
-
-	}
-
-	#DynamicTabs{
-		padding-top: 10px;	
-		padding-bottom: 20px;
-		height: 500px;
-	}
 
 	/* Pranav: Footer*/
 	.site-footer{
@@ -224,105 +214,33 @@
 	.tab-content {
 		padding-top: 25px;
 	}
-  
-	/*From Net*/
-	.panel-image {
-	    position: relative;   
-	}
-	.panel-image img.panel-image-preview {
-	    width: 100%;
-		border-radius: 4px 4px 0px 0px;
-	}
 
-	.panel-image label {
-	    display: block;
-	    position: absolute;
-	    top: 0px;
-	    left: 0px;
-	    height: 100%;
-	    width: 100%;
+	.footer-nav2 a{
+		color: #b2b2b2;
 	}
+	.footer-nav2 a:hover{
+		color: #fff;
+		text-decoration: none;
 
-	.panel-heading ~ .panel-image img.panel-image-preview {
-		border-radius: 0px;
 	}
+  	
 
-	.panel-body {
-	   overflow: hidden;
-	}
-
-	.panel-image ~ input[type=checkbox] {
-	    position:absolute;
-	    top:- 30px;
-	    z-index: -1;   
-	}
-
-	.panel-image ~ input[type=checkbox] ~ .panel-body {
-		height: 0px;
-		padding: 0px;
-	}
-
-	.panel-image ~ input[type=checkbox]:checked ~ .panel-body {
-	    height: auto;
-		padding: 15px;
-	}
-
-	.panel-image ~ .panel-footer a {
-	    padding: 0px 10px;
-		font-size: 1.3em;
-		color: rgb(100, 100, 100);
-	}
-
-	.demo-bg{
-	background: #ffac0c;
-	margin-top: 15px;
-	}
-	.business-hours {
-		background: #222; 
-		padding: 40px 14px;
-		margin-top: -15px;
-		position: relative;
-	}
-	.business-hours:before{
-		content: '';
-		width: 23px;
-		height: 23px;
-		background: #111;
-		position: absolute;
-		top: 5px;
-		left: -12px;
-		transform: rotate(-45deg);
-		z-index: -1;
-	}
-	.business-hours .title {
-		font-size: 20px;
-		color: #BBB;
-		text-transform: uppercase;
-		padding-left: 5px;
-		border-left: 4px solid #ffac0c; 
-	}
-	.business-hours li {
-		color: #888;
-		line-height: 30px;
-		border-bottom: 1px solid #333; 
-	}
-	.business-hours li:last-child {
-		border-bottom: none; 
-	}
-	.business-hours .opening-hours li.today {
-		color: #ffac0c; 
-	}
-	/* ----- */
 
 
 	/*Tanmay */
 	.eqcol{
 		display: flex;
 	}
+
+
+
+}
+  
 	.ccard {
     /*shadow*/
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    margin: 10px 20px 10px 0px;
 	}
 
 	/* On mouse-over, add a deeper shadow */
@@ -349,8 +267,6 @@
     	display: table-cell; /* Make elements inside the container behave like table cells */
 	}
 
-
-}
   .frame{
   			
   		padding:20px;
@@ -381,7 +297,8 @@
 }
 
 .navbar-custom .navbar-nav > li > a {
-    color:#fff;
+    color: white;
+    font-size: 16px;
 }
 
 .navbar-custom .navbar-nav > .active > a {

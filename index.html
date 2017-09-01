@@ -6,11 +6,12 @@
         <title>St. Francis Institute of Technology</title>
         <link rel="shortcut icon" href="images/favicon.png" type="image/png">
         
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet"> -->
 
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+         <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -43,6 +44,11 @@
         <!-----internalcss---->
         <style type="text/css">
         /*CSS for img-slider*/
+        
+        *{
+          font-family: 'Raleway', sans-serif;
+        }
+
         .re{
            margin: 0;
            padding: 0;
@@ -93,13 +99,69 @@
           }
          /*End img-slider*/
 
-         @font-face {
+/*         @font-face {
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 400;
             src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
-          }
+          }*/
 
+            .demo-bg{
+              background: #ffac0c;
+              margin-top: 30px;
+              }
+              .business-hours {
+                background: #222; 
+                padding: 40px 14px;
+                margin-top: -15px;
+                position: relative;
+              }
+              .business-hours:before{
+                content: '';
+                width: 23px;
+                height: 23px;
+                background: #111;
+                position: absolute;
+                top: 5px;
+                left: -12px;
+                transform: rotate(-45deg);
+                z-index: -1;
+              }
+              .business-hours .title {
+                font-size: 20px;
+                color: #BBB;
+                text-transform: uppercase;
+                padding-left: 5px;
+                border-left: 4px solid #ffac0c; 
+              }
+              .business-hours li {
+                color: #888;
+                line-height: 30px;
+                border-bottom: 1px solid #333; 
+              }
+              .business-hours li:last-child {
+                border-bottom: none; 
+              }
+              .business-hours .opening-hours li.today {
+                color: #ffac0c; 
+              }
+              /* ----- */
+              @media screen and (max-width: 1100px){
+                #noMobile{
+                  display: none;
+                }
+              }
+
+                #mission{
+                /*    background-color: #001a66;*/
+
+                  }
+
+                #DynamicTabs{
+                  padding-top: 10px;  
+                  padding-bottom: 20px;
+                  min-height: 500px;
+                }
 
      </style>
 
@@ -177,7 +239,7 @@
 									<li><a href="#">Contact Us</a></li>
 									<li><a href="#">Archive</a></li>
                 <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
-                  <ul class="dropdown-menu" aria-labelled-by="drop">
+                  <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
                     <li><a href="#">Alumini Corner</a></li>
                     <li><a href="#">Alumini Associstion</a></li>
                     <li><a href="#">Alumini Website</a></li>
@@ -238,10 +300,13 @@
 
     <!--=========== END HEADER SECTION ================--> 
 
-    <div class = "navhide" style = "height: 200px;"></div>
+    <div id = "noMobile" class = " large-device-only" style = "height: 200px;background-color: #2d992d;" >
+        <div style = "margin-top: 50px;text-align: center; padding: 40px 0px 10px 0px;"><span><img src="images/sfithead.png" height="120px" width="300px"></span></div>
+    </div>
+    <div class = "mobile-only" style = "height: 51px;"></div>
     <!-- <div class = "notnavhide" style = "height: 100px;display: none;"></div> -->
       <!--=========ImageSlider updated: Jeson==========-->
-    <div>
+    <div id = "top">
 	       <div class="cycle-slideshow" width="100%">
              <span class="cycle-prev">&#9001;</span>
              <span class="cycle-next">&#9002;</span>
@@ -255,7 +320,7 @@
 	     <!--=============ImageSlider ENDS===================-->
 
 	   <!-- Pranav: About us -->
-      <section class = "Intro" style="padding: 50px 30px 50px 40px;background-color: #ffffe6;">
+      <section class = "Intro" style="padding: 50px 30px 50px 0px;background-color: #ffffe6;">
         <div class = "container">
 
           <div class = "row">
@@ -264,16 +329,20 @@
               <div class="col-lg-6 col-md-6 col-sm-12">
 
                   <h2 class="titile" style="font-size: 50px;">Welcome</h2>
-                  <div style = "left: 0;bottom: 0px;width: 50px;    height: 5px;background-color: #78adc9;"></div>
-                  <br> <br>
-                  <p>St. Francis Institute of Technology (SFIT) was established in 1999 with a view to create an Engineering Degree Institute to fulfill the long felt public need of an Institute of Excellence in Borivli.<br/><br>
+                  <div style = "left: 0;bottom: 0px;width: 50px; height: 5px;background-color: #78adc9;"></div>
+                  <br> 
+                  <div style="font-size: 16px; padding: 0px 10px 0px 5px;font-family: 'Heebo', sans-serif;" >
 
-                  SFIT has three UG Programs and two PG Programs in the most coveted disciplines considering both industrial need and public preference. These courses would lead to award of the Degree of Bachelor of Engineering (B. E.) and Master of Engineering (M.E.) and PhD  in related discipline of Engineering.<br><br>
+                    <p>St. Francis Institute of Technology (SFIT) was established in 1999 with a view to create an Engineering Degree Institute to fulfill the long felt public need of an Institute of Excellence in Borivli.<br/><br>
 
-                  SFIT is approved by AICTE and is permanently affiliated to the University of Mumbai.<br><br>
+                    SFIT has three UG Programs and two PG Programs in the most coveted disciplines considering both industrial need and public preference. These courses would lead to award of the Degree of Bachelor of Engineering (B. E.) and Master of Engineering (M.E.) and PhD  in related discipline of Engineering.<br><br>
 
-                  National Board of Accreditation (NBA) has granted accreditation to all the three U.G. programs offered by our Institute.  The institute is also certified for meeting with the Quality Management System Standards ISO 9001:2008, for providing undergraduate courses in Engineering/Technology.</p>
-                  <br><br>
+                    SFIT is approved by AICTE and is permanently affiliated to the University of Mumbai.<br><br>
+
+                    National Board of Accreditation (NBA) has granted accreditation to all the three U.G. programs offered by our Institute.  The institute is also certified for meeting with the Quality Management System Standards ISO 9001:2008, for providing undergraduate courses in Engineering/Technology.</p>
+                    <br><br>
+                 
+                  </div>
 
             </div>
             <div class = "col-lg-6 col-md-6 col-sm-12" data-aos="fade-left">
@@ -286,18 +355,18 @@
                   <li><a data-toggle="tab" href="#menu2">Events</a></li>
               </ul>
 
-              <div class="tab-content" >
+              <div class="tab-content"  style="width: 650px;">
                   
-                  <div id="home" class="tab-pane fade in active" style="height: 350px;overflow: auto;">
+                  <div id="home" class="tab-pane fade in active" style="height: 420px;overflow: auto;">
                       <ul style="list-style: none;">
                         <li>
                           <div class="media">
                             <div class="media-left">
                               <img src="images/sfit.png" class="media-object" style="width:60px">
                             </div>
-                            <div class="media-body"  align="left">
-                              <h4>Left-aligned</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="media-body"  align="left" >
+                              <h4><b>Left-aligned</b> </h4>
+                              <p style="font-size: 16px;font-family: 'Heebo', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                           </div> 
                         </li>
@@ -309,7 +378,7 @@
                             </div>
                             <div class="media-body" >
                               <h4 class="media-heading">Left-aligned</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                              <p style="font-size: 16px;font-family: 'Heebo', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                           </div>  
                         </li>
@@ -321,7 +390,7 @@
                             </div>
                             <div class="media-body" >
                               <h4 class="media-heading">Left-aligned</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                              <p style="font-size: 16px;font-family: 'Heebo', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                           </div>  
                         </li>
@@ -333,7 +402,7 @@
                             </div>
                             <div class="media-body" >
                               <h4 class="media-heading">Left-aligned</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                              <p style="font-size: 16px;font-family: 'Heebo', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                           </div>  
                         </li>
@@ -345,7 +414,7 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">Left-aligned</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                              <p style="font-size: 16px;font-family: 'Heebo', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                           </div> 
                         </li>
@@ -363,7 +432,7 @@
                             </div>
                             <div class="media-body"  align="left">
                               <h4>Left-aligned</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                              <p style="font-size: 16px;font-family: 'Heebo', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                           </div> 
                         </li>
@@ -375,7 +444,7 @@
                             </div>
                             <div class="media-body" >
                               <h4 class="media-heading">Left-aligned</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                              <p style="font-size: 16px;font-family: 'Heebo', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                           </div>  
                         </li>
@@ -387,7 +456,7 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">Left-aligned</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                              <p style="font-size: 16px;font-family: 'Heebo', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                           </div> 
                         </li>
@@ -538,6 +607,24 @@
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
+                
+                <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
+                  <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
+                  <div class="ccard-block">
+                    <h4 class="ccard-title">Card title</h4>
+                    <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+                <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
+                  <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
+                  <div class="ccard-block">
+                    <h4 class="ccard-title">Card title</h4>
+                    <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
 
 
 				    </div>
@@ -630,41 +717,44 @@
         
           <div class = "container" style="padding: 40px 30px 60px 30px;">
 
-            <div style="text-align: center; color: #FCB941;font-size: 80px;font-family: 'Comic Sans MS', cursive, sans-serif; margin-bottom: 15px;">
-                  Hello
+            <div style="text-align: center; color: #FCB941;font-size: 80px;font-family: 'Raleway', sans-serif; margin-bottom: 15px;">
+                  Placement
             </div>
 
 
             <!-- <div style="overflow: hidden; position: relative; display: block; box-shadow: 0 0px 1px rgb(107, 107, 107),0 1px 2px rgba(0,0,0,.24)">  -->
 
               <center>  
-              <div class = "col-md-4 col-sm-4 col-xs-12">
+              
+              <div class = "col-md-4 col-sm-12 col-xs-12" style="padding: 5px 5px 5px 5px;">
                 <div class="item ">
-                  <img src="images/SFIT_Black.jpeg" width="250" height="250">
+                  <img src="images/google.jpg" width="250" height="250">
                   <div class="item-overlay top"></div>
                   
                 </div>
-                <div style="color: white;">This is Caption</div>
+                <div style="color: white;">Company</div>
               </div>
-              <div class = "col-md-4 col-sm-4 col-xs-12">
+
+              <div class = "col-md-4 col-sm-12col-xs-12" style="padding: 5px 5px 5px 5px;">
                 
                 <div class="item">
-                  <img src="images/SFIT_Black.jpeg" width="250" height="250">
+                  <img src="images/google.jpg" width="250" height="250">
                   <div class="item-overlay top"></div>
                   
                 </div>
-                <div style="color: white;">This is Caption</div>
+                <div style="color: white;">Company</div>
               </div>
-              <div class = "col-md-4 col-sm-4 col-xs-12">
+
+              <div class = "col-md-4 col-sm-12 col-xs-12" style="padding: 5px 5px 5px 5px;">
                 
 
                 <div class="item">
-                  <img src="images/SFIT_Black.jpeg" width="250" height="250">
+                  <img src="images/google.jpg" width="250" height="250">
                   <div class="item-overlay top"></div>
                   
                 </div>
               </div>
-              <div style="color: white;">This is Caption</div>
+              <div style="color: white;">Company</div>
             </center>
 
             </div>
@@ -683,7 +773,7 @@
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
             <div class="business-hours">
-            <h2 class="title">Opening Hours</h2>
+            <h2 class="title" style="font-family: 'Raleway', sans-serif;">Opening Hours</h2>
               <ul class="list-unstyled opening-hours">
               <li>Sunday <span class="pull-right">Closed</span></li>
               <li>Monday <span class="pull-right">9:00-22:00</span></li>
@@ -716,19 +806,23 @@
 
 
   	    			<div class = "col-md-2 col-sm-6 col-xs-6 right divs-on-mob" style = "text-align: right;">
-  	    				<h4>About Us</h4>
+  	    				<h4>Links</h4>
   	    				<address>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
-
-  	    				</address>
+                <ul class = "footer-nav2" style="list-style: none;">
+                    <li><a href="#"> Placement</a></li>
+                    <li><a href="#"> Library</a></li>
+                    <li><a href="#"> Student Info</a></li>
+                    <li><a href="#"> Parents Login</a></li>
+                    <li><a href="#"> Admission</a></li>
+                    
+                </ul>
+   	    				</address>
   	    			</div>
 
   	    			<div class="col-md-2 right large-device-only " style = "text-align: right;">
-  	    				<h4>Contact</h4>
+  	    				<h4>About Us</h4>
   	    				<address>
-  	    					Santoshi Mata Rd, Mandapeshwar,<br>
-  	    					Dahisar West, Mumbai, Maharashtra<br>
-  	    					400103.
+  	    					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is industry's standard dummy text.
 
   	    				</address>
   	    			</div>
@@ -748,13 +842,15 @@
   	    			</div>
 
   	    			<div class="col-md-2 col-sm-6 col-xs-6" >
-  	    				<h4>Contact</h4>
-  	    				<address>
-  	    					Santoshi Mata Rd, Mandapeshwar,<br>
-  	    					Dahisar West, Mumbai, Maharashtra<br>
-  	    					400103.
-
-  	    				</address>
+  	    				<h4>Links</h4>
+                <address>
+                <ul class = "footer-nav2" style="list-style: none;padding-left:0;">
+                    <li><a href="#"> Fees</a></li>
+                    <li><a href="#"> Events</a></li>
+                    <li><a href="#"> Iinstitute</a></li>
+                    <li><a href="#top"> Back To Top</a></li>
+                </ul>
+                </address>
   	    			</div>
 
 
