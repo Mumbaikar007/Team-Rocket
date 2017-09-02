@@ -195,22 +195,296 @@
         }
 
 
+        /*=======Faculty Page============*/
+        /*.card {
+            padding-top: 20px;
+            margin: 10px 0 20px 0;
+            background-color: rgba(214, 224, 226, 0.2);
+            border-top-width: 0;
+            border-bottom-width: 2px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .card .card-heading {
+            padding: 0 20px;
+            margin: 0;
+        }
+
+        .card .card-heading.simple {
+            font-size: 20px;
+            font-weight: 300;
+            color: #777;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .card .card-heading.image img {
+            display: inline-block;
+            width: 46px;
+            height: 46px;
+            margin-right: 15px;
+            vertical-align: top;
+            border: 0;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        .card .card-heading.image .card-heading-header {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .card .card-heading.image .card-heading-header h3 {
+            margin: 0;
+            font-size: 14px;
+            line-height: 16px;
+            color: #262626;
+        }
+
+        .card .card-heading.image .card-heading-header span {
+            font-size: 12px;
+            color: #999999;
+        }
+
+        .card .card-body {
+            padding: 0 20px;
+            margin-top: 20px;
+        }
+
+        .card .card-media {
+            padding: 0 20px;
+            margin: 0 -14px;
+        }
+
+        .card .card-media img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .card .card-actions {
+            min-height: 30px;
+            padding: 0 20px 20px 20px;
+            margin: 20px 0 0 0;
+        }
+
+        .card .card-comments {
+            padding: 20px;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+
+        .card .card-comments .comments-collapse-toggle {
+            padding: 0;
+            margin: 0 20px 12px 20px;
+        }
+
+        .card .card-comments .comments-collapse-toggle a,
+        .card .card-comments .comments-collapse-toggle span {
+            padding-right: 5px;
+            overflow: hidden;
+            font-size: 12px;
+            color: #999;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .card-comments .media-heading {
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .card.people {
+            position: relative;
+            display: inline-block;
+            width: 170px;
+            height: 300px;
+            padding-top: 0;
+            margin-left: 20px;
+            overflow: hidden;
+            vertical-align: top;
+        }
+
+        .card.people:first-child {
+            margin-left: 0;
+        }
+
+        .card.people .card-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            width: 170px;
+            height: 150px;
+            background-color: #ffffff;
+        }
+
+        .card.people .card-top.green {
+            background-color: #53a93f;
+        }
+
+        .card.people .card-top.blue {
+            background-color: #427fed;
+        }
+
+        .card.people .card-info {
+            position: absolute;
+            top: 150px;
+            display: inline-block;
+            width: 100%;
+            height: 101px;
+            overflow: hidden;
+            background: #ffffff;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .card.people .card-info .title {
+            display: block;
+            margin: 8px 14px 0 14px;
+            overflow: hidden;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 18px;
+            color: #404040;
+        }
+
+        .card.people .card-info .desc {
+            display: block;
+            margin: 8px 14px 0 14px;
+            overflow: hidden;
+            font-size: 12px;
+            line-height: 16px;
+            color: #737373;
+            text-overflow: ellipsis;
+        }
+
+        .card.people .card-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: inline-block;
+            width: 100%;
+            padding: 10px 20px;
+            line-height: 29px;
+            text-align: center;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .card.hovercard {
+            position: relative;
+            padding-top: 0;
+            overflow: hidden;
+            text-align: center;
+            background-color: rgba(214, 224, 226, 0.2);
+        }
+
+        .card.hovercard .cardheader {
+            background: url("http://lorempixel.com/850/280/nature/4/");
+            background-size: cover;
+            height: 135px;
+        }
+
+        .card.hovercard .avatar {
+            position: relative;
+            top: -50px;
+            margin-bottom: -50px;
+        }
+
+        .card.hovercard .avatar img {
+            width: 100px;
+            height: 100px;
+            max-width: 100px;
+            max-height: 100px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,0.5);
+        }
+
+        .card.hovercard .info {
+            padding: 4px 8px 10px;
+        }
+
+        .card.hovercard .info .title {
+            margin-bottom: 4px;
+            font-size: 24px;
+            line-height: 1;
+            color: #262626;
+            vertical-align: middle;
+        }
+
+        .card.hovercard .info .desc {
+            overflow: hidden;
+            font-size: 12px;
+            line-height: 20px;
+            color: #737373;
+            text-overflow: ellipsis;
+        }
+
+        .card.hovercard .bottom {
+            padding: 0 20px;
+            margin-bottom: 17px;
+        }
+
+        .btn{ border-radius: 50%; width:32px; height:32px; line-height:18px;  }
+*/
+
+        /*=====Equal Height Divisions =============*/
+        .col-container {
+            display: table; /* Make the container element behave like a table */
+            width: 100%; /* Set full-width to expand the whole page */
+            border-spacing:5px;
+        }
+
+        .col {
+            display: table-cell; /* Make elements inside the container behave like table cells */
+        }
+        @media only screen and (max-width: 600px) {
+        .col {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .wrap{
+            overflow:hidden;
+            width:100%;
+            display: table;
+            border-collapse: collapse;
+        }
+
+        .row {
+            display: table-row;
+        }
+        .left1{
+            width:30%;
+            display: table-cell; 
+            background-color: #0f0;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+
+        .right1{
+            width: 80%;
+            background-color: #f00;
+            display: table-cell;     
+        }
+
     </style>
 
-</head>
-<body>
-
-	
-
-
-       <section id="home" data-type="background" data-speed="10" class="pages">     
-             <article>I am absolute positioned</article>
-        </section>   
-             
-        <section id="about" data-type="background" data-speed="10" class="pages">
-                 <article>Simple Parallax Scroll</article>
-        </section>
-
+</head><body>
 
           <!------------Jeson: Tiles---------------------->
           <div class="container-fluid dynamicTile">
@@ -418,59 +692,49 @@
 
 
 
-        <!-- Carousel
-        ================================================== -->
-        <div id="myCarousel" class="carousel slide">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="/assets/example/bg_suburb.jpg" class="img-responsive">
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Bootstrap 3 Carousel Layout</h1>
-                  <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses="" the="" bootstrap="" 3="" styles.<="" small=""><p></p>
-                  <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com">Learn More</a>
-                </p></pthis></div>
-              </div>
-            </div>
-            <div class="item">
-              <img src="http://lorempixel.com/1500/600/abstract/1" class="img-responsive">
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Changes to the Grid</h1>
-                  <p>Bootstrap 3 still features a 12-column grid, but many of the CSS class names have completely changed.</p>
-                  <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <img src="http://placehold.it/1500X500" class="img-responsive">
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Percentage-based sizing</h1>
-                  <p>With "mobile-first" there is now only one percentage-based grid.</p>
-                  <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-          </a>  
-        </div>
-        <!-- /.carousel -->
+            
+        <section style="width: 100%;">
+           <div class="container">  
+            
+              <div class="row">
 
+                  <div class="col-md-4" style="padding: 20px 5px 10px 5px;text-align: center;background-color: red;">
+                    
+                    <img src="images/Kavita Sonawane.jpg" style="border-radius: 50%;">
+                  
+                  </div>
 
-        </div><!-- /.container -->
+                  <div class="col-md-8">
+                   <div class = "panel panel-default">
+                     <div class ="panel-heading">Panel heading</div>
+                       
+                       <div class = "panel-body">
+                          <p>This is a Basic panel content. This is a Basic panel content.
+                             This is a Basic panel content. This is a Basic panel content.
+                             This is a Basic panel content. This is a Basic panel content.
+                             This is a Basic panel content.</p>
+                       </div>
+                       
+                       <ul class = "list-group">
+                          <li class = "list-group-item">Free Domain Name Registration</li>
+                          <li class = "list-group-item">Free Window Space hosting</li>
+                          <li class = "list-group-item">Number of Images</li>
+                          <li class = "list-group-item">24*7 support</li>
+                          <li class = "list-group-item">Renewal cost per year</li>
+                       </ul>
+
+                    </div>
+
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">Panel with panel-primary class</div>
+                      <div class="panel-body">Panel Content</div>
+                    </div>
+                  </div>                
+
+              </div>
+
+            </div>
+        </section>
 
 </body>
 </html>
