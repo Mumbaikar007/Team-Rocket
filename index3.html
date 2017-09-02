@@ -168,6 +168,16 @@
                   min-height: 500px;
                 }
 
+
+                  .col-container {
+                      display: table; /* Make the container element behave like a table */
+                      width: 100%; /* Set full-width to expand the whole page */
+                  }
+
+                  .col {
+                      display: table-cell; /* Make elements inside the container behave like table cells */
+                  }
+
      </style>
 
 
@@ -225,25 +235,29 @@
 
 
         
-           <div class="container" style="padding: 20px 20px 20px 20px; ">  
+           <div class="container" style="padding: 20px 20px 20px 20px;">  
             
-              <div class="row">
+              <div class="row col-container">
 
-                  <div class="col-md-4" style="padding: 20px 5px 10px 5px;text-align: center;background-color: red; color: white;font-family: 'Raleway', sans-serif;border-radius: 15px;">
-                    <div class="item1 " style="width: 100%;">
+                  <div class="col-md-4 col" style="padding: 10px 10px 10px 10px;">
 
-                    <img src="images/Kavita Sonawane.jpg" style="border-radius: 50%;" align="center">
-                    <div class="item-overlay top"></div>
+                    <div style="padding: 20px 5px 10px 5px;text-align: center;background-color: red; color: white;font-family: 'Raleway', sans-serif;border-radius: 15px;">
+
+                      <div class="item1 " style="width: 100%;">
+
+                      <img src="images/Kavita Sonawane.jpg" style="border-radius: 50%;" align="center">
+                      <div class="item-overlay top"></div>
+                      </div>
+                      <div>
+                      <font style="font-size: 20px;margin-top: 20px;">Kavita Sonawane</font>
+                      </div>                 
+                    
                     </div>
-                    <div>
-                    <font style="font-size: 20px;margin-top: 20px;">Kavita Sonawane</font>
-                    </div>                 
                   </div>
-
-                  <div class="col-md-8" style="padding: 0px 5px 10px 0px;">
-                  <div  style="border-style: solid; border-left: thin double #ff0000;padding-right: 20px;">
+                  <div class="col-md-8 col " style="padding: 0px 5px 10px 0px;">
+                  <div  style=" border-left: thin double grey;padding-right: 20px;">
                    
-                   <div class = "panel panel-default">
+                   <div class = "panel panel-default" style="margin: 10px 10px 10px 10px;">
                      <div class ="panel-heading">Panel heading</div>
                        
                        <div class = "panel-body">
@@ -263,7 +277,7 @@
 
                     </div>
 
-                    <div class="panel panel-primary">
+                    <div class="panel panel-primary" style="margin: 10px 10px 10px 10px;">
                       <div class="panel-heading">Panel with panel-primary class</div>
                       <div class="panel-body">Panel Content</div>
                     </div>
