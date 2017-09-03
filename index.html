@@ -167,7 +167,13 @@
                   padding-bottom: 20px;
                   min-height: 500px;
                 }
-                
+
+
+                .affix {
+                    position: fixed;
+                }
+
+
 
      </style>
 
@@ -177,38 +183,22 @@
        $(document).ready(function(){
          $(window).scroll(function() {
 
-         /* if ($(this).scrollTop()>0)
-           {
-              $('.semi-circle').fadeOut();
-           }
-          else
-           {
-            $('.semi-circle').fadeIn();
-           }*/
-	      if ($(this).scrollTop()>0)
+        /*if ($(this).scrollTop()>0)
            {
               $('.navhide').slideUp();
-             /* $('.notnavhide').slideDown();
-              $('.notnavhide').css("display", "block");*/
            }
           else
            {
             $('.navhide').slideDown();
-            /*$('.notnavhide').slideUp();
-            $('.notnavhide').css("display", "none");*/
            }
 		if ($(this).scrollTop()>0)
            {
               $('.invnav').unhide();
-             /* $('.notnavhide').slideDown();
-              $('.notnavhide').css("display", "block");*/
            }
           else
            {
             $('.invnav').hide();
-            /*$('.notnavhide').slideUp();
-            $('.notnavhide').css("display", "none");*/
-           }
+          } */
        });
 
         $('.opening-hours li').eq(new Date().getDay()).addClass('today');
@@ -226,7 +216,7 @@
 
 
       <header>
-      	 <nav class="navbar navbar-custom navbar-fixed-top" >
+      	 <nav class="navbar navbar-custom navbar-static-top" >
   					<div >
 
 
@@ -277,7 +267,7 @@
 
 											<div style="padding-top: 10px" class="navhide"><center><br><img src="images/sfithead.png" width="400px" height="130px"></center> <br></div></div>
 
-                  <ul class="nav navbar-nav " >
+                  <ul class="nav navbar-nav navbar-custom navbar-nav-just" data-spy="affix" data-offset-top="230" >
     								<li class="active"><a href="#">Institute</a></li>
     								<li><a href="#">Student Info</a></li>
     								<li><a href="#">Administation</a></li>
@@ -320,11 +310,6 @@
 
     <!--=========== END HEADER SECTION ================-->
 
-    <div id = "noMobile" class = " large-device-only" style = "height: 200px;background-color: #2d992d;" >
-        <!--div style = "margin-top: 50px;text-align: center; padding: 40px 0px 10px 0px;"><span><img src="images/sfithead.png" height="120px" width="300px"></span></div-->
-    </div>
-    <div class = "mobile-only" style = "height: 51px;"></div>
-    <!-- <div class = "notnavhide" style = "height: 100px;display: none;"></div> -->
       <!--=========ImageSlider updated: Jeson==========-->
     <div id = "top">
 	       <div class="cycle-slideshow" width="100%">
@@ -792,7 +777,7 @@
         <h2>Carousel Example</h2>
         <div id="myCarousel" class="carousel slide" data-ride="carousel" style="min-height: 200px;">
 
-     
+
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -804,17 +789,17 @@
           <div class="carousel-inner">
 
             <div class="item active">
-            
+
                <div style = "background-color: #ff5a1e; min-width: 100%; height: 400px;background-size: cover;text-align: center;padding-top: 15px;" >
 
-                  
+
                   <a href="#top">
                   <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                     <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
                     <div class="ccard-block">
                       <h4 class="ccard-title">Card title</h4>
                       <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
+
                     </div>
                   </div>
                   </a>
@@ -826,7 +811,7 @@
                     <div class="ccard-block">
                       <h4 class="ccard-title">Card title</h4>
                       <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
+
                     </div>
                   </div>
                   </a>
@@ -837,7 +822,7 @@
                     <div class="ccard-block">
                       <h4 class="ccard-title">Card title</h4>
                       <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
+
                     </div>
                   </div>
                   </a>
@@ -849,7 +834,7 @@
                     <div class="ccard-block">
                       <h4 class="ccard-title">Card title</h4>
                       <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
+
                     </div>
 
                   </div>
@@ -861,7 +846,7 @@
                     <div class="ccard-block">
                       <h4 class="ccard-title">Card title</h4>
                       <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
+
                     </div>
                   </div>
                   </a>
@@ -869,7 +854,7 @@
 
 
                </div>
-             
+
               <div class="carousel-caption">
                 <h3>Los Angeles</h3>
                 <p>LA is always so much fun!</p>
@@ -878,16 +863,16 @@
 
             <div class="item">
 
-            
+
                <div style = "background-color: #ff5a1e; min-width: 100%; height: 400px;background-size: cover;text-align: center;padding-top: 15px;" >
-                  
+
                   <a href="#top">
                   <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                     <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
                     <div class="ccard-block">
                       <h4 class="ccard-title">Card title</h4>
                       <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
+
                     </div>
                   </div>
                   </a>
@@ -898,7 +883,7 @@
                     <div class="ccard-block">
                       <h4 class="ccard-title">Card title</h4>
                       <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
+
                     </div>
                   </div>
                   </a>
@@ -909,7 +894,7 @@
                     <div class="ccard-block">
                       <h4 class="ccard-title">Card title</h4>
                       <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
+
                     </div>
                   </div>
                   </a>
@@ -920,7 +905,7 @@
                     <div class="ccard-block">
                       <h4 class="ccard-title">Card title</h4>
                       <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
+
                     </div>
                   </div>
                   </a>
@@ -931,33 +916,33 @@
                     <div class="ccard-block">
                       <h4 class="ccard-title">Card title</h4>
                       <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
+
                     </div>
                   </div>
                   </a>
 
 
                </div>
-             
+
               <div class="carousel-caption">
                 <h3>Los Angeles</h3>
                 <p>LA is always so much fun!</p>
 
               </div>
             </div>
-          
+
             <div class="item">
 
-            
+
                <div style = "background-color: #ff5a1e; min-width: 100%; height: 400px;background-size: cover;text-align: center;padding-top: 15px;" >
-                  
+
                   <a href="#top">
                   <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                     <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
                     <div class="ccard-block">
                       <h4 class="ccard-title">Card title</h4>
                       <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
+
                     </div>
                   </div>
                   </a>
@@ -968,7 +953,7 @@
                     <div class="ccard-block">
                       <h4 class="ccard-title">Card title</h4>
                       <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
+
                     </div>
                   </div>
                   </a>
@@ -979,7 +964,7 @@
                     <div class="ccard-block">
                       <h4 class="ccard-title">Card title</h4>
                       <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
+
                     </div>
                   </div>
                   </a>
@@ -990,7 +975,7 @@
                     <div class="ccard-block">
                       <h4 class="ccard-title">Card title</h4>
                       <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
+
                     </div>
                   </div>
                   </a>
@@ -1001,14 +986,14 @@
                     <div class="ccard-block">
                       <h4 class="ccard-title">Card title</h4>
                       <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
+
                     </div>
                   </div>
                   </a>
 
 
                </div>
-             
+
               <div class="carousel-caption">
                 <h3>Los Angeles</h3>
                 <p>LA is always so much fun!</p>
@@ -1133,7 +1118,7 @@
 
 		    		</div>
 	    		</div>
-    
+
 
 	    	</div>
 
