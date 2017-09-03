@@ -25,22 +25,22 @@
         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> -->
 
         <!-- For Mobile -->
-		    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      	<!--JS-->
-      	<script src="js/jquery.min.js"></script>
-    	  <script src="js/bootstrap.min.js"></script>
+        <!--JS-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
         <!-- <script src="js/tiles.js"></script> -->
 
-    	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
         <!---------ImageSliderJS updated: Jeson---------->
         <script src="js/js-image-slider.js" type="text/javascript"></script>
 
-		    <!-- --------Custom css--------- -->
-		    <link rel="stylesheet" href="css/custom.css">
+        <!-- --------Custom css--------- -->
+        <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="css/custom_header.css">
         <link rel="stylesheet" href="css/custom_ccards.css">
         <link rel="stylesheet" href="css/footer.css">
@@ -59,22 +59,22 @@
            max-width: 100%;
          }
          .cycle-slideshow {
-  	        width: 100%;
-  	          max-width: 100%;
-  	         display: block;
-  	         position: relative;
-  	         margin: auto;
-  	         overflow: hidden;
+            width: 100%;
+              max-width: 100%;
+             display: block;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
           }
           .cycle-prev, .cycle-next {
-  	         font-size: 200%;
-  	         color: #FFF;
-  	         display: block;
-  	         position: absolute;
-  	         top: 50%;
-  	         margin-top: -16px;
-  	         z-index: 9999;
-  	         cursor: pointer;
+             font-size: 200%;
+             color: #FFF;
+             display: block;
+             position: absolute;
+             top: 50%;
+             margin-top: -16px;
+             z-index: 9999;
+             cursor: pointer;
           }
           .cycle-prev {left: 10%;}
           .cycle-next {right: 10%;}
@@ -169,9 +169,30 @@
                 }
 
 
-                .affix {
-                    position: fixed;
-                }
+          ul li {display: inline-block;}
+          ul li:hover {background: #555;}
+          ul li:hover ul {display: block;}
+          ul li ul {
+            position: absolute;
+            width: 200px;
+            display: none;
+          }
+          ul li ul li { 
+            background: #555; 
+            display: block; 
+          }
+          ul li ul li a {display:block !important;} 
+          ul li ul li:hover {background:  }
+
+          .affix {
+              top: 0;
+              width: 100%;
+              position: fixed;
+          }
+
+          .affix + .container-fluid {
+              padding-top: 70px;
+          }
 
 
 
@@ -191,7 +212,7 @@
            {
             $('.navhide').slideDown();
            }
-		if ($(this).scrollTop()>0)
+    if ($(this).scrollTop()>0)
            {
               $('.invnav').unhide();
            }
@@ -208,123 +229,265 @@
     </head>
 
 
-	<body>
+  <body>
 
-	    <!-- updated by Tanmay..    linked bootstrap-->
-	    <!--Main Division containing everything-->
+      <!-- updated by Tanmay..    linked bootstrap-->
+      <!--Main Division containing everything-->
 
 
 
       <header>
-      	 <nav class="navbar navbar-custom navbar-static-top" >
-  					<div >
+         <nav class="navbar navbar-custom navbar-static-top" >
+            <div >
 
 
 
-    					<div class="navbar-header">
-      						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-    								<span class="icon-bar"></span>
-    								<span class="icon-bar"></span>
-    								<span class="icon-bar"></span>
-							     </button>
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                   </button>
 
-    							<!-- Pranav: MobileHeader -->
-    							<a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>SFIT</a>
+                  <!-- Pranav: MobileHeader -->
+                  <a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>SFIT</a>
 
-    					</div>
+              </div>
 
 
-    					<div class="collapse navbar-collapse" id="myNavbar">
+              <div class="collapse navbar-collapse" id="myNavbar">
 
-							<div class="nav navhide " style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;display: block;">&nbsp;
-								<ul class="nav navbar-nav navbar-right">
+              <div class="nav navhide " style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;display: block;">&nbsp;
+                <ul class="nav navbar-nav navbar-right">
 
-								  	<li><a href="#">Home</a></li>
-									<li><a href="#">Mandatory Disclosure</a></li>
-									<li><a href="#">Careers</a></li>
-									<li><a href="#">Library</a></li>
-									<li><a href="#">Parents Corner</a></li>
-									<li><a href="#">Contact Us</a></li>
-									<li><a href="#">Archive</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-home"> </span> Home</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-star"> </span> Mandatory Disclosure</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-education"> </span> Careers</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-book"> </span> Library</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"> </span> ParentsCorner</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-phone-alt"> </span> Contact Us</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-duplicate"> </span> Archive</a></li>
+
+              </ul>
+              </div>
+
+
+
+
+
+                <div class="large-device-only">
+
+                      <div style="padding-top: 10px" class="navhide"><center><br><img src="images/sfithead.png" width="400px" height="130px"></center> <br></div></div>
+
+
+                      <!-- =========Institute Dropdown============== -->
+                  <ul class="nav navbar-nav navbar-custom navbar-nav-just" data-spy="affix" data-offset-top="230" >
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Institute</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">The Society</a></li>
+                        <li><a href="#">College Emblem & Anthem</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Academic Consultant/ Advisor</a></li>
+                        <li><a href="#">Mandatory Disclosure</a></li>
+                        <li><a href="#">Newsletter  ---- Bits-N-Bytes</a></li>
+                        <li><a href="#">AICTE apprval letter</a></li>
+                        <li><a href="#">NBA Accreditation</a></li>
+                        <li><a href="#">ISO Certification</a></li>
+                        <li><a href="#">Fee Proposal</a></li>
+                        <li><a href="#">Prohibition of Ragging</a></li>
+                        <li><a href="#">Grievance Redressal Committee</a></li>
+                        <li><a href="#">Achievements</a></li>
+                        <li><a href="#">Sister Institutions</a></li>
+
+                      </ul>
+                    </li>
+
+                    <!-- ============Campus Dropdown========= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Campus</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Building </a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Computer Center</a></li>
+                        <li><a href="#">Counselling Cell</a></li>
+                        <li><a href="#">Seminar Room</a></li>
+                        <li><a href="#">Assembly Hall</a></li>
+                        <li><a href="#">Gymkhana</a></li>
+                        <li><a href="#">Canteen</a></li>
+                      </ul>
+                    </li>
+                    
+                    <!-- ================Administration================ -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Administration</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Committeees</a></li>
+                        <li><a href="#">Staff Service Rules</a></li>
+                        <li><a href="#">Code of Ethics</a></li>
+                        <li><a href="#">New Staff Induction Manual</a></li>
+                        <li><a href="#">Staff Working Committees</a></li>
+
+                      </ul>
+                    </li>
+
+                    <!-- ===============Student Info================ -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Student Info</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Dean Student Affairs</a></li>
+                        <li><a href="#">Code of Conduct </a></li>
+                        <li><a href="#">Student Council</a></li>
+                        <li><a href="#">Fee Payment</a></li>
+                        <li><a href="#">Academic Examination</a></li>
+                        <li><a href="#">Academic Results</a></li>
+                        <li><a href="#">Academic Calender</a></li>
+                        <li><a href="#">Student Attendance</a></li>
+                        <li><a href="#">Annual Programs </a></li>
+                        <li><a href="#">Acitivities</a></li>
+                        <li><a href="#">NPTEL</a></li>
+                        <li><a href="#">Industrial Visits</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- =============Placement=============== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Placement</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Training And Placement</a></li>
+                        <li><a href="#">Placement Comittee</a></li>
+                        <li><a href="#">placement Policy</a></li>
+                        <li><a href="#">Training Calender</a></li>
+                        <li><a href="#">Training & Placement Activities</a></li>
+                        <li><a href="#">Recruiters</a></li>
+                        <li><a href="#">Feedback for Employers</a></li>
+                        <li><a href="#">Feedback for students</a></li>
+                        <li><a href="#">Record</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ======================R&D====================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">R&D</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">R&D</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">RadLabs</a></li>
+                        <li><a href="#">Robocon</a></li>
+                        <li><a href="#">Consultancy Rules</a></li>
+                        <li><a href="#">Lecture Series</a></li>
+                        <li><a href="#">Sanshodhan</a></li>
+                        <li><a href="#">Research Project</a></li>
+                        <li><a href="#">Faculty Development</a></li>
+                        <li><a href="#">Conferences</a></li>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Notices</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ====================E-Cell================== -->
+                    <li><a href="http://ecell.sfitengg.org/"  >E-Cell</a></li>
+
+
+                    <!-- =====================Departments==================== -->  
+                    <li><a href="compdept.html">Department</a></li>
+                    
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Computer Engineering</a></li>
+                        <li><a href="#">Information Technology Engineering</a></li>
+                        <li><a href="#">Electronics and Telecommunication Engineering</a></li>
+                        <li><a href="#">Basic Science and Humanities</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ===================Admissions================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Admissions<span class="caret"></span></a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Bachelor of Engineering</a></li>
+                        <li><a href="#">Master of Engineering</a></li>
+                        <li><a href="#">Doctor of Philosophy(Ph.D)</a></li>
+                        <li><a href="#">Noticce on Disclaimer</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ================Events===================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Events<span class="caret"></span></a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Prayas 2017</a></li>
+                        <li><a href="#">Technotron</a></li>
+                        <li><a href="#">IRIS 2017</a></li>
+                        <li><a href="#">Graduation day</a></li>
+                        <li><a href="#">Workshop</a></li>
+                        <li><a href="#">CSCITA</a></li>
+                      </ul>
+                    </li>
+
+                     <!-- ====================E-Cell================== -->
+                    <li><a href="http://ecell.sfitengg.org/"  >CSCITA'17</a></li>
+
+
+                    <!-- ================Events===================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Events<span class="caret"></span></a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Prayas 2017</a></li>
+                        <li><a href="#">Technotron</a></li>
+                        <li><a href="#">IRIS 2017</a></li>
+                        <li><a href="#">Graduation day</a></li>
+                        <li><a href="#">Workshop</a></li>
+                        <li><a href="#">CSCITA</a></li>
+                      </ul>
+                    </li>
+
+                     <!-- ====================E-Cell================== -->
+                    <li><a href="http://ecell.sfitengg.org/"  >Parent's Corner</a></li>
+
+                  </ul>
+
+
+
+
+              <!-- Pranav: header -->
+
+            <!--  <a class="navbar-brand large-device-only " href="#">
+                <center> St. Francis Institute of Technology</center> <!--span><div class="semi-circle"><img src="images/sfit.png" height="70px" width="70px"></span></div>
+              </ -->
+
+<!--              <ul class="nav navbar-nav navbar-right">
+
                 <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
-                  <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                  <ul class="dropdown-menu" aria-labelled-by="drop">
                     <li><a href="#">Alumini Corner</a></li>
                     <li><a href="#">Alumini Associstion</a></li>
                     <li><a href="#">Alumini Website</a></li>
                     <li><a href="#">Alumini Feedback Form</a></li>
                    </ul>
                 </li>
-                <!-- Dropdown end -->
+
                   <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
-							</ul>
-							</div>
+              </ul> -->
 
+            </div>
+            </div>
+        </nav>
 
-
-
-
-						    <div class="large-device-only">
-
-											<div style="padding-top: 10px" class="navhide"><center><br><img src="images/sfithead.png" width="400px" height="130px"></center> <br></div></div>
-
-                  <ul class="nav navbar-nav navbar-custom navbar-nav-just" data-spy="affix" data-offset-top="230" >
-    								<li class="active"><a href="#">Institute</a></li>
-    								<li><a href="#">Student Info</a></li>
-    								<li><a href="#">Administation</a></li>
-    								<li><a href="#">Campus</a></li>
-  								<li><a href="#">Placement</a></li>
-  								<li><a href="#">R&D</a></li>
-  								<li><a href="#">E-Cell</a></li>
-  								<li><a href="compdept.html">Department</a></li>
-  								<li><a href="#">Admission</a></li>
-  								<li><a href="#">Events</a></li>
-					  			<li ><a href="gallery.html">Gallery</a></li>
-    							</ul>
-
-
-							<!-- Pranav: header -->
-
-						<!--	<a class="navbar-brand large-device-only " href="#">
-								<center> St. Francis Institute of Technology</center> <!--span><div class="semi-circle"><img src="images/sfit.png" height="70px" width="70px"></span></div>
-							</ -->
-
-<!-- 						 	<ul class="nav navbar-nav navbar-right">
-
-								<li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
-									<ul class="dropdown-menu" aria-labelled-by="drop">
-										<li><a href="#">Alumini Corner</a></li>
-										<li><a href="#">Alumini Associstion</a></li>
-										<li><a href="#">Alumini Website</a></li>
-										<li><a href="#">Alumini Feedback Form</a></li>
-	                 </ul>
-							 	</li>
-
-								  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
-							</ul> -->
-
-						</div>
-  					</div>
-				</nav>
-
-	     </header>
+       </header>
 
     <!--=========== END HEADER SECTION ================-->
 
       <!--=========ImageSlider updated: Jeson==========-->
-    <div id = "top">
-	       <div class="cycle-slideshow" width="100%">
-             <span class="cycle-prev">&#9001;</span>
-             <span class="cycle-next">&#9002;</span>
-	           <img class="re" src="images/slider/1.jpg" />
-	           <img class="re" src="images/slider/2.jpg" />
-	           <img class="re" src="images/slider/3.jpg" />
-	           <img class="re" src="images/slider/4.jpg" />
+    <div id = "top" style="margin-top: -20px;">
+         <div class="cycle-slideshow" width="100%">
+             <span class="cycle-prev" >&#9001;</span>
+             <span class="cycle-next" ">&#9002;</span>
+             <img class="re" src="images/slider/1.jpg" />
+             <img class="re" src="images/slider/2.jpg" />
+             <img class="re" src="images/slider/3.jpg" />
+             <img class="re" src="images/slider/4.jpg" />
              <span class="cycle-pager"></span>
-	       </div>
-		</div>
-	     <!--=============ImageSlider ENDS===================-->
+         </div>
+    </div>
+       <!--=============ImageSlider ENDS===================-->
 
-	   <!-- Pranav: Welcome -->
+     <!-- Pranav: Welcome -->
       <section class = "Intro" style="padding: 50px 30px 50px 0px;background-color: #ffffe6;">
         <div class = "container">
 
@@ -541,10 +704,10 @@
 
 
 
-	    	  <div class = "container" style="color: aliceblue" >
-	            <div class="row">
+          <div class = "container" style="color: aliceblue" >
+              <div class="row">
 
-	                <div class="col-sm-4 col-xs-12" style="margin-bottom: 20px;">
+                  <div class="col-sm-4 col-xs-12" style="margin-bottom: 20px;">
                     <div style="border: 1px solid grey;" >
                     <h2 align="center"><b>Vision</b></h2>
                      <p style=" padding: 0px 10px 10px 20px; font-size: 16px;">"To be a chrysalis where bright youngsters are transformed into technological entrepreneurs and innovative leaders of tomorrow’s world, consistent with the Franciscan vision of integrity, peace and love."</p></div>
@@ -572,17 +735,17 @@
 
 
 
-	    <!--=========== DYNAMIC TABS SECTION ================-->
-	    <div id = "DynamicTabs" class="container-fluid animated fadeIn" style="background-color: #D2F25F; padding: 20px 30px 10px 30px;  " >
+      <!--=========== DYNAMIC TABS SECTION ================-->
+      <div id = "DynamicTabs" class="container-fluid animated fadeIn" style="background-color: #D2F25F; padding: 20px 30px 10px 30px;  " >
 
-			  <ul class="nav nav-tabs "> <!-- nav-justified -->
-				    <li class="active"><a data-toggle="tab" href="#homeB">Home</a></li>
-				    <li><a data-toggle="tab" href="#menu1B">Menu 1</a></li>
-				    <li><a data-toggle="tab" href="#menu2B">Menu 2</a></li>
-				    <li><a data-toggle="tab" href="#menu3B">Menu 3</a></li>
-			  </ul>
-			<div class="row">
-			  <div class="tab-content">
+        <ul class="nav nav-tabs "> <!-- nav-justified -->
+            <li class="active"><a data-toggle="tab" href="#homeB">Home</a></li>
+            <li><a data-toggle="tab" href="#menu1B">Menu 1</a></li>
+            <li><a data-toggle="tab" href="#menu2B">Menu 2</a></li>
+            <li><a data-toggle="tab" href="#menu3B">Menu 3</a></li>
+        </ul>
+      <div class="row">
+        <div class="tab-content">
 
             <div id="homeB" class="tab-pane fade in active" align="center">
 
@@ -632,9 +795,9 @@
                 </div>
 
 
-				    </div>
+            </div>
 
-				    <div id="menu1B" class="tab-pane fade" align="center">
+            <div id="menu1B" class="tab-pane fade" align="center">
 
                 <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                   <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
@@ -645,9 +808,9 @@
                   </div>
                 </div>
 
-				    </div>
+            </div>
 
-				    <div id="menu2B" class="tab-pane fade" align="center">
+            <div id="menu2B" class="tab-pane fade" align="center">
 
               <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                   <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
@@ -679,7 +842,7 @@
 
             </div>
 
-				    <div id="menu3B" class="tab-pane fade" align="center">
+            <div id="menu3B" class="tab-pane fade" align="center">
 
               <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                   <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
@@ -709,12 +872,12 @@
                 </div>
 
 
-				    </div>
-			  </div>
-  	   </div>
-  		</div>
+            </div>
+        </div>
+       </div>
+      </div>
     </div>
-		<!--=========== END DYNAMIC TABS SECTION ================-->
+    <!--=========== END DYNAMIC TABS SECTION ================-->
 
     <!--=========== START PARALLAX ================-->
 
@@ -1042,21 +1205,21 @@
 
 
 
-	  <!--=========== PRANAV: START FOOTER SECTION ================-->
-	    <footer class = "site-footer">
+    <!--=========== PRANAV: START FOOTER SECTION ================-->
+      <footer class = "site-footer">
 
-	    	<div class="container-fluid">
+        <div class="container-fluid">
 
-	    		<div class = "row">
+          <div class = "row">
 
-	    			<div class="col-md-12 mobile-only" style = "text-align: center;">
-	    				<img src="images/SFIT_Black.jpeg" height="200px" width="200px" style="margin-bottom: 15px;">
-	    			</div>
+            <div class="col-md-12 mobile-only" style = "text-align: center;">
+              <img src="images/SFIT_Black.jpeg" height="200px" width="200px" style="margin-bottom: 15px;">
+            </div>
 
 
-  	    			<div class = "col-md-2 col-sm-6 col-xs-6 right divs-on-mob" style = "text-align: right;">
-  	    				<h4>Links</h4>
-  	    				<address>
+              <div class = "col-md-2 col-sm-6 col-xs-6 right divs-on-mob" style = "text-align: right;">
+                <h4>Links</h4>
+                <address>
                 <ul class = "footer-nav2" style="list-style: none;">
                     <li><a href="#"> Placement</a></li>
                     <li><a href="#"> Library</a></li>
@@ -1065,33 +1228,33 @@
                     <li><a href="#"> Admission</a></li>
 
                 </ul>
-   	    				</address>
-  	    			</div>
+                </address>
+              </div>
 
-  	    			<div class="col-md-2 right large-device-only " style = "text-align: right;">
-  	    				<h4>About Us</h4>
-  	    				<address>
-  	    					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is industry's standard dummy text.
+              <div class="col-md-2 right large-device-only " style = "text-align: right;">
+                <h4>About Us</h4>
+                <address>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is industry's standard dummy text.
 
-  	    				</address>
-  	    			</div>
+                </address>
+              </div>
 
-  	    			<div class="col-md-4 right large-device-only " style = "text-align: center;">
-  	    				<img src="images/SFIT_Black.jpeg" height="150px" width="150px">
-  	    			</div>
+              <div class="col-md-4 right large-device-only " style = "text-align: center;">
+                <img src="images/SFIT_Black.jpeg" height="150px" width="150px">
+              </div>
 
-  	    			<div class = "col-md-2 right large-device-only" >
-  	    				<h4>Contact</h4>
-  	    				<address>
-  	    					Santoshi Mata Rd, Mandapeshwar,<br>
-  	    					Dahisar West, Mumbai, Maharashtra<br>
-  	    					400103.
+              <div class = "col-md-2 right large-device-only" >
+                <h4>Contact</h4>
+                <address>
+                  Santoshi Mata Rd, Mandapeshwar,<br>
+                  Dahisar West, Mumbai, Maharashtra<br>
+                  400103.
 
-  	    				</address>
-  	    			</div>
+                </address>
+              </div>
 
-  	    			<div class="col-md-2 col-sm-6 col-xs-6" >
-  	    				<h4>Links</h4>
+              <div class="col-md-2 col-sm-6 col-xs-6" >
+                <h4>Links</h4>
                 <address>
                 <ul class = "footer-nav2" style="list-style: none;padding-left:0;">
                     <li><a href="#"> Fees</a></li>
@@ -1100,29 +1263,29 @@
                     <li><a href="#top"> Back To Top</a></li>
                 </ul>
                 </address>
-  	    			</div>
+              </div>
 
 
-	    		</div>
+          </div>
 
-	    		<div class = "bottom-footer divs-on-mob" >
-	    			<div class = "col-md-5 col-xs-12">2017 St. Francis Institute of Technology. All Rights Reserved.</div>
+          <div class = "bottom-footer divs-on-mob" >
+            <div class = "col-md-5 col-xs-12">2017 St. Francis Institute of Technology. All Rights Reserved.</div>
 
-		    			<div class = "col-md-7 col-xs-12 large-device-only">
-		    				<ul class = "footer-nav" style="list-style: none;">
-		    					<li><a href="#">Home </a></li>
-		    					<li><a href="#">About </a></li>
-		    					<li><a href="#">FAQ </a></li>
-		    					<li><a href="#">Baki bacha wo </a></li>
-		    				</ul>
+              <div class = "col-md-7 col-xs-12 large-device-only">
+                <ul class = "footer-nav" style="list-style: none;">
+                  <li><a href="#">Home </a></li>
+                  <li><a href="#">About </a></li>
+                  <li><a href="#">FAQ </a></li>
+                  <li><a href="#">Baki bacha wo </a></li>
+                </ul>
 
-		    		</div>
-	    		</div>
+            </div>
+          </div>
 
 
-	    	</div>
+        </div>
 
-		</footer>
+    </footer>
     <!--=========== END FOOTER SECTION ================-->
-	</body>
+  </body>
 </html>
