@@ -28,20 +28,7 @@
        -webkit-filter: grayscale(50%);
 	}
 
-	.site-footer{
-		background-color: black;
-		color: #fff;
-		padding-top: 30px;
-		
-	}
 
-	.bottom-footer{
-		border-top: 1px solid #b2b2b2;
-		margin-top: 10px;
-		padding-top: 10px;
-		color: #b2b2b2; 
-		
-	}
 
 /*	ul.nav-tabs {
 	  text-align: center;
@@ -54,14 +41,7 @@
 		padding-top: 15px;
 	}
 
-	.footer-nav2 a{
-		color: #b2b2b2;
-	}
-	.footer-nav2 a:hover{
-		color: #fff;
-		text-decoration: none;
 
-	}
 
 }
 
@@ -71,12 +51,6 @@
 	}
 
 	
-	/* Pranav: Header edits*/
-	.navbar-brand {
-	  transform: translateX(-50%);
-	  left: 50%;
-	  position: absolute;
-	}
 
 	/*
 	.navbar-brand {
@@ -89,7 +63,6 @@
 	}
 	*/
 
-	
 	ul.nav-tabs {
 	  text-align: center;
 	}
@@ -148,7 +121,7 @@
 	  padding: 0;
 	  margin: 2%;
 	  overflow: hidden;
-	  
+	  width: 250px;
 	  border-radius: 8px;
 	}
 
@@ -166,63 +139,12 @@
 	}
 
 
-	/* Pranav: Footer*/
-	.site-footer{
-		background-color: black;
-		color: #b2b2b2;
-		padding-top: 30px;
 	
-	}
-	
-
-	.bottom-footer{
-		border-top: 1px solid #b2b2b2;
-		margin-top: 10px;
-		padding-top: 10px;
-		color: #b2b2b2; 
-	}
-
-
-	.footer-nav{
-		text-align: right;
-		list-style: none;
-	}
-	.footer-nav li{
-		display: inline;
-		padding: 0px 10px;
-	}
-
-	.footer-nav li:not(:first-child):before{
-		content: '|';
-		padding: 0px 10px;
-	}
-
-	.footer-nav a{
-		color: #b2b2b2;
-	}
-	.footer-nav a:hover{
-		color: #fff;
-		text-decoration: none;
-
-	}
-
-	.right{
-		border-right: 1px solid #b2b2b2;
-	}
 
 	.tab-content {
 		padding-top: 25px;
 	}
 
-	.footer-nav2 a{
-		color: #b2b2b2;
-	}
-	.footer-nav2 a:hover{
-		color: #fff;
-		text-decoration: none;
-
-	}
-  	
 
 
 
@@ -236,6 +158,10 @@
 }
   
 
+
+
+
+	
   .frame{
   			
   		padding:20px;
@@ -269,3 +195,4 @@
 
 
 /*dia end*/
+

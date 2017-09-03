@@ -1,3 +1,8 @@
+
+	.ccard-deck{
+		display: inline;
+	}
+
 	.ccard {
     /*shadow*/
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -27,7 +32,4 @@
 
 	.card-col {
     	display: table-cell; /* Make elements inside the container behave like table cells */
-	}
-	.ccard-deck{
-		display: inline;
 	}
