@@ -1,0 +1,547 @@
+
+<!DOCTYPE html>
+<html>
+      <head>
+        <title>St. Francis Institute of Technology</title>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+		
+         <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet"> -->
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+		<!-- --------Custom css--------- -->
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/custom_header.css">
+        <link rel="stylesheet" href="css/custom_ccards.css">
+        <link rel="stylesheet" href="css/footer.css">
+
+        
+		  	    <!--JS-->
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+		
+
+		 <style type="text/css">
+		 	
+		 	body{
+			    font-family: 'Quicksand', sans-serif;
+			}
+			.team{
+			    padding:75px 0;
+			}
+			h6.description{
+				font-weight: bold;
+				letter-spacing: 2px;
+				color: #999;
+				border-bottom: 1px solid rgba(0, 0, 0,0.1);
+				padding-bottom: 5px;
+			}
+			.profile{
+				margin-top: 25px;
+			}
+			.profile h1{
+				font-weight: normal;
+				font-size: 20px;
+				margin:10px 0 0 0;
+			}
+			.profile h2{
+				font-size: 14px;
+				font-weight: lighter;
+				margin-top: 5px;
+			}
+			.profile .img-box{
+				opacity: 1;
+				display: block;
+				position: relative;
+			}
+			.profile .img-box:after{
+				content:"";
+				opacity: 0;
+				background-color: rgba(0, 0, 0, 0.75);
+				position: absolute;
+				right: 0;
+				left: 0;
+				top: 0;
+				bottom: 0;
+			}
+			.img-box ul{
+				position: absolute;
+				z-index: 2;
+				bottom: 50px;
+				text-align: center;
+				width: 100%;
+				padding-left: 0px;
+				height: 0px;
+				margin:0px;
+				opacity: 0;
+			}
+			.profile .img-box:after, .img-box ul, .img-box ul li{
+				-webkit-transition: all 0.5s ease-in-out 0s;
+			    -moz-transition: all 0.5s ease-in-out 0s;
+			    transition: all 0.5s ease-in-out 0s;
+			}
+			.img-box ul i{
+				font-size: 20px;
+				letter-spacing: 10px;
+			}
+			.img-box ul li{
+				width: 30px;
+			    height: 30px;
+			    text-align: center;
+			    border: 1px solid #88C425;
+			    margin: 2px;
+			    padding: 5px;
+				display: inline-block;
+			}
+			.img-box a{
+				color:#fff;
+			}
+			.img-box:hover:after{
+				opacity: 1;
+			}
+			.img-box:hover ul{
+				opacity: 1;
+			}	
+			.img-box ul a{
+				-webkit-transition: all 0.3s ease-in-out 0s;
+				-moz-transition: all 0.3s ease-in-out 0s;
+				transition: all 0.3s ease-in-out 0s;
+			}
+			.img-box a:hover li{
+				border-color: #fff;
+				color: #88C425;
+			}
+			a{
+			    color:#88C425;
+			}
+			a:hover{
+			    text-decoration:none;
+			    color:#519548;
+			}
+			i.red{
+			    color:#BC0213;
+			}
+
+
+		 </style>
+
+	 <!-- Basic Animations -->
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $(window).scroll(function() {
+
+          if ($(this).scrollTop()>0)
+           {
+              $('.navhide').slideUp();
+           }
+          else
+           {
+            $('.navhide').slideDown();
+           }
+       });
+
+      $('.opening-hours li').eq(new Date().getDay()).addClass('today');
+      });
+     </script>
+
+
+        </head>
+
+
+	<body>
+	 	<header>
+      	 <nav class="navbar navbar-custom navbar-fixed-top" >
+  					<div >
+						
+						
+						
+    					<div class="navbar-header">
+      						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+							     </button>
+
+    							<!-- Pranav: MobileHeader -->
+    							<a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>SFIT</a>
+
+    					</div>
+					
+
+    					<div class="collapse navbar-collapse" id="myNavbar">
+							
+							<div class="nav navhide" style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;display: block;">&nbsp;
+								
+								<ul class="large-device-only nav navbar-nav navbar-left" style="padding-left:20px;padding-top: 5px ">
+											
+											<img src="images/sfithead.png" width="120px" height="39px">
+								</ul>
+								
+								
+								
+								
+								<ul class="nav navbar-nav navbar-right">
+								 
+								  	<li><a href="index.html">Home</a></li>
+									<li><a href="#">Mandatory Disclosure</a></li>
+									<li><a href="#">Careers</a></li>
+									<li><a href="#">Library</a></li>
+									<li><a href="#">Parents Corner</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Archive</a></li>
+                <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
+                  <ul class="dropdown-menu" aria-labelled-by="drop">
+                    <li><a href="#">Alumini Corner</a></li>
+                    <li><a href="#">Alumini Associstion</a></li>
+                    <li><a href="#">Alumini Website</a></li>
+                    <li><a href="#">Alumini Feedback Form</a></li>
+                   </ul>
+                </li>
+                <!-- Dropdown end -->
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
+							</ul>
+							</div>
+							
+							
+							
+									
+						    
+    						
+                  <ul class="nav navbar-nav " >
+    								<li class="active"><a href="index.html">Institute</a></li>
+    								<li><a href="profile.html">Student Info</a></li>
+    								<li><a href="message.html">Administation</a></li>
+    								<li><a href="#">Campus</a></li>
+  								<li><a href="#">Placement</a></li>
+  								<li><a href="#">R&D</a></li>
+  								<li><a href="#">E-Cell</a></li>
+  								<li><a class="custom-nav-active" href="#">Department</a></li>
+  								<li><a href="#">Admission</a></li>
+  								<li><a href="#">Events</a></li>
+					  			<li><a href="gallery.html">Gallery</a></li>
+    							</ul>
+
+
+							<!-- Pranav: header -->
+							
+						<!--	<a class="navbar-brand large-device-only " href="#">
+								<center> St. Francis Institute of Technology</center> <!--span><div class="semi-circle"><img src="images/sfit.png" height="70px" width="70px"></span></div>
+							</ -->
+							
+<!-- 						 	<ul class="nav navbar-nav navbar-right">
+								  
+								<li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
+									<ul class="dropdown-menu" aria-labelled-by="drop">
+										<li><a href="#">Alumini Corner</a></li>
+										<li><a href="#">Alumini Associstion</a></li>
+										<li><a href="#">Alumini Website</a></li>
+										<li><a href="#">Alumini Feedback Form</a></li>
+	                 </ul>
+							 	</li>
+								
+								  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
+							</ul> -->
+
+						</div>
+  					</div>
+				</nav>
+        
+	     </header>
+
+		
+		
+		
+		
+	    <!-- ===============Pranav: Parallax===================== -->
+	    <div class = "parallax grayscale" style="padding-top: 100px;background-image: url('images/bg1.jpg');" >
+		    	
+		    <div>
+					<div style="color: #ffffff	; text-align: center; font-size: 80px;font-family: 'Raleway', sans-serif;">Information Technology<br> Department</div>    	
+		    </div>
+
+	    </div>
+		
+		<div class="nav" style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;">&nbsp;
+							<ul class="nav navbar-nav navbar-right">
+								 
+								  	<li><a href="#">Objectives and Outcome</a></li>
+									<li><a href="#">Department Calender</a></li>
+									<li><a href="#">HOD</a></li>
+									<li><a href="#">Faculty</a></li>
+									<li><a href="#">Non-Teaching staff</a></li>
+									<li><a href="#">Laboratories</a></li>
+									<li><a href="#">Timetable</a></li>
+							</ul>
+							</div>
+
+	    
+ 		<section class="team">
+		  <div class="container">
+		    <div class="row">
+		      <div class="col-md-10 col-md-offset-1">
+		        <div class="col-lg-12">
+		          <h6 class="description">OUR TEAM</h6>
+		          <div class="row pt-md">
+		            
+
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="images/IT-Dept/hod.jpg"  width="205px"  height = "240px">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1> Dr. Joanne Gomes </h1>
+		              <h2>Head of Department</h2>
+
+		              <p>Professor  Ph.D.,M.E. (EXTC),	B.E. (Electronics)</p>
+		            </div>
+		            
+
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="images/IT-Dept/Best.jpg"  width="205px"  height = "240px">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1> Mr. Bhavesh Pandya </h1>
+		              <h2>Assistant Professor</h2>
+
+		              <p>M.E. (Info. Tech.), B.E. (Info. Tech.)</p>
+		            </div>
+
+
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="images/IT-Dept/CSI.jpg"  width="205px"  height = "240px">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1> Ms. Amrita Mathur</h1>
+		              <h2>Assistant Professor</h2>
+
+		              <p>M.E. (Comp.Engg.),B.E. (Comp.Engg.)</p>
+		            </div>
+
+
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>ABC</h1>
+		              <h2>Designer</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>ABC</h1>
+		              <h2>Web Developer</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>ABC</h1>
+		              <h2>Fullstack Developer</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>ABC</h1>
+		              <h2>Co-founder/ Operations</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>ABC</h1>
+		              <h2>Co-founder/ Projects</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>ABC</h1>
+		              <h2>Co-founder/ Marketing</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>ABC</h1>
+		              <h2>Designer</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>ABC</h1>
+		              <h2>Web Developer</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+		              <div class="img-box">
+		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
+		                <ul class="text-center">
+		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+		                </ul>
+		              </div>
+		              <h1>ABC</h1>
+		              <h2>Fullstack Developer</h2>
+		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+	    
+		<!-- Pranav: Footer -->
+	    <footer class = "site-footer">
+
+	    	<div class="container-fluid">
+
+	    		<div class = "row">
+
+	    			<div class="col-md-4 right mobile-only" style = "text-align: center;">
+	    				<img src="images/SFIT_Black.jpeg" height="200px" width="200px" style="margin-bottom: 15px;">
+	    			</div>
+
+	    			<div class = "col-md-2 col-xs-6 right divs-on-mob" style = "text-align: right;">
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+	    			<div class="col-md-2 right large-device-only " style = "text-align: right;">
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+	    			<div class="col-md-4 right large-device-only " style = "text-align: center;">
+	    				<img src="images/SFIT_Black.jpeg" height="150px" width="150px">
+	    			</div>
+
+	    			<div class = "col-md-2 right large-device-only" >
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+	    			<div class="col-md-2 col-xs-6" >
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+
+	    		</div>
+
+	    		<div class = "bottom-footer divs-on-mob" >
+	    			<div class = "col-md-5 col-xs-12"> © 2017 St. Francis Institute of Technology. All Rights Reserved</div>
+
+		    			<div class = "col-md-7 col-xs-12 large-device-only">
+		    				<ul class = "footer-nav" style="list-style: none;">
+		    					<li><a href="#">Home </a></li>
+		    					<li><a href="#">About </a></li>
+		    					<li><a href="#">FAQ </a></li>
+		    					<li><a href="#">Baki bacha wo </a></li>
+		    				</ul>
+
+		    		</div>
+	    		</div>
+
+	    	</div>
+
+		</footer>
+
+
+
+
+	    
+	  
+	    
+	</body>

@@ -35,6 +35,13 @@
 			    font-family: 'Raleway', sans-serif;
 			}
 
+			ul li:hover ul {display: block;}
+         	ul li ul {
+	            position: absolute;
+	            width: 200px;
+	            display: none;
+          	}
+          	ul li ul li a {display:block !important;} 	
 
 		 </style>
 
@@ -86,34 +93,17 @@
 							
 							<div class="nav navhide" style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;display: block;">&nbsp;
 								
-								<ul class="large-device-only nav navbar-nav navbar-left" style="padding-left:20px;padding-top: 5px ">
-											
-											<img src="images/sfithead.png" width="120px" height="39px">
-								</ul>
-								
-								
-								
-								
-								<ul class="nav navbar-nav navbar-right">
-								 
-								  	<li><a href="index.html">Home</a></li>
-									<li><a href="#">Mandatory Disclosure</a></li>
-									<li><a href="#">Careers</a></li>
-									<li><a href="#">Library</a></li>
-									<li><a href="#">Parents Corner</a></li>
-									<li><a href="#">Contact Us</a></li>
-									<li><a href="#">Archive</a></li>
-                <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
-                  <ul class="dropdown-menu" aria-labelled-by="drop">
-                    <li><a href="#">Alumini Corner</a></li>
-                    <li><a href="#">Alumini Associstion</a></li>
-                    <li><a href="#">Alumini Website</a></li>
-                    <li><a href="#">Alumini Feedback Form</a></li>
-                   </ul>
-                </li>
-                <!-- Dropdown end -->
-                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
-							</ul>
+								 <ul class="nav navbar-nav navbar-right">
+
+					                  <li><a href="#"><span class="glyphicon glyphicon-home"> </span> Home</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-star"> </span> Mandatory Disclosure</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-education"> </span> Careers</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-book"> </span> Library</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-log-in"> </span> ParentsCorner</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-phone-alt"> </span> Contact Us</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-duplicate"> </span> Archive</a></li>
+
+					              </ul>
 							</div>
 							
 							
@@ -121,19 +111,166 @@
 									
 						    
     						
-                  <ul class="nav navbar-nav " >
-    								<li class="active"><a href="index.html">Institute</a></li>
-    								<li><a href="profile.html">Student Info</a></li>
-    								<li><a href="message.html">Administation</a></li>
-    								<li><a href="#">Campus</a></li>
-  								<li><a href="#">Placement</a></li>
-  								<li><a href="#">R&D</a></li>
-  								<li><a href="#">E-Cell</a></li>
-  								<li><a class="custom-nav-active" href="#">Department</a></li>
-  								<li><a href="#">Admission</a></li>
-  								<li><a href="#">Events</a></li>
-					  			<li><a href="gallery.html">Gallery</a></li>
-    							</ul>
+		        <ul class="nav navbar-nav navbar-custom navbar-nav-just" data-spy="affix" data-offset-top="230" >
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Institute</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">The Society</a></li>
+                        <li><a href="#">College Emblem & Anthem</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Academic Consultant/ Advisor</a></li>
+                        <li><a href="#">Mandatory Disclosure</a></li>
+                        <li><a href="#">Newsletter  ---- Bits-N-Bytes</a></li>
+                        <li><a href="#">AICTE apprval letter</a></li>
+                        <li><a href="#">NBA Accreditation</a></li>
+                        <li><a href="#">ISO Certification</a></li>
+                        <li><a href="#">Fee Proposal</a></li>
+                        <li><a href="#">Prohibition of Ragging</a></li>
+                        <li><a href="#">Grievance Redressal Committee</a></li>
+                        <li><a href="#">Achievements</a></li>
+                        <li><a href="#">Sister Institutions</a></li>
+
+                      </ul>
+                    </li>
+
+                    <!-- ============Campus Dropdown========= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Campus</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Building </a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Computer Center</a></li>
+                        <li><a href="#">Counselling Cell</a></li>
+                        <li><a href="#">Seminar Room</a></li>
+                        <li><a href="#">Assembly Hall</a></li>
+                        <li><a href="#">Gymkhana</a></li>
+                        <li><a href="#">Canteen</a></li>
+                      </ul>
+                    </li>
+                    
+                    <!-- ================Administration================ -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Administration</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Committeees</a></li>
+                        <li><a href="#">Staff Service Rules</a></li>
+                        <li><a href="#">Code of Ethics</a></li>
+                        <li><a href="#">New Staff Induction Manual</a></li>
+                        <li><a href="#">Staff Working Committees</a></li>
+
+                      </ul>
+                    </li>
+
+                    <!-- ===============Student Info================ -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Student Info</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Dean Student Affairs</a></li>
+                        <li><a href="#">Code of Conduct </a></li>
+                        <li><a href="#">Student Council</a></li>
+                        <li><a href="#">Fee Payment</a></li>
+                        <li><a href="#">Academic Examination</a></li>
+                        <li><a href="#">Academic Results</a></li>
+                        <li><a href="#">Academic Calender</a></li>
+                        <li><a href="#">Student Attendance</a></li>
+                        <li><a href="#">Annual Programs </a></li>
+                        <li><a href="#">Acitivities</a></li>
+                        <li><a href="#">NPTEL</a></li>
+                        <li><a href="#">Industrial Visits</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- =============Placement=============== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Placement</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Training And Placement</a></li>
+                        <li><a href="#">Placement Comittee</a></li>
+                        <li><a href="#">placement Policy</a></li>
+                        <li><a href="#">Training Calender</a></li>
+                        <li><a href="#">Training & Placement Activities</a></li>
+                        <li><a href="#">Recruiters</a></li>
+                        <li><a href="#">Feedback for Employers</a></li>
+                        <li><a href="#">Feedback for students</a></li>
+                        <li><a href="#">Record</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ======================R&D====================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">R&D</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">R&D</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">RadLabs</a></li>
+                        <li><a href="#">Robocon</a></li>
+                        <li><a href="#">Consultancy Rules</a></li>
+                        <li><a href="#">Lecture Series</a></li>
+                        <li><a href="#">Sanshodhan</a></li>
+                        <li><a href="#">Research Project</a></li>
+                        <li><a href="#">Faculty Development</a></li>
+                        <li><a href="#">Conferences</a></li>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Notices</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ====================E-Cell================== -->
+                    <li><a href="http://ecell.sfitengg.org/"  >E-Cell</a></li>
+
+
+                    <!-- =====================Departments==================== -->  
+                    <li><a href="compdept.html">Department</a></li>
+                    
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Computer Engineering</a></li>
+                        <li><a href="#">Information Technology Engineering</a></li>
+                        <li><a href="#">Electronics and Telecommunication Engineering</a></li>
+                        <li><a href="#">Basic Science and Humanities</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ===================Admissions================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Admissions<span class="caret"></span></a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Bachelor of Engineering</a></li>
+                        <li><a href="#">Master of Engineering</a></li>
+                        <li><a href="#">Doctor of Philosophy(Ph.D)</a></li>
+                        <li><a href="#">Noticce on Disclaimer</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ================Events===================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Events<span class="caret"></span></a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Prayas 2017</a></li>
+                        <li><a href="#">Technotron</a></li>
+                        <li><a href="#">IRIS 2017</a></li>
+                        <li><a href="#">Graduation day</a></li>
+                        <li><a href="#">Workshop</a></li>
+                        <li><a href="#">CSCITA</a></li>
+                      </ul>
+                    </li>
+
+                     <!-- ====================E-Cell================== -->
+                    <li><a href="http://ecell.sfitengg.org/"  >CSCITA'17</a></li>
+
+
+                    <!-- ================Events===================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Events<span class="caret"></span></a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Prayas 2017</a></li>
+                        <li><a href="#">Technotron</a></li>
+                        <li><a href="#">IRIS 2017</a></li>
+                        <li><a href="#">Graduation day</a></li>
+                        <li><a href="#">Workshop</a></li>
+                        <li><a href="#">CSCITA</a></li>
+                      </ul>
+                    </li>
+
+                     <!-- ====================E-Cell================== -->
+                    <li><a href="http://ecell.sfitengg.org/"  >Parent's Corner</a></li>
+
+                  </ul>
 
 
 							<!-- Pranav: header -->
@@ -192,7 +329,7 @@
 
         <!-- ==================Content Starts================= -->
 
-        <div class="container-fluid">
+        <div class="container-fluid" style="padding-bottom: 20px;">
         	
         	<div class="container" style="background-color: #F6F6F6;padding: 10px 0px 0px 5px;">
 
@@ -206,7 +343,224 @@
 	 				<h3 style="font-family: 'Merriweather', sans-serif;text-align: center;font-size: 25px;"> Information Technology </h3>
 	 			</div>
 
-	 			<div class="container" style="background-image: url('images/burned.jpg'); background-size: 100%; background-size: cover;padding: 10px 50px 20px 50px; ">
+
+	 			    <!-- =========================This is Carousel================= -->
+
+      <div class="container-fluid" style="padding: 10px 30px 10px 30px;min-height: 500px;">
+        
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="min-height: 200px;">
+
+
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+
+            <div class="item active">
+
+               <div style = " min-width: 100%; height: 400px;background-size: cover;text-align: center;padding-top: 15px;" >
+
+
+                  <a href="#top">
+                  <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
+                    <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
+                    <div class="ccard-block">
+                      <h4 class="ccard-title">Card title</h4>
+                      <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    </div>
+                  </div>
+                  </a>
+
+
+                  <a href="#top">
+                  <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
+                    <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
+                    <div class="ccard-block">
+                      <h4 class="ccard-title">Card title</h4>
+                      <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    </div>
+                  </div>
+                  </a>
+
+                  <a href="#top">
+                  <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
+                    <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
+                    <div class="ccard-block">
+                      <h4 class="ccard-title">Card title</h4>
+                      <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    </div>
+                  </div>
+                  </a>
+
+
+
+                  <a href="#top">
+                  <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
+                    <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
+                    <div class="ccard-block">
+                      <h4 class="ccard-title">Card title</h4>
+                      <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    </div>
+                  </div>
+                  </a>
+
+
+
+               </div>
+
+              <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>LA is always so much fun!</p>
+              </div>
+            </div>
+
+            <div class="item">
+
+
+               <div style = " min-width: 100%; height: 400px;background-size: cover;text-align: center;padding-top: 15px;" >
+
+
+
+                  <a href="#top">
+                  <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
+                    <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
+                    <div class="ccard-block">
+                      <h4 class="ccard-title">Card title</h4>
+                      <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    </div>
+                  </div>
+                  </a>
+
+                  <a href="#top">
+                  <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
+                    <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
+                    <div class="ccard-block">
+                      <h4 class="ccard-title">Card title</h4>
+                      <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    </div>
+                  </div>
+                  </a>
+
+                  <a href="#top">
+                  <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
+                    <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
+                    <div class="ccard-block">
+                      <h4 class="ccard-title">Card title</h4>
+                      <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    </div>
+                  </div>
+                  </a>
+
+                  <a href="#top">
+                  <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
+                    <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
+                    <div class="ccard-block">
+                      <h4 class="ccard-title">Card title</h4>
+                      <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    </div>
+                  </div>
+                  </a>
+
+
+               </div>
+
+              <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>LA is always so much fun!</p>
+
+              </div>
+            </div>
+
+            <div class="item">
+
+
+               <div style = "min-width: 100%; height: 400px;background-size: cover;text-align: center;padding-top: 15px;" >
+
+
+                  <a href="#top">
+                  <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
+                    <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
+                    <div class="ccard-block">
+                      <h4 class="ccard-title">Card title</h4>
+                      <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    </div>
+                  </div>
+                  </a>
+
+                  <a href="#top">
+                  <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
+                    <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
+                    <div class="ccard-block">
+                      <h4 class="ccard-title">Card title</h4>
+                      <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    </div>
+                  </div>
+                  </a>
+
+                  <a href="#top">
+                  <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
+                    <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
+                    <div class="ccard-block">
+                      <h4 class="ccard-title">Card title</h4>
+                      <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    </div>
+                  </div>
+                  </a>
+
+                  <a href="#top">
+                  <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
+                    <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
+                    <div class="ccard-block">
+                      <h4 class="ccard-title">Card title</h4>
+                      <p class="ccard-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    </div>
+                  </div>
+                  </a>
+
+
+               </div>
+
+              <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>LA is always so much fun!</p>
+              </div>
+            </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+    </div>  </div>
+
+    <!-- ================Carousal Ends====================== -->
+
+
+
+	 			<div class="container" style="background-image: url('images/burned.jpg');  background-size: cover;padding: 10px 50px 20px 50px;margin-top: 20px;">
 		 			
 		 				
 
@@ -253,6 +607,25 @@
 					<ol type="1">
 						<li style="font-family: 'Heebo', sans-serif;font-size: 22px;">Bachelor of Engineering </li>
 					</ol>
+
+					<br>
+					<h3 style="font-family: 'Merriweather', sans-serif;"> Year Established :  1993
+					</h3>
+
+					<br>
+					<h3 style="font-family: 'Merriweather', sans-serif;"> Intake since then : </h3>
+
+					<br>
+					<h3 style="font-family: 'Merriweather', sans-serif;"> Direct admission after diploma (Direct SE) :  24 
+					</h3>
+
+					<br>
+					<h3 style="font-family: 'Merriweather', sans-serif;"> Name of departmental Student Body:  ITSA, CSI, IEEE, IETE
+					</h3>
+
+					<br>
+					<h3 style="font-family: 'Merriweather', sans-serif;"> NBA Accreditation Status:  Provisionally Accredited for Academic Years 2016-17 and 2017-18, i.e. upto 30-06-2018
+					</h3>
 				
 				</div>
 

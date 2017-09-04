@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+	<title>St.Francis Institute of Technology</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/tiles.css">
+
+    <!-- For Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--JS-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!---------ImageSliderJS updated: Jeson---------->
+    <script src="js/js-image-slider.js" type="text/javascript"></script>
+
+
+    <!-- --------Custom css--------- -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom_header.css">
+    <link rel="stylesheet" href="css/custom_ccards.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-----internalcss---->
+        <style type="text/css">
+        /*CSS for img-slider*/
+
+        *{
+          font-family: 'Raleway', sans-serif;
+          zoom : 90%;  
+        }
+
+        body{
+		    overflow-x:hidden;
+		}
+       
+        .re{
+           margin: 0;
+           padding: 0;
+           max-width: 100%;
+         }
+         .cycle-slideshow {
+            width: 100%;
+              max-width: 100%;
+             display: block;
+             position: relative;
+             margin: auto;
+             overflow: hidden;
+          }
+          .cycle-prev, .cycle-next {
+             font-size: 200%;
+             color: #FFF;
+             display: block;
+             position: absolute;
+             top: 50%;
+             margin-top: -16px;
+             z-index: 9999;
+             cursor: pointer;
+          }
+          .cycle-prev {left: 10%;}
+          .cycle-next {right: 10%;}
+          .cycle-pager {
+              width: 100%;
+              text-align: center;
+              display: block;
+              position: absolute;
+              bottom: 20px;
+              z-index: 999;
+              cursor: pointer;
+          }
+          .cycle-pager span {
+              text-indent: 100%;
+              white-space: nowrap;
+              width: 12px;
+              height: 12px;
+              display: inline-block;
+              border: 1px solid #FFF;
+              border-radius: 50%;
+              margin: 0 10px;
+              overflow: hidden;
+          }
+          .cycle-pager .cycle-pager-active {
+              background-color: #FFF;
+          }
+          .cycle-overlay {
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute; bottom: 0; width: 100%; z-index: 600;
+            background: rgba(0,0,0,0.5); color: white; padding: 15px;
+          }
+         /*End img-slider*/
+
+          @media screen and (max-width: 760px){
+            #noMobile{
+              display: none;
+            }
+          }
+
+        #mission{
+
+        /*    background-color: #001a66;*/
+
+          }
+
+        #DynamicTabs{
+          padding-top: 10px;
+          padding-bottom: 20px;
+          min-height: 500px;
+        }
+
+
+	      header ul li {display: inline-block;}
+	      /*header ul li:hover {background: #555;}*/
+	      header ul li:hover ul {display: block;}
+	      header ul li ul {
+	        position: absolute;
+	        width: 200px;
+	        display: none;
+	      }
+	      header ul li ul li { 
+	        
+	        display: block; 
+	      }
+	      header ul li ul li a {display:block !important;} 
+	      /*header ul li ul li:hover {background:  }*/
+
+	      .affix {
+	          top: 0;
+	          width: 100%;
+	          position: fixed;
+	      }
+
+     </style>
+
+     <!-- Basic Animations -->
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $(window).scroll(function() {
+
+        /*if ($(this).scrollTop()>0)
+           {
+              $('.navhide').slideUp();
+           }
+          else
+           {
+            $('.navhide').slideDown();
+           }
+    if ($(this).scrollTop()>0)
+           {
+              $('.invnav').unhide();
+           }
+          else
+           {
+            $('.invnav').hide();
+          } */
+       });
+
+        $('.opening-hours li').eq(new Date().getDay()).addClass('today');
+        });
+     </script>
+</head>
+
+<body>
+
+	<header>
+         <nav class="navbar navbar-custom navbar-static-top" >
+            <div >
+
+
+
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                   </button>
+
+                  <!-- Pranav: MobileHeader -->
+                  <a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>SFIT</a>
+
+              </div>
+
+
+              <div class="collapse navbar-collapse" id="myNavbar">
+
+              <div class="nav navhide " style="padding-left: 10px;background-color: darkslategrey;display: block;">
+                <ul class="nav navbar-nav navbar-right">
+
+                  <li><a href="#"><span class="glyphicon glyphicon-home"> </span> Home</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-star"> </span> Mandatory Disclosure</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-education"> </span> Careers</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-book"> </span> Library</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"> </span> ParentsCorner</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-phone-alt"> </span> Contact Us</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-duplicate"> </span> Archive</a></li>
+
+              </ul>
+              </div>
+
+
+
+
+
+                <div class="large-device-only">
+
+                      <div style="padding-top: 10px" class="navhide"><center><br><img src="images/sfithead.png" width="400px" height="130px"></center> <br></div></div>
+
+
+                      <!-- =========Institute Dropdown============== -->
+                  <ul class="nav navbar-nav navbar-custom navbar-nav-just" data-spy="affix" data-offset-top="230" >
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Institute</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">The Society</a></li>
+                        <li><a href="#">College Emblem & Anthem</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Academic Consultant/ Advisor</a></li>
+                        <li><a href="#">Mandatory Disclosure</a></li>
+                        <li><a href="#">Newsletter  ---- Bits-N-Bytes</a></li>
+                        <li><a href="#">AICTE apprval letter</a></li>
+                        <li><a href="#">NBA Accreditation</a></li>
+                        <li><a href="#">ISO Certification</a></li>
+                        <li><a href="#">Fee Proposal</a></li>
+                        <li><a href="#">Prohibition of Ragging</a></li>
+                        <li><a href="#">Grievance Redressal Committee</a></li>
+                        <li><a href="#">Achievements</a></li>
+                        <li><a href="#">Sister Institutions</a></li>
+
+                      </ul>
+                    </li>
+
+                    <!-- ============Campus Dropdown========= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Campus</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Building </a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Computer Center</a></li>
+                        <li><a href="#">Counselling Cell</a></li>
+                        <li><a href="#">Seminar Room</a></li>
+                        <li><a href="#">Assembly Hall</a></li>
+                        <li><a href="#">Gymkhana</a></li>
+                        <li><a href="#">Canteen</a></li>
+                      </ul>
+                    </li>
+                    
+                    <!-- ================Administration================ -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Administration</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Committeees</a></li>
+                        <li><a href="#">Staff Service Rules</a></li>
+                        <li><a href="#">Code of Ethics</a></li>
+                        <li><a href="#">New Staff Induction Manual</a></li>
+                        <li><a href="#">Staff Working Committees</a></li>
+
+                      </ul>
+                    </li>
+
+                    <!-- ===============Student Info================ -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Student Info</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Dean Student Affairs</a></li>
+                        <li><a href="#">Code of Conduct </a></li>
+                        <li><a href="#">Student Council</a></li>
+                        <li><a href="#">Fee Payment</a></li>
+                        <li><a href="#">Academic Examination</a></li>
+                        <li><a href="#">Academic Results</a></li>
+                        <li><a href="#">Academic Calender</a></li>
+                        <li><a href="#">Student Attendance</a></li>
+                        <li><a href="#">Annual Programs </a></li>
+                        <li><a href="#">Acitivities</a></li>
+                        <li><a href="#">NPTEL</a></li>
+                        <li><a href="#">Industrial Visits</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- =============Placement=============== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Placement</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Training And Placement</a></li>
+                        <li><a href="#">Placement Comittee</a></li>
+                        <li><a href="#">placement Policy</a></li>
+                        <li><a href="#">Training Calender</a></li>
+                        <li><a href="#">Training & Placement Activities</a></li>
+                        <li><a href="#">Recruiters</a></li>
+                        <li><a href="#">Feedback for Employers</a></li>
+                        <li><a href="#">Feedback for students</a></li>
+                        <li><a href="#">Record</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ======================R&D====================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">R&D</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">R&D</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">RadLabs</a></li>
+                        <li><a href="#">Robocon</a></li>
+                        <li><a href="#">Consultancy Rules</a></li>
+                        <li><a href="#">Lecture Series</a></li>
+                        <li><a href="#">Sanshodhan</a></li>
+                        <li><a href="#">Research Project</a></li>
+                        <li><a href="#">Faculty Development</a></li>
+                        <li><a href="#">Conferences</a></li>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Notices</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- =====================Departments==================== -->  
+                    <li><a href="compdept.html">Department</a></li>
+                    
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Computer Engineering</a></li>
+                        <li><a href="#">Information Technology Engineering</a></li>
+                        <li><a href="#">Electronics and Telecommunication Engineering</a></li>
+                        <li><a href="#">Basic Science and Humanities</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ===================Admissions================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Admissions<span class="caret"></span></a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Bachelor of Engineering</a></li>
+                        <li><a href="#">Master of Engineering</a></li>
+                        <li><a href="#">Doctor of Philosophy(Ph.D)</a></li>
+                        <li><a href="#">Noticce on Disclaimer</a></li>
+                      </ul>
+                    </li>
+
+
+                    <!-- ================Events===================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Events<span class="caret"></span></a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Prayas 2017</a></li>
+                        <li><a href="#">Technotron</a></li>
+                        <li><a href="#">IRIS 2017</a></li>
+                        <li><a href="#">Graduation day</a></li>
+                        <li><a href="#">Workshop</a></li>
+                        <li><a href="#">CSCITA</a></li>
+                      </ul>
+                    </li>
+
+                  </ul>
+
+            </div>
+            </div>
+        </nav>
+
+    </header>
+
+</body>
+
+</html>
