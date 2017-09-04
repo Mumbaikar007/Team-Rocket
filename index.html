@@ -12,7 +12,7 @@
         <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet"> -->
 
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-         <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -103,6 +103,12 @@
           .cycle-pager .cycle-pager-active {
               background-color: #FFF;
           }
+          .cycle-overlay {
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute; bottom: 0; width: 100%; z-index: 600;
+            background: rgba(0,0,0,0.5); color: white; padding: 15px;
+          }
          /*End img-slider*/
 
 /*         @font-face {
@@ -152,23 +158,21 @@
                 color: #ffac0c;
               }*/
               /* ----- */
-              @media screen and (max-width: 1100px){
-                #noMobile{
-                  display: none;
-                }
-              }
+          @media screen and (max-width: 1100px){
+            #noMobile{
+              display: none;
+            }
 
-                #mission{
+            .affix {
+                position: static;
+            }
+          }
 
-                /*    background-color: #001a66;*/
-
-                  }
-
-                #DynamicTabs{
-                  padding-top: 10px;
-                  padding-bottom: 20px;
-                  min-height: 500px;
-                }
+          #DynamicTabs{
+            padding-top: 10px;
+            padding-bottom: 20px;
+            min-height: 500px;
+          }
 
 
           header ul li {display: inline-block;}
@@ -186,16 +190,24 @@
           header ul li ul li a {display:block !important;} 
           /*header ul li ul li:hover {background:  }*/
 
-          .affix {
+          @media (min-width: 768px) {
+            .affix {
+              position: fixed;
               top: 0;
               width: 100%;
-              position: fixed;
+            }
           }
 
-          .affix + .container-fluid {
+          /*.affix + .container-fluid {
               padding-top: 70px;
+          }*/
+          body{
+              overflow-x:hidden;
           }
 
+          .dropdown-menu {
+            min-width: 250px;
+          }
 
 
      </style>
@@ -224,8 +236,7 @@
           } */
        });
 
-        $('.opening-hours li').eq(new Date().getDay()).addClass('today');
-        });
+
      </script>
 
     </head>
@@ -279,7 +290,9 @@
 
                 <div class="large-device-only">
 
-                      <div style="padding-top: 10px" class="navhide"><center><br><img src="images/sfithead.png" width="400px" height="130px"></center> <br></div></div>
+                      <div style="padding-top: 10px" class="navhide"><center><br><img src="images/sfithead.png" width="400px" height="130px"></center> <br></div>
+
+                </div>
 
 
                       <!-- =========Institute Dropdown============== -->
@@ -383,24 +396,23 @@
                       </ul>
                     </li>
 
-                    <!-- ====================E-Cell================== -->
-                    <li><a href="http://ecell.sfitengg.org/"  >E-Cell</a></li>
-
 
                     <!-- =====================Departments==================== -->  
                     <li><a href="compdept.html">Department</a></li>
                     
-                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
+                    
+                    <!-- ================Alumini======================= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini</a>
                       <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
                         <li><a href="#">Computer Engineering</a></li>
-                        <li><a href="#">Information Technology Engineering</a></li>
-                        <li><a href="#">Electronics and Telecommunication Engineering</a></li>
+                        <li><a href="#">Information Technology<br> Engineering</a></li>
+                        <li><a href="#">Electronics and <br>Telecommunication <br>Engineering</a></li>
                         <li><a href="#">Basic Science and Humanities</a></li>
                       </ul>
                     </li>
 
                     <!-- ===================Admissions================== -->
-                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Admissions<span class="caret"></span></a>
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Admissions</a>
                       <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
                         <li><a href="#">Bachelor of Engineering</a></li>
                         <li><a href="#">Master of Engineering</a></li>
@@ -409,12 +421,8 @@
                       </ul>
                     </li>
 
-                     <!-- ====================E-Cell================== -->
-                    <li><a href="http://ecell.sfitengg.org/"  >CSCITA'17</a></li>
-
-
                     <!-- ================Events===================== -->
-                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Events<span class="caret"></span></a>
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Events</a>
                       <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
                         <li><a href="#">Upcoming Events</a></li>
                         <li><a href="#">Prayas 2017</a></li>
@@ -463,16 +471,69 @@
     <!--=========== END HEADER SECTION ================-->
 
       <!--=========ImageSlider updated: Jeson==========-->
-    <div id = "top" style="margin-top: -20px;">
-         <div class="cycle-slideshow" width="100%">
-             <span class="cycle-prev" >&#9001;</span>
-             <span class="cycle-next" ">&#9002;</span>
-             <img class="re" src="images/slider/1.jpg" />
-             <img class="re" src="images/slider/2.jpg" />
-             <img class="re" src="images/slider/3.jpg" />
-             <img class="re" src="images/slider/4.jpg" />
-             <span class="cycle-pager"></span>
-         </div>
+    <!-- <div id = "top" style="margin-top: -20px;">
+      <div class="cycle-slideshow" data-cycle-timeout=2000 data-cycle-fx=scrollHorz width="100%">
+          <span class="cycle-pager"></span>
+          <span class="cycle-prev" >&#9001;</span>
+          <span class="cycle-next" >&#9002;</span>
+          <span class="cycle-overlay"></span>
+          <img class="re" src="images/slider/1.jpg" data-cycle-title="Nature1" data-cycle-desc=""  />
+          <img class="re" src="images/slider/2.jpg" data-cycle-title="Nature2" data-cycle-desc="" />
+          <img class="re" src="images/slider/3.jpg" data-cycle-title="Nature3" data-cycle-desc=""  / >
+          <img class="re" src="images/slider/4.jpg" data-cycle-title="Nature4" data-cycle-desc=""  />
+      </div>
+    </div> -->
+
+
+    <div style="margin-top: -20px;">
+      
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+          <div class="item active">
+            <img src="images/slider/1.jpg" alt="IMG" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>Los Angeles</h3>
+              <p>LA is always so much fun!</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/slider/2.jpg" alt="IMG" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>Chicago</h3>
+              <p>Thank you, Chicago!</p>
+            </div>
+          </div>
+        
+          <div class="item">
+            <img src="images/slider/3.jpg" alt="IMG" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>New York</h3>
+              <p>We love the Big Apple!</p>
+            </div>
+          </div>
+      
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
        <!--=============ImageSlider ENDS===================-->
 
@@ -483,7 +544,7 @@
           <div class = "row">
 
 
-              <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="col-lg-6 col-md-6 col-sm-12 ">
 
                   <h2 class="titile" style="font-size: 50px;">Welcome</h2>
                   <div style = "left: 0;bottom: 0px;width: 50px; height: 5px;background-color: #78adc9;"></div>
@@ -502,9 +563,9 @@
                   </div>
 
             </div>
-            <div class = "col-lg-6 col-md-6 col-sm-12" data-aos="fade-left">
+            <div class = "col-lg-6 col-md-6 col-sm-12">
 
-            <div id = "DynamicTabs" class="container-fluid animated fadeIn" >
+            <div id = "DynamicTabs" class="container-fluid" >
 
               <ul class="nav nav-tabs "> <!-- nav-justified -->
                   <li class="active"><a data-toggle="tab" href="#home">News</a></li>
@@ -926,15 +987,15 @@
     <!-- =========================This is Carousel================= -->
 
       <div class="container-fluid" style="background-color: #ff5a1e;padding: 10px 30px 10px 30px;min-height: 500px;">
-        <h2>Carousel Example</h2>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="min-height: 200px;">
+        
+        <div id="myCarousel2" class="carousel slide" data-ride="carousel" style="min-height: 200px;">
 
 
           <!-- Indicators -->
           <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="1"></li>
+            <li data-target="#myCarousel2" data-slide-to="2"></li>
           </ol>
 
           <!-- Wrapper for slides -->
@@ -979,7 +1040,7 @@
                   </div>
                   </a>
 
-                  <a href="#top">
+                  <a href="#top" class="large-device-only">
 
                   <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                     <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
@@ -992,7 +1053,7 @@
                   </div>
                   </a>
 
-                  <a href="#top">
+                  <a href="#top" class="large-device-only">
                   <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                     <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
                     <div class="ccard-block">
@@ -1040,7 +1101,7 @@
                   </div>
                   </a>
 
-                  <a href="#top">
+                  <a href="#top" class="large-device-only">
                   <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                     <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
                     <div class="ccard-block">
@@ -1051,7 +1112,7 @@
                   </div>
                   </a>
 
-                  <a href="#top">
+                  <a href="#top" class="large-device-only">
                   <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                     <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
                     <div class="ccard-block">
@@ -1062,7 +1123,7 @@
                   </div>
                   </a>
 
-                  <a href="#top">
+                  <a href="#top" class="large-device-only">
                   <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                     <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
                     <div class="ccard-block">
@@ -1110,7 +1171,7 @@
                   </div>
                   </a>
 
-                  <a href="#top">
+                  <a href="#top" >
                   <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                     <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
                     <div class="ccard-block">
@@ -1121,7 +1182,7 @@
                   </div>
                   </a>
 
-                  <a href="#top">
+                  <a href="#top" class="large-device-only">
                   <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                     <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
                     <div class="ccard-block">
@@ -1132,7 +1193,7 @@
                   </div>
                   </a>
 
-                  <a href="#top">
+                  <a href="#top" class="large-device-only">
                   <div class="ccard cardcontainer" style="width: 20rem;display: inline-block;background-color: aliceblue">
                     <img class="ccard-img-top" src="images/sfit.png" alt="Card image cap" width = "90px" height = "90px">
                     <div class="ccard-block">
@@ -1153,11 +1214,11 @@
             </div>
 
           <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <a class="right carousel-control" href="#myCarousel2" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
           </a>
