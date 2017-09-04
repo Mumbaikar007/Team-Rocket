@@ -8,8 +8,9 @@
 
 .navbar-custom .navbar-nav > li > a {
     color: white;
-    font-size: 16px;
+    font-size: 13px;
 }
+
 
 .navbar-custom .navbar-nav > .active > a {
     color: #ffffff;

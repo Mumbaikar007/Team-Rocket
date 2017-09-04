@@ -1,0 +1,14 @@
+.profile-head{
+	background:#D32F2F;
+	color:wheat;
+}
+.profile-body{
+	color:#424242;
+	background:#EEEEEE;
+}
+@media screen and (min-width: 761px) {
+		.profile-content{
+			padding-right: 50px;
+			padding-left: 50px; 
+		}
+	}
