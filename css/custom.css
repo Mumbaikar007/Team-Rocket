@@ -158,7 +158,13 @@
 }
   
 
+body{
+      overflow-x:hidden;
+  }
 
+  .dropdown-menu {
+    min-width: 250px;
+  }
 
 
 	
