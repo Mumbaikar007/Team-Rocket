@@ -3,6 +3,7 @@
 <html>
       <head>
         <title>St. Francis Institute of Technology</title>
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png">
         
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -20,6 +21,7 @@
 		<link rel="stylesheet" href="css/custom_header.css">
         <link rel="stylesheet" href="css/custom_ccards.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/materialcard.css">
 
         
 		  	    <!--JS-->
@@ -30,7 +32,7 @@
 		 <style type="text/css">
 		 	
 		 	body{
-			    font-family: 'Quicksand', sans-serif;
+			    font-family: 'Raleway', sans-serif;
 			}
 			.team{
 			    padding:75px 0;
@@ -128,6 +130,13 @@
 			    color:#BC0213;
 			}
 
+			ul li:hover ul {display: block;}
+	     	ul li ul {
+	          position: absolute;
+	          width: 200px;
+	          display: none;
+	      	}
+	     	ul li ul li a {display:block !important;} 	
 
 		 </style>
 
@@ -155,8 +164,9 @@
 
 
 	<body>
-	 	<header>
-      	 <nav class="navbar navbar-custom navbar-fixed-top" >
+
+		<header>
+		      	 <nav class="navbar navbar-custom navbar-fixed-top" >
   					<div >
 						
 						
@@ -178,34 +188,17 @@
 							
 							<div class="nav navhide" style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;display: block;">&nbsp;
 								
-								<ul class="large-device-only nav navbar-nav navbar-left" style="padding-left:20px;padding-top: 5px ">
-											
-											<img src="images/sfithead.png" width="120px" height="39px">
-								</ul>
-								
-								
-								
-								
-								<ul class="nav navbar-nav navbar-right">
-								 
-								  	<li><a href="index.html">Home</a></li>
-									<li><a href="#">Mandatory Disclosure</a></li>
-									<li><a href="#">Careers</a></li>
-									<li><a href="#">Library</a></li>
-									<li><a href="#">Parents Corner</a></li>
-									<li><a href="#">Contact Us</a></li>
-									<li><a href="#">Archive</a></li>
-                <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
-                  <ul class="dropdown-menu" aria-labelled-by="drop">
-                    <li><a href="#">Alumini Corner</a></li>
-                    <li><a href="#">Alumini Associstion</a></li>
-                    <li><a href="#">Alumini Website</a></li>
-                    <li><a href="#">Alumini Feedback Form</a></li>
-                   </ul>
-                </li>
-                <!-- Dropdown end -->
-                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
-							</ul>
+								 <ul class="nav navbar-nav navbar-right">
+
+					                  <li><a href="#"><span class="glyphicon glyphicon-home"> </span> Home</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-star"> </span> Mandatory Disclosure</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-education"> </span> Careers</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-book"> </span> Library</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-log-in"> </span> ParentsCorner</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-phone-alt"> </span> Contact Us</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-duplicate"> </span> Archive</a></li>
+
+					              </ul>
 							</div>
 							
 							
@@ -213,19 +206,158 @@
 									
 						    
     						
-                  <ul class="nav navbar-nav " >
-    								<li class="active"><a href="index.html">Institute</a></li>
-    								<li><a href="profile.html">Student Info</a></li>
-    								<li><a href="message.html">Administation</a></li>
-    								<li><a href="#">Campus</a></li>
-  								<li><a href="#">Placement</a></li>
-  								<li><a href="#">R&D</a></li>
-  								<li><a href="#">E-Cell</a></li>
-  								<li><a class="custom-nav-active" href="#">Department</a></li>
-  								<li><a href="#">Admission</a></li>
-  								<li><a href="#">Events</a></li>
-					  			<li><a href="gallery.html">Gallery</a></li>
-    							</ul>
+		         <!-- ========= Dropdown============== -->
+                  <ul class="nav navbar-nav navbar-custom navbar-nav-just" data-spy="affix" data-offset-top="230" >
+                    
+                  <!-- ==============iNSTITUTE================= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Institute</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">The Society</a></li>
+                        <li><a href="#">College Emblem & Anthem</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Academic Consultant/ Advisor</a></li>
+                        <li><a href="#">Mandatory Disclosure</a></li>
+                        <li><a href="#">Newsletter  ---- Bits-N-Bytes</a></li>
+                        <li><a href="#">AICTE apprval letter</a></li>
+                        <li><a href="#">NBA Accreditation</a></li>
+                        <li><a href="#">ISO Certification</a></li>
+                        <li><a href="#">Fee Proposal</a></li>
+                        <li><a href="#">Prohibition of Ragging</a></li>
+                        <li><a href="#">Grievance Redressal Committee</a></li>
+                        <li><a href="#">Achievements</a></li>
+                        <li><a href="#">Sister Institutions</a></li>
+
+                      </ul>
+                    </li>
+
+                    <!-- ============Campus Dropdown========= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Campus</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Building </a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Computer Center</a></li>
+                        <li><a href="#">Counselling Cell</a></li>
+                        <li><a href="#">Seminar Room</a></li>
+                        <li><a href="#">Assembly Hall</a></li>
+                        <li><a href="#">Gymkhana</a></li>
+                        <li><a href="#">Canteen</a></li>
+                      </ul>
+                    </li>
+                    
+                    <!-- ================Administration================ -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Administration</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Committeees</a></li>
+                        <li><a href="#">Staff Service Rules</a></li>
+                        <li><a href="#">Code of Ethics</a></li>
+                        <li><a href="#">New Staff Induction Manual</a></li>
+                        <li><a href="#">Staff Working Committees</a></li>
+
+                      </ul>
+                    </li>
+
+                    <!-- ===============Student Info================ -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Student Info</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Dean Student Affairs</a></li>
+                        <li><a href="#">Code of Conduct </a></li>
+                        <li><a href="#">Student Council</a></li>
+                        <li><a href="#">Fee Payment</a></li>
+                        <li><a href="#">Academic Examination</a></li>
+                        <li><a href="#">Academic Results</a></li>
+                        <li><a href="#">Academic Calender</a></li>
+                        <li><a href="#">Student Attendance</a></li>
+                        <li><a href="#">Annual Programs </a></li>
+                        <li><a href="#">Acitivities</a></li>
+                        <li><a href="#">NPTEL</a></li>
+                        <li><a href="#">Industrial Visits</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- =============Placement=============== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Placement</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Training And Placement</a></li>
+                        <li><a href="#">Placement Comittee</a></li>
+                        <li><a href="#">placement Policy</a></li>
+                        <li><a href="#">Training Calender</a></li>
+                        <li><a href="#">Training & Placement Activities</a></li>
+                        <li><a href="#">Recruiters</a></li>
+                        <li><a href="#">Feedback for Employers</a></li>
+                        <li><a href="#">Feedback for students</a></li>
+                        <li><a href="#">Record</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ======================R&D====================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">R&D</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">R&D</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">RadLabs</a></li>
+                        <li><a href="#">Robocon</a></li>
+                        <li><a href="#">Consultancy Rules</a></li>
+                        <li><a href="#">Lecture Series</a></li>
+                        <li><a href="#">Sanshodhan</a></li>
+                        <li><a href="#">Research Project</a></li>
+                        <li><a href="#">Faculty Development</a></li>
+                        <li><a href="#">Conferences</a></li>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Notices</a></li>
+                      </ul>
+                    </li>
+
+
+                    <!-- =====================Departments==================== -->  
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Department</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="compdept.html">Computer Department</a></li>
+                        <li><a href="#">IT Department</a></li>
+                        <li><a href="#">EXTC Department</a></li>
+                        <li><a href="#">Basic Sciences<br>and Humanity</a></li>
+
+                      </ul>
+                    </li>
+                    
+                    <!-- ================Alumini======================= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Computer Engineering</a></li>
+                        <li><a href="#">Information Technology<br> Engineering</a></li>
+                        <li><a href="#">Electronics and <br>Telecommunication <br>Engineering</a></li>
+                        <li><a href="#">Basic Science and Humanities</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ===================Admissions================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Admissions</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Bachelor of Engineering</a></li>
+                        <li><a href="#">Master of Engineering</a></li>
+                        <li><a href="#">Doctor of Philosophy(Ph.D)</a></li>
+                        <li><a href="#">Noticce on Disclaimer</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ================Events===================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Events</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Prayas 2017</a></li>
+                        <li><a href="#">Technotron</a></li>
+                        <li><a href="#">IRIS 2017</a></li>
+                        <li><a href="#">Graduation day</a></li>
+                        <li><a href="#">Workshop</a></li>
+                        <li><a href="#">CSCITA</a></li>
+                      </ul>
+                    </li>
+
+                     <!-- ====================E-Cell================== -->
+                    <li><a href="http://ecell.sfitengg.org/"  >Parent's Corner</a></li>
+
+                  </ul>
 
 
 							<!-- Pranav: header -->
@@ -252,7 +384,8 @@
   					</div>
 				</nav>
         
-	     </header>
+	     </header>		
+
 
 		
 		
@@ -280,268 +413,389 @@
 							</ul>
 							</div>
 
-	    
- 		<section class="team">
-		  <div class="container">
-		    <div class="row">
-		      <div class="col-md-10 col-md-offset-1">
-		        <div class="col-lg-12">
-		          <h6 class="description">OUR TEAM</h6>
-		          <div class="row pt-md">
-		            
+	    <!-- ===================End Parallax=========================== -->
 
-		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		              <div class="img-box">
-		                <img src="images/IT-Dept/hod.jpg"  width="205px"  height = "240px">
-		                <ul class="text-center">
-		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-		                </ul>
-		              </div>
-		              <h1> Dr. Joanne Gomes </h1>
-		              <h2>Head of Department</h2>
+	    <!-- =======================Okk============================= -->
+ 		
+	    <div class="container-fluid">
 
-		              <p>Professor  Ph.D.,M.E. (EXTC),	B.E. (Electronics)</p>
-		            </div>
-		            
+	    	
 
-		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		              <div class="img-box">
-		                <img src="images/IT-Dept/Best.jpg"  width="205px"  height = "240px">
-		                <ul class="text-center">
-		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-		                </ul>
-		              </div>
-		              <h1> Mr. Bhavesh Pandya </h1>
-		              <h2>Assistant Professor</h2>
+          <div class="container">
+          	
+          	<div class = "page-header">
+	 				<h3 style="font-family: 'Merriweather', sans-serif;font-size: 25px;"> Our Team </h3>
+ 			</div>
 
-		              <p>M.E. (Info. Tech.), B.E. (Info. Tech.)</p>
-		            </div>
+          <div class = "row">
 
+		  		<div class="col-lg-3 col-sm-12">
+		            <div class="cardmat">
+		                <div class="cardmat-image1">
+		                    
+		                    
+		                    
+		                    <img class="img-responsive1" src="images/IT-Dept/hod.jpg" style="width: 100%;border-radius: 50%;padding: 50px">
 
-		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		              <div class="img-box">
-		                <img src="images/IT-Dept/CSI.jpg"  width="205px"  height = "240px">
-		                <ul class="text-center">
-		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-		                </ul>
-		              </div>
-		              <h1> Ms. Amrita Mathur</h1>
-		              <h2>Assistant Professor</h2>
-
-		              <p>M.E. (Comp.Engg.),B.E. (Comp.Engg.)</p>
+		                    <span class="cardmat-title"> <center><br>  Dr. Joanne Gomes </center></span>
+		                    
+		                </div>
+		                
+		                <div class="cardmat-content" style="text-align: center;">
+		                    <p>Head of Department,<br>Professor  Ph.D.,<br>M.E. (EXTC),<br>B.E. (Electronics)</p>
+		                </div>
+		                
+		                <div class="cardmat-action" style="text-align: center;">
+		                    <a href="#" target="new_blank">Know More</a>
+		                </div>
 		            </div>
-
-
-		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		              <div class="img-box">
-		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
-		                <ul class="text-center">
-		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-		                </ul>
-		              </div>
-		              <h1>ABC</h1>
-		              <h2>Designer</h2>
-		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		            </div>
-		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		              <div class="img-box">
-		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
-		                <ul class="text-center">
-		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-		                </ul>
-		              </div>
-		              <h1>ABC</h1>
-		              <h2>Web Developer</h2>
-		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		            </div>
-		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		              <div class="img-box">
-		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
-		                <ul class="text-center">
-		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-		                </ul>
-		              </div>
-		              <h1>ABC</h1>
-		              <h2>Fullstack Developer</h2>
-		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		            </div>
-		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		              <div class="img-box">
-		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
-		                <ul class="text-center">
-		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-		                </ul>
-		              </div>
-		              <h1>ABC</h1>
-		              <h2>Co-founder/ Operations</h2>
-		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		            </div>
-		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		              <div class="img-box">
-		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
-		                <ul class="text-center">
-		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-		                </ul>
-		              </div>
-		              <h1>ABC</h1>
-		              <h2>Co-founder/ Projects</h2>
-		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		            </div>
-		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		              <div class="img-box">
-		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
-		                <ul class="text-center">
-		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-		                </ul>
-		              </div>
-		              <h1>ABC</h1>
-		              <h2>Co-founder/ Marketing</h2>
-		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		            </div>
-		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		              <div class="img-box">
-		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
-		                <ul class="text-center">
-		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-		                </ul>
-		              </div>
-		              <h1>ABC</h1>
-		              <h2>Designer</h2>
-		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		            </div>
-		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		              <div class="img-box">
-		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
-		                <ul class="text-center">
-		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-		                </ul>
-		              </div>
-		              <h1>ABC</h1>
-		              <h2>Web Developer</h2>
-		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		            </div>
-		            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		              <div class="img-box">
-		                <img src="images/img_avatar.png"  width="205px"  height = "240px">
-		                <ul class="text-center">
-		                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-		                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-		                </ul>
-		              </div>
-		              <h1>ABC</h1>
-		              <h2>Fullstack Developer</h2>
-		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		            </div>
-		          </div>
 		        </div>
-		      </div>
-		    </div>
-		  </div>
-		</section>
+		      
+		        <div class="col-lg-3 col-sm-12">
+		            <div class="cardmat">
+		                <div class="cardmat-image1">
+		                    
+		                    
+		                    
+		                    <img class="img-responsive1" src="images/IT-Dept/Best.jpg" style="width: 100%;border-radius: 50%;padding: 50px">
+
+		                    <span class="cardmat-title"> <center><br>Mr.Bhavesh Pandya</center></span>
+		                    
+		                </div>
+		                
+		                <div class="cardmat-content" style="text-align: center;">
+		                    <p>Assistant Professor,<br>M.E. (Info. Tech.),<br>B.E. (Info. Tech.)</p>
+		                </div>
+		                
+		                <div class="cardmat-action" style="text-align: center;">
+		                    <a href="#" target="new_blank">Know More</a>
+		                </div>
+		            </div>
+		        </div>
+
+		        <div class="col-lg-3 col-sm-12">
+		            <div class="cardmat">
+		                <div class="cardmat-image1">
+		                    
+		                    
+		                    
+		                    <img class="img-responsive1" src="images/IT-Dept/hod.jpg" style="width: 100%;border-radius: 50%;padding: 50px">
+
+		                    <span class="cardmat-title"> <center><br>  Dr. Joanne Gomes </center></span>
+		                    
+		                </div>
+		                
+		                <div class="cardmat-content" style="text-align: center;">
+		                    <p>Head of Department,<br>Professor  Ph.D.,<br>M.E. (EXTC),<br>B.E. (Electronics)</p>
+		                </div>
+		                
+		                <div class="cardmat-action" style="text-align: center;">
+		                    <a href="#" target="new_blank">Know More</a>
+		                </div>
+		            </div>
+		        </div>
+
+		         <div class="col-lg-3 col-sm-12">
+		            <div class="cardmat">
+		                <div class="cardmat-image1">
+		                    
+		                    
+		                    
+		                    <img class="img-responsive1" src="images/IT-Dept/hod.jpg" style="width: 100%;border-radius: 50%;padding: 50px">
+
+		                    <span class="cardmat-title"> <center><br>  Dr. Joanne Gomes </center></span>
+		                    
+		                </div>
+		                
+		                <div class="cardmat-content" style="text-align: center;">
+		                    <p>Head of Department,<br>Professor  Ph.D.,<br>M.E. (EXTC),<br>B.E. (Electronics)</p>
+		                </div>
+		                
+		                <div class="cardmat-action" style="text-align: center;">
+		                    <a href="#" target="new_blank">Know More</a>
+		                </div>
+		            </div>
+		        </div>
+
+		        
+		  </div><br>
+
+		  <div class = "row">
+
+		  		<div class="col-lg-3 col-sm-12">
+		            <div class="cardmat">
+		                <div class="cardmat-image1">
+		                    
+		                    
+		                    
+		                    <img class="img-responsive1" src="images/IT-Dept/hod.jpg" style="width: 100%;border-radius: 50%;padding: 50px">
+
+		                    <span class="cardmat-title"> <center><br>  Dr. Joanne Gomes </center></span>
+		                    
+		                </div>
+		                
+		                <div class="cardmat-content" style="text-align: center;">
+		                    <p>Head of Department,<br>Professor  Ph.D.,<br>M.E. (EXTC),<br>B.E. (Electronics)</p>
+		                </div>
+		                
+		                <div class="cardmat-action" style="text-align: center;">
+		                    <a href="#" target="new_blank">Know More</a>
+		                </div>
+		            </div>
+		        </div>
+		      
+		        <div class="col-lg-3 col-sm-12">
+		            <div class="cardmat">
+		                <div class="cardmat-image1">
+		                    
+		                    
+		                    
+		                    <img class="img-responsive1" src="images/IT-Dept/hod.jpg" style="width: 100%;border-radius: 50%;padding: 50px">
+
+		                    <span class="cardmat-title"> <center><br>  Dr. Joanne Gomes </center></span>
+		                    
+		                </div>
+		                
+		                <div class="cardmat-content" style="text-align: center;">
+		                    <p>Head of Department,<br>Professor  Ph.D.,<br>M.E. (EXTC),<br>B.E. (Electronics)</p>
+		                </div>
+		                
+		                <div class="cardmat-action" style="text-align: center;">
+		                    <a href="#" target="new_blank">Know More</a>
+		                </div>
+		            </div>
+		        </div>
+
+		        <div class="col-lg-3 col-sm-12">
+		            <div class="cardmat">
+		                <div class="cardmat-image1">
+		                    
+		                    
+		                    
+		                    <img class="img-responsive1" src="images/IT-Dept/hod.jpg" style="width: 100%;border-radius: 50%;padding: 50px">
+
+		                    <span class="cardmat-title"> <center><br>  Dr. Joanne Gomes </center></span>
+		                    
+		                </div>
+		                
+		                <div class="cardmat-content" style="text-align: center;">
+		                    <p>Head of Department,<br>Professor  Ph.D.,<br>M.E. (EXTC),<br>B.E. (Electronics)</p>
+		                </div>
+		                
+		                <div class="cardmat-action" style="text-align: center;">
+		                    <a href="#" target="new_blank">Know More</a>
+		                </div>
+		            </div>
+		        </div>
+
+		         <div class="col-lg-3 col-sm-12">
+		            <div class="cardmat">
+		                <div class="cardmat-image1">
+		                    
+		                    
+		                    
+		                    <img class="img-responsive1" src="images/IT-Dept/hod.jpg" style="width: 100%;border-radius: 50%;padding: 50px">
+
+		                    <span class="cardmat-title"> <center><br>  Dr. Joanne Gomes </center></span>
+		                    
+		                </div>
+		                
+		                <div class="cardmat-content" style="text-align: center;">
+		                    <p>Head of Department,<br>Professor  Ph.D.,<br>M.E. (EXTC),<br>B.E. (Electronics)</p>
+		                </div>
+		                
+		                <div class="cardmat-action" style="text-align: center;">
+		                    <a href="#" target="new_blank">Know More</a>
+		                </div>
+		            </div>
+		        </div>
+
+		        
+		  </div><br>
+
+
+		  <div class = "row">
+
+		  		<div class="col-lg-3 col-sm-12">
+		            <div class="cardmat">
+		                <div class="cardmat-image1">
+		                    
+		                    
+		                    
+		                    <img class="img-responsive1" src="images/IT-Dept/hod.jpg" style="width: 100%;border-radius: 50%;padding: 50px">
+
+		                    <span class="cardmat-title"> <center><br>  Dr. Joanne Gomes </center></span>
+		                    
+		                </div>
+		                
+		                <div class="cardmat-content" style="text-align: center;">
+		                    <p>Head of Department,<br>Professor  Ph.D.,<br>M.E. (EXTC),<br>B.E. (Electronics)</p>
+		                </div>
+		                
+		                <div class="cardmat-action" style="text-align: center;">
+		                    <a href="#" target="new_blank">Know More</a>
+		                </div>
+		            </div>
+		        </div>
+		      
+		        <div class="col-lg-3 col-sm-12">
+		            <div class="cardmat">
+		                <div class="cardmat-image1">
+		                    
+		                    
+		                    
+		                    <img class="img-responsive1" src="images/IT-Dept/hod.jpg" style="width: 100%;border-radius: 50%;padding: 50px">
+
+		                    <span class="cardmat-title"> <center><br>  Dr. Joanne Gomes </center></span>
+		                    
+		                </div>
+		                
+		                <div class="cardmat-content" style="text-align: center;">
+		                    <p>Head of Department,<br>Professor  Ph.D.,<br>M.E. (EXTC),<br>B.E. (Electronics)</p>
+		                </div>
+		                
+		                <div class="cardmat-action" style="text-align: center;">
+		                    <a href="#" target="new_blank">Know More</a>
+		                </div>
+		            </div>
+		        </div>
+
+		        <div class="col-lg-3 col-sm-12">
+		            <div class="cardmat">
+		                <div class="cardmat-image1">
+		                    
+		                    
+		                    
+		                    <img class="img-responsive1" src="images/IT-Dept/hod.jpg" style="width: 100%;border-radius: 50%;padding: 50px">
+
+		                    <span class="cardmat-title"> <center><br>  Dr. Joanne Gomes </center></span>
+		                    
+		                </div>
+		                
+		                <div class="cardmat-content" style="text-align: center;">
+		                    <p>Head of Department,<br>Professor  Ph.D.,<br>M.E. (EXTC),<br>B.E. (Electronics)</p>
+		                </div>
+		                
+		                <div class="cardmat-action" style="text-align: center;">
+		                    <a href="#" target="new_blank">Know More</a>
+		                </div>
+		            </div>
+		        </div>
+
+		         <div class="col-lg-3 col-sm-12">
+		            <div class="cardmat">
+		                <div class="cardmat-image1">
+		                    
+		                    
+		                    
+		                    <img class="img-responsive1" src="images/IT-Dept/hod.jpg" style="width: 100%;border-radius: 50%;padding: 50px">
+
+		                    <span class="cardmat-title"> <center><br>  Dr. Joanne Gomes </center></span>
+		                    
+		                </div>
+		                
+		                <div class="cardmat-content" style="text-align: center;">
+		                    <p>Head of Department,<br>Professor  Ph.D.,<br>M.E. (EXTC),<br>B.E. (Electronics)</p>
+		                </div>
+		                
+		                <div class="cardmat-action" style="text-align: center;">
+		                    <a href="#" target="new_blank">Know More</a>
+		                </div>
+		            </div>
+		        </div>
+
+		        
+		  </div><br>
+		
+
+		</div>
+	</div>
+
+		<!-- ===============================Okk Ends====================== -->
 	    
-		<!-- Pranav: Footer -->
-	    <footer class = "site-footer">
+		<!--=========== PRANAV: START FOOTER SECTION ================-->
+      <footer class = "site-footer" >
 
-	    	<div class="container-fluid">
+        <div class="container-fluid">
 
-	    		<div class = "row">
+          <div class = "row">
 
-	    			<div class="col-md-4 right mobile-only" style = "text-align: center;">
-	    				<img src="images/SFIT_Black.jpeg" height="200px" width="200px" style="margin-bottom: 15px;">
-	    			</div>
-
-	    			<div class = "col-md-2 col-xs-6 right divs-on-mob" style = "text-align: right;">
-	    				<h4>Contact</h4>
-	    				<address>
-	    					Santoshi Mata Rd, Mandapeshwar,<br>
-	    					Dahisar West, Mumbai, Maharashtra<br>
-	    					400103.
-
-	    				</address>
-	    			</div>
-
-	    			<div class="col-md-2 right large-device-only " style = "text-align: right;">
-	    				<h4>Contact</h4>
-	    				<address>
-	    					Santoshi Mata Rd, Mandapeshwar,<br>
-	    					Dahisar West, Mumbai, Maharashtra<br>
-	    					400103.
-
-	    				</address>
-	    			</div>
-
-	    			<div class="col-md-4 right large-device-only " style = "text-align: center;">
-	    				<img src="images/SFIT_Black.jpeg" height="150px" width="150px">
-	    			</div>
-
-	    			<div class = "col-md-2 right large-device-only" >
-	    				<h4>Contact</h4>
-	    				<address>
-	    					Santoshi Mata Rd, Mandapeshwar,<br>
-	    					Dahisar West, Mumbai, Maharashtra<br>
-	    					400103.
-
-	    				</address>
-	    			</div>
-
-	    			<div class="col-md-2 col-xs-6" >
-	    				<h4>Contact</h4>
-	    				<address>
-	    					Santoshi Mata Rd, Mandapeshwar,<br>
-	    					Dahisar West, Mumbai, Maharashtra<br>
-	    					400103.
-
-	    				</address>
-	    			</div>
+            <div class="col-md-12 mobile-only" style = "text-align: center;">
+              <img src="images/SFIT_Black.jpeg" height="200px" width="200px" style="margin-bottom: 15px;">
+            </div>
 
 
-	    		</div>
+              <div class = "col-md-2 col-sm-6 col-xs-6 right divs-on-mob" style = "text-align: right;">
+                <h4>Links</h4>
+                <address>
+                <ul class = "footer-nav2" style="list-style: none;">
+                    <li><a href="#"> Placement</a></li>
+                    <li><a href="#"> Library</a></li>
+                    <li><a href="#"> Student Info</a></li>
+                    <li><a href="#"> Parents Login</a></li>
+                    <li><a href="#"> Admission</a></li>
 
-	    		<div class = "bottom-footer divs-on-mob" >
-	    			<div class = "col-md-5 col-xs-12"> © 2017 St. Francis Institute of Technology. All Rights Reserved</div>
+                </ul>
+                </address>
+              </div>
 
-		    			<div class = "col-md-7 col-xs-12 large-device-only">
-		    				<ul class = "footer-nav" style="list-style: none;">
-		    					<li><a href="#">Home </a></li>
-		    					<li><a href="#">About </a></li>
-		    					<li><a href="#">FAQ </a></li>
-		    					<li><a href="#">Baki bacha wo </a></li>
-		    				</ul>
+              <div class="col-md-2 right large-device-only " style = "text-align: right;">
+                <h4>About Us</h4>
+                <address>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is industry's standard dummy text.
 
-		    		</div>
-	    		</div>
+                </address>
+              </div>
 
-	    	</div>
+              <div class="col-md-4 right large-device-only " style = "text-align: center;">
+                <img src="images/SFIT_Black.jpeg" height="150px" width="150px">
+              </div>
 
-		</footer>
+              <div class = "col-md-2 right large-device-only" >
+                <h4>Contact</h4>
+                <address>
+                  Santoshi Mata Rd, Mandapeshwar,<br>
+                  Dahisar West, Mumbai, Maharashtra<br>
+                  400103.
+
+                </address>
+              </div>
+
+              <div class="col-md-2 col-sm-6 col-xs-6" >
+                <h4>Links</h4>
+                <address>
+                <ul class = "footer-nav2" style="list-style: none;padding-left:0;">
+                    <li><a href="#"> Fees</a></li>
+                    <li><a href="#"> Events</a></li>
+                    <li><a href="#"> Iinstitute</a></li>
+                    <li><a href="#top"> Back To Top</a></li>
+                </ul>
+                </address>
+              </div>
 
 
+          </div>
+
+          <div class = "bottom-footer divs-on-mob" >
+            <div class = "col-md-5 col-xs-12">2017 St. Francis Institute of Technology. All Rights Reserved.</div>
+
+              <div class = "col-md-7 col-xs-12 large-device-only">
+                <ul class = "footer-nav" style="list-style: none;">
+                  <li><a href="#">Home </a></li>
+                  <li><a href="#">About </a></li>
+                  <li><a href="#">FAQ </a></li>
+                  <li><a href="#">Baki bacha wo </a></li>
+                </ul>
+
+            </div>
+          </div>
 
 
-	    
+        </div>
+
+    </footer>
+    <!--=========== END FOOTER SECTION ================-->
 	  
 	    
 	</body>
+</html>
