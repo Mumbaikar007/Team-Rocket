@@ -1,7 +1,7 @@
 
 /*CUSTOM NAV*/
 .navbar-custom {
-    background-color:#800000;
+    background-color:#229922;
     color:#ffffff;
     border-radius:0;
 }
@@ -23,8 +23,7 @@
 .navbar-custom .navbar-nav > .active > a:focus,
 .navbar-custom .navbar-nav > .open >a {
     text-decoration: none;
-    color: #800000;
-    background-color: #f4dcdc;
+    background-color: #33aa33;
 }
 
 .navbar-custom .navbar-brand {
@@ -34,22 +33,17 @@
     background-color:#eeeeee;
 }
 .navbar-custom .icon-bar {
-    background-color:#800000;
+    background-color:#33aa33;
 }
 /* for dropdowns only */
 .navbar-custom .navbar-nav .dropdown-menu  {
-  background-color: #f4dcdc;
+  background-color: #33aa33;
 }
 .navbar-custom .navbar-nav .dropdown-menu>li>a  {
-  color: #800000;
+  color: #fff;
 }
 .navbar-custom .navbar-nav .dropdown-menu>li>a:hover,.navbar-custom .navbar-nav .dropdown-menu>li>a:focus  {
-    color:  white;
-    background: #800000;
-}
-.topbar{
-    padding-left: 10px;
-    padding-right: 20px;
+  color: #33aa33;
 }
 
 /*custom nav end*/
@@ -81,11 +75,5 @@
         display: table-cell;
         float: none;
         text-align: center;
-    }
-}
-@media (max-width: 768px){
-    .topbar{
-        margin-left: -14px;
-        margin-right: -14px;
     }
 }
