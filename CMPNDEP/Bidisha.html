@@ -1,0 +1,538 @@
+
+<!DOCTYPE html>
+<html>
+      <head>
+        <title>St. Francis Institute of Technology</title>
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+         <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet"> -->
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Slabo 27px' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="css/profile.css">
+
+		<!-- --------Custom css--------- -->
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/custom_header.css">
+        <link rel="stylesheet" href="css/custom_ccards.css">
+        <link rel="stylesheet" href="css/footer.css">
+
+
+		  	    <!--JS-->
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+
+
+		 <style type="text/css">
+
+		 	*{
+
+			    font-family: 'Raleway', sans-serif;
+			}
+
+			ul li:hover ul {display: block;}
+         	ul li ul {
+	            position: absolute;
+	            width: 200px;
+	            display: none;
+          	}
+          	ul li ul li a {display:block !important;}
+
+		 </style>
+
+	 <!-- Basic Animations -->
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $(window).scroll(function() {
+
+          if ($(this).scrollTop()>0)
+           {
+              $('.navhide').slideUp();
+           }
+          else
+           {
+            $('.navhide').slideDown();
+           }
+       });
+
+      $('.opening-hours li').eq(new Date().getDay()).addClass('today');
+      });
+     </script>
+
+
+        </head>
+
+
+	<body>
+
+	 	<header>
+         <nav class="navbar navbar-custom navbar-fixed-top" >
+            <div >
+            
+            
+            
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                   </button>
+
+                  <!-- Pranav: MobileHeader -->
+                  <a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>SFIT</a>
+
+              </div>
+          
+
+              <div class="collapse navbar-collapse" id="myNavbar">
+              
+              <div class="nav navhide" style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;display: block;">&nbsp;
+                
+                 <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="#"><span class="glyphicon glyphicon-home"> </span> Home</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-star"> </span> Mandatory Disclosure</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-education"> </span> Careers</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-book"> </span> Library</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"> </span> ParentsCorner</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-phone-alt"> </span> Contact Us</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-duplicate"> </span> Archive</a></li>
+
+                        </ul>
+              </div>
+              
+              
+              
+                  
+                
+                
+             <!-- ========= Dropdown============== -->
+                  <ul id ="lalala" class="nav navbar-nav navbar-custom navbar-nav-just" data-spy="affix" data-offset-top="230" >
+                    
+                  <!-- ==============iNSTITUTE================= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown"><span>Institute</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">The Society</a></li>
+                        <li><a href="#">College Emblem & Anthem</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Academic Consultant/ Advisor</a></li>
+                        <li><a href="#">Mandatory Disclosure</a></li>
+                        <li><a href="#">Newsletter  ---- Bits-N-Bytes</a></li>
+                        <li><a href="#">AICTE apprval letter</a></li>
+                        <li><a href="#">NBA Accreditation</a></li>
+                        <li><a href="#">ISO Certification</a></li>
+                        <li><a href="#">Fee Proposal</a></li>
+                        <li><a href="#">Prohibition of Ragging</a></li>
+                        <li><a href="#">Grievance Redressal Committee</a></li>
+                        <li><a href="#">Achievements</a></li>
+                        <li><a href="#">Sister Institutions</a></li>
+
+                      </ul>
+                    </li>
+
+                    <!-- ============Campus Dropdown========= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Campus</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Building </a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Computer Center</a></li>
+                        <li><a href="#">Counselling Cell</a></li>
+                        <li><a href="#">Seminar Room</a></li>
+                        <li><a href="#">Assembly Hall</a></li>
+                        <li><a href="#">Gymkhana</a></li>
+                        <li><a href="#">Canteen</a></li>
+                      </ul>
+                    </li>
+                    
+                    <!-- ================Administration================ -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Administration</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Committeees</a></li>
+                        <li><a href="#">Staff Service Rules</a></li>
+                        <li><a href="#">Code of Ethics</a></li>
+                        <li><a href="#">New Staff Induction Manual</a></li>
+                        <li><a href="#">Staff Working Committees</a></li>
+
+                      </ul>
+                    </li>
+
+                    <!-- ===============Student Info================ -->
+                    <li><a href="../student/Student-Info.html"  typeid="drop" data-toggle="dropdown">Student Info</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="../student/Dean.html">Dean Student Affairs</a></li>
+                        <li><a href="../student/cce.html">Code of Conduct </a></li>
+                        <li><a href="../student/studcouncil.html">Student Council</a></li>
+                        <li><a href="#">Fee Payment</a></li>
+                        <li><a href="#">Academic Examination</a></li>
+                        <li><a href="#">Academic Results</a></li>
+                        <li><a href="#">Academic Calender</a></li>
+                        <li><a href="#">Student Attendance</a></li>
+                        <li><a href="../student/SI-IRIS.html">Annual Programs </a></li>
+                        <li><a href="#">Acitivities</a></li>
+                        <li><a href="#">NPTEL</a></li>
+                        <li><a href="../student/SI-IV2.html">Industrial Visits</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- =============Placement=============== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Placement</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="placement.html">Training And Placement</a></li>
+                        <li><a href="#">Placement Comittee</a></li>
+                        <li><a href="#">placement Policy</a></li>
+                        <li><a href="#">Training Calender</a></li>
+                        <li><a href="#">Training & Placement Activities</a></li>
+                        <li><a href="#">Recruiters</a></li>
+                        <li><a href="#">Feedback for Employers</a></li>
+                        <li><a href="#">Feedback for students</a></li>
+                        <li><a href="#">Record</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ======================R&D====================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">R&D</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">R&D</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">RadLabs</a></li>
+                        <li><a href="#">Robocon</a></li>
+                        <li><a href="#">Consultancy Rules</a></li>
+                        <li><a href="#">Lecture Series</a></li>
+                        <li><a href="#">Sanshodhan</a></li>
+                        <li><a href="#">Research Project</a></li>
+                        <li><a href="#">Faculty Development</a></li>
+                        <li><a href="#">Conferences</a></li>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Notices</a></li>
+                      </ul>
+                    </li>
+
+
+                    <!-- =====================Departments==================== -->  
+                    <li><a href="../All-Departments.html"  typeid="drop" data-toggle="dropdown">Department</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="../compdept.html">Computer Department</a></li>
+                        <li><a href="../ITDEP/IT-Dept2.html">IT Department</a></li>
+                        <li><a href="#">EXTC Department</a></li>
+                        <li><a href="#">Basic Sciences<br>and Humanity</a></li>
+
+                      </ul>
+                    </li>
+                    
+                    <!-- ================Alumini======================= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Alumni Testimonials</a></li>
+                        <li><a href="#">Achievers</a></li>
+                        <li><a href="#">Alumni</a></li>
+                        <li><a href="#">Alumni Feedback Form</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ===================Admissions================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Admissions</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Bachelor of Engineering</a></li>
+                        <li><a href="#">Master of Engineering</a></li>
+                        <li><a href="#">Doctor of Philosophy(Ph.D)</a></li>
+                        <li><a href="#">Noticce on Disclaimer</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ================Events===================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Events</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Prayas 2017</a></li>
+                        <li><a href="#">Technotron</a></li>
+                        <li><a href="#">IRIS 2017</a></li>
+                        <li><a href="#">Graduation day</a></li>
+                        <li><a href="#">Workshop</a></li>
+                        <li><a href="#">CSCITA</a></li>
+                      </ul>
+                    </li>
+
+                     <!-- ====================E-Cell================== -->
+                    <li><a href="#"  >Parent's Corner</a></li>
+
+                  </ul>
+
+
+              <!-- Pranav: header -->
+              
+            <!--  <a class="navbar-brand large-device-only " href="#">
+                <center> St. Francis Institute of Technology</center> <!--span><div class="semi-circle"><img src="images/sfit.png" height="70px" width="70px"></span></div>
+              </ -->
+              
+<!--              <ul class="nav navbar-nav navbar-right">
+                  
+                <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
+                  <ul class="dropdown-menu" aria-labelled-by="drop">
+                    <li><a href="#">Alumini Corner</a></li>
+                    <li><a href="#">Alumini Associstion</a></li>
+                    <li><a href="#">Alumini Website</a></li>
+                    <li><a href="#">Alumini Feedback Form</a></li>
+                   </ul>
+                </li>
+                
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
+              </ul> -->
+
+            </div>
+            </div>
+        </nav>
+        
+       </header>
+
+
+
+
+
+
+
+
+<!-- profile -->
+
+<div class="container" style="margin-bottom: 30px;margin-top: 200px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+  <div class="row">
+    <div class="col-sm-12 profile-head">
+    <center><div style="padding: 10px"><br><img src="images/Bidisha Roy.jpg" style="border-radius: 50%;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);"><div>
+    <div style="font-family: 'Merriweather', sans-serif;">
+      <h1>Ms. Bidisha Roy</h1>
+      <h4>bidisha.bhaumik.roy@gmail.com</h4>
+      <h3>
+          Total Experience: 15 years, 1 months<br>
+      </h3>
+
+      <h4>
+        Ph.D (Pursuing)<br>
+        M.E Dissertation Title: SNMP Based Multicast Reachability Monitoring<br>
+        B.E Project: Code Assist
+      </h4>
+      </div>
+    </center>
+       <br>
+
+    </div>
+
+  </div>
+  <div class="row profile-body">
+  <div>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Publications</a></li>
+    <li><a data-toggle="tab" href="#menu2">Teaching</a></li>
+    <li><a data-toggle="tab" href="#menu3">Projects</a></li>
+  </ul>
+
+  <div class="tab-content" style="padding: 20px;">
+    <div id="home" class="tab-pane fade in active">
+      <h3>Date of Joining the Institute: 01/07/2002</h3>
+      <h3>Work Exprience:</h3>
+      <p>
+        <ol type="A"><li><b>Teaching : 14.5 Years</b><p>
+        <ul type="disc">
+            <li>Associate Professor: 7 years
+              <li>Assistant professor: 7.5 years
+</ul></p>
+        <li><b>Industry : 6 months</b><p><ul type="disc">
+          <li>Software Consultant, Nextgenix India Pvt Ltd</li>
+        </ul></p></ol>
+      </p>
+
+      <h3>Skill Sets:</h3>
+                    <p>
+                      <ul>
+                        <li>Application software: Rational Rose, Matlab (Basic)
+  <li>Computer language: C, C++, Java
+  <li>Internet Technologies: HTML/DHTML, JavaScript, Servlets, JSP, PHP
+  <li>Database Technologies: Oracle, MySQL
+                      </ul>
+                    </p>
+
+                    <h3>Awards:</h3><p><ul>
+                    <li>Got First Rank in M.E – Computer Engineering in Thadomal Shahani Engineering College in 2003</ul></p>
+
+      <h3>Active Research:</h3>
+      <p>
+        <ul>
+          <li>Web Mining
+  <li>Semantic Web and Ontologies
+  <li>Cloud Computing
+  <li>Computational Intelligence
+  <li>Algorithms and Complexity
+  <li>Educational Technology
+        </ul>
+      </p>
+
+      <h3>Research Advisor in field of</h3>
+      <p><ul><li>Computer Engineering
+      <li>Information Technology</ul></p>
+
+      <h3>Professional Memberships: IETE</h3>
+
+    </p>
+    <h3>Academic Duties:</h3>
+    <p><ul><li>HOD : Department of Computer Engineering (from July 2005 to June 2016)
+<li>Deputy Presiding Officer for IIT-JEE exam at SFIT
+<li>Member Academic Advisory Committee St. Francis Institute of technology(SFIT), Mumbai-400103
+<li>Member Local Management Committee St. Francis Institute of technology(SFIT), Mumbai-400103</ul></p>
+<h3>Interaction with Professional Institutions:</h3>
+<p><ul><li>University of Mumbai as Examiner and Moderator
+<li>University of Mumbai as Paper Setter
+</ul></p>
+
+<h3>R&D Activities:</h3><p>
+<ol type="A"><li><h4>Workshop, lecture series & Conferences Conducted:</h4>
+<p><ul type="disc"><li>R&D lecture series
+<li>National Conference on INFOCOM, 2007
+<li>STTP on “Image Processing Applications: Basics to Advanced”, Jan 2010
+<li>IEEE International Conference CSCITA, April 2014</ul></p>
+<li><h4>Invited Talks</h4>
+<p><ul type="disc"><li>Research Methodology
+<li>Faculty Development Programme</ul></p>
+<li><h4>Continuing Education Programs</h4>
+<p><ul type="disc"><li>Two weeks STTP on “Faculty Development Programme”
+<li>Two weeks STTP on “Open Source Softwares: An effective Way of Managing Engineering Education”
+<li>One day Seminar on “Software Testing”
+<li>Two day workshop on “Object Oriented Analysis and Design”
+<li>Two weeks TEQIP on ”Research Methodologies” from IIT, Mumbai
+<li>Two weeks TEQIP on “Computer Programming” from IIT, Mumbai
+<li>Two weeks TEQIP on “Design and Analysis of Algorithms”, from IIT, Kharagpur
+</ul></p></ol></p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Publication & Conferences : (Till Date)</h3>
+      <p>
+        <table border="0" width="100%">
+          <tr>
+            <td>
+              <h3>Conference:</h3>
+                <p><ul><li>National : 0
+                <li>International : 07</ul></p>
+            </td>
+            <td>
+              <h3>Journal:</h3>
+                <p><ul><li>National : 0
+                <li>International : 06</ul></p>
+            </td>
+          </tr>
+        </table>
+      </p>
+      </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Courses Taught:</h3>
+      <p><ul><li>Discrete Structures (UG)
+<li>Data Structures and Analysis of Algorithms (UG)
+<li>Web Engineering (UG)
+<li>Theory of Computer Science (UG)
+<li>Advanced Internet Technologies (UG)
+<li>Advanced Algorithms and Complexity (PG)
+<li>E-Business Technology (PG)
+<li>Semantic Web Technologies (PG)</ul></p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Projects Guided:</h3><p>
+<ul><li>M.E Project: 07
+<li>B.E Project: 40</ul></p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+        <!--=========== PRANAV: START FOOTER SECTION ================-->
+      <footer class = "site-footer" >
+
+        <div class="container-fluid">
+
+          <div class = "row">
+
+            <div class="col-md-12 mobile-only" style = "text-align: center;">
+              <img src="images/SFIT_Black.jpeg" height="200px" width="200px" style="margin-bottom: 15px;">
+            </div>
+
+
+              <div class = "col-md-2 col-sm-6 col-xs-6 right divs-on-mob" style = "text-align: right;">
+                <h4>Links</h4>
+                <address>
+                <ul class = "footer-nav2" style="list-style: none;">
+                    <li><a href="#"> Placement</a></li>
+                    <li><a href="#"> Library</a></li>
+                    <li><a href="#"> Student Info</a></li>
+                    <li><a href="#"> Parents Login</a></li>
+                    <li><a href="#"> Admission</a></li>
+
+                </ul>
+                </address>
+              </div>
+
+              <div class="col-md-2 right large-device-only " style = "text-align: right;">
+                <h4>About Us</h4>
+                <address>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is industry's standard dummy text.
+
+                </address>
+              </div>
+
+              <div class="col-md-4 right large-device-only " style = "text-align: center;">
+                <img src="images/SFIT_Black.jpeg" height="150px" width="150px">
+              </div>
+
+              <div class = "col-md-2 right large-device-only" >
+                <h4>Contact</h4>
+                <address>
+                  Santoshi Mata Rd, Mandapeshwar,<br>
+                  Dahisar West, Mumbai, Maharashtra<br>
+                  400103.
+
+                </address>
+              </div>
+
+              <div class="col-md-2 col-sm-6 col-xs-6" >
+                <h4>Links</h4>
+                <address>
+                <ul class = "footer-nav2" style="list-style: none;padding-left:0;">
+                    <li><a href="#"> Fees</a></li>
+                    <li><a href="#"> Events</a></li>
+                    <li><a href="#"> Iinstitute</a></li>
+                    <li><a href="#top"> Back To Top</a></li>
+                </ul>
+                </address>
+              </div>
+
+
+          </div>
+
+          <div class = "bottom-footer divs-on-mob" >
+            <div class = "col-md-5 col-xs-12">2017 St. Francis Institute of Technology. All Rights Reserved.</div>
+
+              <div class = "col-md-7 col-xs-12 large-device-only">
+                <ul class = "footer-nav" style="list-style: none;">
+                  <li><a href="#">Home </a></li>
+                  <li><a href="#">About </a></li>
+                  <li><a href="#">FAQ </a></li>
+                  <li><a href="#">Baki bacha wo </a></li>
+                </ul>
+
+            </div>
+          </div>
+
+
+        </div>
+
+    </footer>
+    <!--=========== END FOOTER SECTION ================-->
+
+
+	</body>
+  </html>

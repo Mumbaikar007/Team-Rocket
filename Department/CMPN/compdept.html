@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+      <head>
+        <title>St. Francis Institute of Technology</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+         <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet"> -->
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+		<!-- --------Custom css--------- -->
+		 <link rel="stylesheet" href="css/custom.css">
+		 <link rel="stylesheet" href="css/custom_header.css">
+
+		  	    <!--JS-->
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+
+
+		 <style type="text/css">
+
+		 	body{
+			    font-family: 'Quicksand', sans-serif;
+			}
+			.team{
+			    padding:75px 0;
+			}
+			h6.description{
+				font-weight: bold;
+				letter-spacing: 2px;
+				color: #999;
+				border-bottom: 1px solid rgba(0, 0, 0,0.1);
+				padding-bottom: 5px;
+			}
+			.profile{
+				margin-top: 25px;
+			}
+			.profile h1{
+				font-weight: normal;
+				font-size: 20px;
+				margin:10px 0 0 0;
+			}
+			.profile h2{
+				font-size: 14px;
+				font-weight: lighter;
+				margin-top: 5px;
+			}
+			.profile .img-box{
+				opacity: 1;
+				display: block;
+				position: relative;
+			}
+			.profile .img-box:after{
+				content:"";
+				opacity: 0;
+				background-color: rgba(0, 0, 0, 0.75);
+				position: absolute;
+				right: 0;
+				left: 0;
+				top: 0;
+				bottom: 0;
+			}
+			.img-box ul{
+				position: absolute;
+				z-index: 2;
+				bottom: 50px;
+				text-align: center;
+				width: 100%;
+				padding-left: 0px;
+				height: 0px;
+				margin:0px;
+				opacity: 0;
+			}
+			.profile .img-box:after, .img-box ul, .img-box ul li{
+				-webkit-transition: all 0.5s ease-in-out 0s;
+			    -moz-transition: all 0.5s ease-in-out 0s;
+			    transition: all 0.5s ease-in-out 0s;
+			}
+			.img-box ul i{
+				font-size: 20px;
+				letter-spacing: 10px;
+			}
+			.img-box ul li{
+				width: 30px;
+			    height: 30px;
+			    text-align: center;
+			    border: 1px solid #88C425;
+			    margin: 2px;
+			    padding: 5px;
+				display: inline-block;
+			}
+			.img-box a{
+				color:#fff;
+			}
+			.img-box:hover:after{
+				opacity: 1;
+			}
+			.img-box:hover ul{
+				opacity: 1;
+			}
+			.img-box ul a{
+				-webkit-transition: all 0.3s ease-in-out 0s;
+				-moz-transition: all 0.3s ease-in-out 0s;
+				transition: all 0.3s ease-in-out 0s;
+			}
+			.img-box a:hover li{
+				border-color: #fff;
+				color: #88C425;
+			}
+			a{
+			    color:#88C425;
+			}
+			a:hover{
+			    text-decoration:none;
+			    color:#519548;
+			}
+			i.red{
+			    color:#BC0213;
+			}
+
+
+		 </style>
+
+	 <!-- Basic Animations -->
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $(window).scroll(function() {
+
+          if ($(this).scrollTop()>0)
+           {
+              $('.navhide').slideUp();
+           }
+          else
+           {
+            $('.navhide').slideDown();
+           }
+       });
+
+      $('.opening-hours li').eq(new Date().getDay()).addClass('today');
+      });
+     </script>
+
+
+        </head>
+
+
+	<body>
+	 	<header>
+      	 <nav class="navbar navbar-custom navbar-fixed-top" >
+  					<div >
+
+
+
+    					<div class="navbar-header">
+      						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+							     </button>
+
+    							<!-- Pranav: MobileHeader -->
+    							<a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>SFIT</a>
+
+    					</div>
+
+
+    					<div class="collapse navbar-collapse" id="myNavbar">
+
+							<div class="nav navhide" style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;display: block;">&nbsp;
+
+								<ul class="large-device-only nav navbar-nav navbar-left" style="padding-left:20px;padding-top: 5px ">
+
+											<img src="images/sfithead.png" width="120px" height="39px">
+								</ul>
+
+
+
+
+								<ul class="nav navbar-nav navbar-right">
+
+								  	<li><a href="index.html">Home</a></li>
+									<li><a href="#">Mandatory Disclosure</a></li>
+									<li><a href="#">Careers</a></li>
+									<li><a href="#">Library</a></li>
+									<li><a href="#">Parents Corner</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Archive</a></li>
+                <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
+                  <ul class="dropdown-menu" aria-labelled-by="drop">
+                    <li><a href="#">Alumini Corner</a></li>
+                    <li><a href="#">Alumini Associstion</a></li>
+                    <li><a href="#">Alumini Website</a></li>
+                    <li><a href="#">Alumini Feedback Form</a></li>
+                   </ul>
+                </li>
+                <!-- Dropdown end -->
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
+							</ul>
+							</div>
+
+
+
+
+
+
+                  <ul class="nav navbar-nav " >
+    								<li class="active"><a href="index.html">Institute</a></li>
+    								<li><a href="profile.html">Student Info</a></li>
+    								<li><a href="message.html">Administation</a></li>
+    								<li><a href="#">Campus</a></li>
+  								<li><a href="#">Placement</a></li>
+  								<li><a href="#">R&D</a></li>
+  								<li><a href="#">E-Cell</a></li>
+  								<li><a class="custom-nav-active" href="#">Department</a></li>
+  								<li><a href="#">Admission</a></li>
+  								<li><a href="#">Events</a></li>
+					  			<li><a href="gallery.html">Gallery</a></li>
+    							</ul>
+
+
+							<!-- Pranav: header -->
+
+						<!--	<a class="navbar-brand large-device-only " href="#">
+								<center> St. Francis Institute of Technology</center> <!--span><div class="semi-circle"><img src="images/sfit.png" height="70px" width="70px"></span></div>
+							</ -->
+
+<!-- 						 	<ul class="nav navbar-nav navbar-right">
+
+								<li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
+									<ul class="dropdown-menu" aria-labelled-by="drop">
+										<li><a href="#">Alumini Corner</a></li>
+										<li><a href="#">Alumini Associstion</a></li>
+										<li><a href="#">Alumini Website</a></li>
+										<li><a href="#">Alumini Feedback Form</a></li>
+	                 </ul>
+							 	</li>
+
+								  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
+							</ul> -->
+
+						</div>
+  					</div>
+				</nav>
+
+	     </header>
+
+
+
+
+
+	    <!-- ===============Pranav: Parallax===================== -->
+	    <div class = "parallax grayscale " style="padding-top: 100px;background-image: url('images/bg1.jpg');" >
+
+		    <div>
+					<div style="color: #ffffff	; text-align: center; font-size: 80px;font-family: 'Raleway', sans-serif;">Computer Department</div>
+		    </div>
+
+	    </div>
+
+		<div class="nav" style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;">
+							<ul class="nav navbar-nav navbar-right">
+
+								  <li><a href="compdept.html">Computer Engineering Department</a></li>
+                  <li><a href="compobj.html">Objectives and Outcome</a></li>
+									<li><a href="#">Department Calender</a></li>
+									<li><a href="#">HOD</a></li>
+									<li><a href="compfac.html">Faculty</a></li>
+                  <li><a href="#"></a></li>
+									<li><a href="compnon.html">Non-Teaching staff</a></li>
+									<li><a href="#">Laboratories</a></li>
+									<li><a href="#">Timetable</a></li>
+							</ul>
+							</div>
+
+              <div id = "mission" class="container-fluid parallax " style="padding-bottom: 30px;background-image: url('images/bg1.jpg');">
+                 <p>&emsp;</p><div class = "container" style="color: aliceblue" >
+                     <div class="row">
+
+                         <div class="col-sm-6 col-xs-12" style="margin-bottom: 20px;">
+                           <div style="border: 1px solid grey;" >
+                           <h2 align="center"><b>Department Vision</b></h2>
+                            <p style=" padding: 0px 10px 10px 20px; font-size: 16px;">The vision of computer science program at SFIT is to continuously improve its educational environment to nurture future technological entrepreneurs and researchers, with strong emphasis on ethics and professional code of conduct.</p></div>
+                         </div>
+
+                           <div class="col-sm-6 col-xs-12" style="margin-bottom: 20px;">
+                           <div style="border: 1px solid grey;" >
+                           <h2 align="center"><b>Department Mission</h2>
+                            <ul style=" padding: 0px 10px 10px 20px; font-size: 16px;"><li>To produce quality computer science professionals with sound conceptual and practical skills, having a sense of social awareness and responsibility.<li>To inculcate amongst the graduates a knack of lifelong learning and critical thinking, leading to generation of new knowledge and its dissemination, through innovative research and development.</ul></div>
+                         </div>
+                         <div>
+                           <div style="color: #ffffff ; text-align: left; font-size: 30px; margin-bottom: 15px;margin-top: 35px; font-weight: 100;font-family: 'Raleway', sans-serif;"><b>Programme Offered:</b></div>
+                           <ol>
+                             <li>Doctor of Philosophy (Ph.D)</li>
+                             <li>Master of Engineering</li>
+                             <li>Bachelor of Engineering</li>
+                           </ol>
+                         </div>
+                           <div style="color: #ffffff ; text-align: left; font-size: 30px; margin-bottom: 15px;margin-top: 35px; font-weight: 100;font-family: 'Raleway', sans-serif;"><b>Name :</b> Computer Engineering</div>
+                           <div style="color: #ffffff ; text-align: left; font-size: 30px; margin-bottom: 15px;margin-top: 35px; font-weight: 100;font-family: 'Raleway', sans-serif;"><b>Year of Establishment :</b> 1999</div>
+                           <div style="color: #ffffff ; text-align: left; font-size: 30px; margin-bottom: 15px;margin-top: 35px; font-weight: 100;font-family: 'Raleway', sans-serif;"><b>Intake since beginning till date :</b></div>
+                           <table border="1" width="50%" align="left">
+                             <tr>
+                               <td align="center">Year</td>
+                               <td align="center">Intake</td>
+                             </tr>
+                             <tr>
+                               <td align="center">1999</td>
+                               <td align="center">60</td>
+                             </tr>
+                             <tr>
+                               <td align="center">2010</td>
+                               <td align="center">120</td>
+                             </tr>
+                           </table>
+                           <p>&nbsp;</p>
+                           <br/>
+                           <div style="color: #ffffff ; text-align: left; font-size: 30px; margin-bottom: 15px;margin-top: 35px; font-weight: 100;font-family: 'Raleway', sans-serif;"><p>Direct admission after diploma (Direct SE): 24 for every intake of 120</p></div>
+                           <div style="color: #ffffff ; text-align: left; font-size: 30px; margin-bottom: 15px;margin-top: 35px; font-weight: 100;font-family: 'Raleway', sans-serif;">Name of departmental Student Body: IEEE, IETE, CSI </div>
+                           <div style="color: #ffffff ; text-align: left; font-size: 30px; margin-bottom: 15px;margin-top: 35px; font-weight: 100;font-family: 'Raleway', sans-serif;">NBA Accreditation Status : Provisionally Accredited for Academic Years 2016-17,   2017-18 and 2018-19, i.e. upto 30-06-2019</div>
+                           <div style="color: #ffffff ; text-align: center; font-size: 30px; margin-bottom: 15px;margin-top: 35px; font-weight: 100;font-family: 'Raleway', sans-serif;">Teaching  Staff </div>
+                           <center><img src="images/cmpn_deptstaff.jpg"></center>
+                     </div>
+                  </div>
+              </div>
+
+		<!-- Pranav: Footer -->
+	    <footer class = "site-footer">
+
+	    	<div class="container-fluid">
+
+	    		<div class = "row">
+
+	    			<div class="col-md-4 right mobile-only" style = "text-align: center;">
+	    				<img src="images/SFIT_Black.jpeg" height="200px" width="200px" style="margin-bottom: 15px;">
+	    			</div>
+
+	    			<div class = "col-md-2 col-xs-6 right divs-on-mob" style = "text-align: right;">
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+	    			<div class="col-md-2 right large-device-only " style = "text-align: right;">
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+	    			<div class="col-md-4 right large-device-only " style = "text-align: center;">
+	    				<img src="images/SFIT_Black.jpeg" height="150px" width="150px">
+	    			</div>
+
+	    			<div class = "col-md-2 right large-device-only" >
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+	    			<div class="col-md-2 col-xs-6" >
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+
+	    		</div>
+
+	    		<div class = "bottom-footer divs-on-mob" >
+	    			<div class = "col-md-5 col-xs-12"> © 2017 St. Francis Institute of Technology. All Rights Reserved</div>
+
+		    			<div class = "col-md-7 col-xs-12 large-device-only">
+		    				<ul class = "footer-nav" style="list-style: none;">
+		    					<li><a href="#">Home </a></li>
+		    					<li><a href="#">About </a></li>
+		    					<li><a href="#">FAQ </a></li>
+		    					<li><a href="#">Baki bacha wo </a></li>
+		    				</ul>
+
+		    		</div>
+	    		</div>
+
+	    	</div>
+
+		</footer>
+
+
+
+
+
+
+
+	</body>
+</html>

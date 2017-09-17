@@ -1,0 +1,204 @@
+
+
+
+/*For tablets and mobiles*/
+@media screen and (max-width: 760px) {
+	.large-device-only{
+		display: none;
+	}
+	.mobile-only{
+		display: block;
+	}
+
+	.divs-on-mob{
+		text-align: center;
+	}
+
+	.right{
+		border-right: 1px solid #b2b2b2;
+	}
+
+     .parallax {
+     	/*background-image: url("../images/Nature-View.jpg");*/
+        background-attachment: scroll;
+        min-height: 500px;
+        background-size: cover;
+    }
+    .grayscale {
+       -webkit-filter: grayscale(50%);
+	}
+
+
+
+/*	ul.nav-tabs {
+	  text-align: center;
+	}
+	ul.nav-tabs li {
+	  float: none;
+	  display: inline-block;
+	}	*/
+	.tab-content {
+		padding-top: 15px;
+	}
+
+
+
+}
+
+@media screen and (min-width: 761px) {
+	.mobile-only {
+		display: none;
+	}
+
+	
+
+	/*
+	.navbar-brand {
+	  padding: 0px;
+	}
+	.navbar-brand>img {
+	  height: 100%;
+	  width: auto;
+	  padding: 7px 14px;
+	}
+	*/
+
+	ul.nav-tabs {
+	  text-align: center;
+	}
+	ul.nav-tabs li {
+	  float: none;
+	  display: inline-block;
+	}
+
+	.semi-circle {
+		
+	  	border-bottom-left-radius: 160px;
+	  	border-bottom-right-radius: 160px;
+	    height: 80px;
+  		width: 160px;
+  		background-color:#b3ffb3;
+  		text-align: center;
+  		margin-left: 70px;
+  		margin-top: -15px;
+	}
+
+
+	/* Pranav: Parallax*/
+	.parallax {
+	    /* The image used */
+	    /*background-image: url("../images/Nature-View.jpg");*/
+
+	    /* Set a specific height */
+	    min-height: 500px; 
+
+	    /* Create the parallax scrolling effect */
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+
+	}
+	
+	.parallax-title{
+		text-align: center;
+		color: white;
+	}
+
+    /*Parallax*/
+ 	.grayscale {
+       -webkit-filter: grayscale(50%);
+	}
+
+
+	/*Zoom in Image on hover*/
+	.item1 {
+	  position: relative;
+	  -moz-box-sizing: border-box;
+	  -webkit-box-sizing: border-box;
+	  box-sizing: border-box;
+	  margin: 0;
+	  padding: 0;
+	  margin: 2%;
+	  overflow: hidden;
+	  width: 250px;
+	  border-radius: 8px;
+	}
+
+	.item1 img {
+	  max-width: 100%;
+	   border-radius: 8px;
+	  -moz-transition: all 0.3s;
+	  -webkit-transition: all 0.3s;
+	  transition: all 0.3s;
+	}
+	.item1:hover img {
+	  -moz-transform: scale(1.1);
+	  -webkit-transform: scale(1.1);
+	  transform: scale(1.1);
+	}
+
+
+	
+
+	.tab-content {
+		padding-top: 25px;
+	}
+
+
+
+
+	/*Tanmay */
+	.eqcol{
+		display: flex;
+	}
+
+
+
+}
+  
+
+body{
+      overflow-x:hidden;
+  }
+
+  .dropdown-menu {
+    min-width: 250px;
+  }
+
+
+	
+  .frame{
+  			
+  		padding:20px;
+  		background-color:#0F1A26;
+    	border-style: solid;
+		border-color:  #B4DFE5;
+    	border-width: 15px;
+
+    
+    }
+  .framem{
+  			
+/*  		padding:20px;*/
+  		background-image: url("../images/booksb.jpg");
+/*    	border-style: solid;*/
+/*		border-color: #00E2B6;*/
+/*    	border-width: 15px;*/
+	  background-repeat: no-repeat;
+	  background-size: cover;
+    
+    }
+
+.fulls {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*daimond*/
+
+
+
+
+/*dia end*/
+

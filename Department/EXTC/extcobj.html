@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+      <head>
+        <title>St. Francis Institute of Technology</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+         <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet"> -->
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+		<!-- --------Custom css--------- -->
+		 <link rel="stylesheet" href="css/custom.css">
+		 <link rel="stylesheet" href="css/custom_header.css">
+
+		  	    <!--JS-->
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+
+
+		 <style type="text/css">
+
+		 	body{
+			    font-family: 'Quicksand', sans-serif;
+			}
+			.team{
+			    padding:75px 0;
+			}
+			h6.description{
+				font-weight: bold;
+				letter-spacing: 2px;
+				color: #999;
+				border-bottom: 1px solid rgba(0, 0, 0,0.1);
+				padding-bottom: 5px;
+			}
+			.profile{
+				margin-top: 25px;
+			}
+			.profile h1{
+				font-weight: normal;
+				font-size: 20px;
+				margin:10px 0 0 0;
+			}
+			.profile h2{
+				font-size: 14px;
+				font-weight: lighter;
+				margin-top: 5px;
+			}
+			.profile .img-box{
+				opacity: 1;
+				display: block;
+				position: relative;
+			}
+			.profile .img-box:after{
+				content:"";
+				opacity: 0;
+				background-color: rgba(0, 0, 0, 0.75);
+				position: absolute;
+				right: 0;
+				left: 0;
+				top: 0;
+				bottom: 0;
+			}
+			.img-box ul{
+				position: absolute;
+				z-index: 2;
+				bottom: 50px;
+				text-align: center;
+				width: 100%;
+				padding-left: 0px;
+				height: 0px;
+				margin:0px;
+				opacity: 0;
+			}
+			.profile .img-box:after, .img-box ul, .img-box ul li{
+				-webkit-transition: all 0.5s ease-in-out 0s;
+			    -moz-transition: all 0.5s ease-in-out 0s;
+			    transition: all 0.5s ease-in-out 0s;
+			}
+			.img-box ul i{
+				font-size: 20px;
+				letter-spacing: 10px;
+			}
+			.img-box ul li{
+				width: 30px;
+			    height: 30px;
+			    text-align: center;
+			    border: 1px solid #88C425;
+			    margin: 2px;
+			    padding: 5px;
+				display: inline-block;
+			}
+			.img-box a{
+				color:#fff;
+			}
+			.img-box:hover:after{
+				opacity: 1;
+			}
+			.img-box:hover ul{
+				opacity: 1;
+			}
+			.img-box ul a{
+				-webkit-transition: all 0.3s ease-in-out 0s;
+				-moz-transition: all 0.3s ease-in-out 0s;
+				transition: all 0.3s ease-in-out 0s;
+			}
+			.img-box a:hover li{
+				border-color: #fff;
+				color: #88C425;
+			}
+			a{
+			    color:#88C425;
+			}
+			a:hover{
+			    text-decoration:none;
+			    color:#519548;
+			}
+			i.red{
+			    color:#BC0213;
+			}
+
+
+		 </style>
+
+	 <!-- Basic Animations -->
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $(window).scroll(function() {
+
+          if ($(this).scrollTop()>0)
+           {
+              $('.navhide').slideUp();
+           }
+          else
+           {
+            $('.navhide').slideDown();
+           }
+       });
+
+      $('.opening-hours li').eq(new Date().getDay()).addClass('today');
+      });
+     </script>
+
+
+        </head>
+
+
+	<body>
+	 	<header>
+      	 <nav class="navbar navbar-custom navbar-fixed-top" >
+  					<div >
+
+
+
+    					<div class="navbar-header">
+      						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+							     </button>
+
+    							<!-- Pranav: MobileHeader -->
+    							<a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>SFIT</a>
+
+    					</div>
+
+
+    					<div class="collapse navbar-collapse" id="myNavbar">
+
+							<div class="nav navhide" style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;display: block;">&nbsp;
+
+								<ul class="large-device-only nav navbar-nav navbar-left" style="padding-left:20px;padding-top: 5px ">
+
+											<img src="images/sfithead.png" width="120px" height="39px">
+								</ul>
+
+
+
+
+								<ul class="nav navbar-nav navbar-right">
+
+								  	<li><a href="index.html">Home</a></li>
+									<li><a href="#">Mandatory Disclosure</a></li>
+									<li><a href="#">Careers</a></li>
+									<li><a href="#">Library</a></li>
+									<li><a href="#">Parents Corner</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Archive</a></li>
+                <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
+                  <ul class="dropdown-menu" aria-labelled-by="drop">
+                    <li><a href="#">Alumini Corner</a></li>
+                    <li><a href="#">Alumini Associstion</a></li>
+                    <li><a href="#">Alumini Website</a></li>
+                    <li><a href="#">Alumini Feedback Form</a></li>
+                   </ul>
+                </li>
+                <!-- Dropdown end -->
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
+							</ul>
+							</div>
+
+
+
+
+
+
+                  <ul class="nav navbar-nav " >
+    								<li class="active"><a href="index.html">Institute</a></li>
+    								<li><a href="profile.html">Student Info</a></li>
+    								<li><a href="message.html">Administation</a></li>
+    								<li><a href="#">Campus</a></li>
+  								<li><a href="#">Placement</a></li>
+  								<li><a href="#">R&D</a></li>
+  								<li><a href="#">E-Cell</a></li>
+  								<li><a class="custom-nav-active" href="#">Department</a></li>
+  								<li><a href="#">Admission</a></li>
+  								<li><a href="#">Events</a></li>
+					  			<li><a href="gallery.html">Gallery</a></li>
+    							</ul>
+
+
+							<!-- Pranav: header -->
+
+						<!--	<a class="navbar-brand large-device-only " href="#">
+								<center> St. Francis Institute of Technology</center> <!--span><div class="semi-circle"><img src="images/sfit.png" height="70px" width="70px"></span></div>
+							</ -->
+
+<!-- 						 	<ul class="nav navbar-nav navbar-right">
+
+								<li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
+									<ul class="dropdown-menu" aria-labelled-by="drop">
+										<li><a href="#">Alumini Corner</a></li>
+										<li><a href="#">Alumini Associstion</a></li>
+										<li><a href="#">Alumini Website</a></li>
+										<li><a href="#">Alumini Feedback Form</a></li>
+	                 </ul>
+							 	</li>
+
+								  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
+							</ul> -->
+
+						</div>
+  					</div>
+				</nav>
+
+	     </header>
+
+
+
+
+
+	    <!-- ===============Pranav: Parallax===================== -->
+      <div class = "parallax grayscale " style="padding-top: 100px;background-image: url('images/bg1.jpg');" >
+
+        <div>
+          <div style="color: #ffffff	; text-align: center; font-size: 80px;font-family: 'Raleway', sans-serif;">EXTC Department</div>
+        </div>
+
+      </div>
+
+      <div class="nav" style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;">
+              <ul class="nav navbar-nav navbar-right">
+
+                  <li><a href="extc.html">EXTC Department</a></li>
+                  <li><a href="extcobj.html">Objectives and Outcome</a></li>
+                  <li><a href="#">Department Calender</a></li>
+                  <li><a href="#">HOD</a></li>
+                  <li><a href="extcac.html">Faculty</a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="extcnon.html">Non-Teaching staff</a></li>
+                  <li><a href="#">Laboratories</a></li>
+                  <li><a href="#">Timetable</a></li>
+              </ul>
+              </div>
+
+              <div class="container" style="background-color: #78adc9; width: 100%">
+                <h2 align="center">Objectives and Outcome</h2>
+                <p><b>The Program Educational Objectives (PEOs)</b></p>
+                <p>
+                    <ul>
+                      <li>To impart solid foundation of applied mathematics and sciences along with the fundamentals of electronics and telecommunication engineering for sustained contribution in their professional life.</li>
+                      <li>To help students stay updated with the emerging technologies and to provide them with an opportunity to actively participate in professional communities to enhance professional as well as team-building skills and nourish ever-developing careers.</li>
+                      <li>To prepare students to be employable for successful careers and/or pursue higher studies and to promote student inclination for life-long learning in order to contribute to industry, research and society.</li>
+                      <li>To introduce students to the ethics and codes of professional conduct, help them embrace cultural, societal, environmental and ethical issues in their work to fulfill their professional responsibilities towards themselves, peers, employers, and local and global communities.</li>
+                    </ul>
+                </p>
+                <p><b>The Program Specific Outcomes (PSOs)</b></p>
+                  <p>
+                    <ul>
+                      <li>Graduates will be able to demonstrate knowledge of mathematics, applied sciences, electronics, communication and multidisciplinary subjects.</li>
+                      <li>Graduates will be able to perform literature survey, identify the problem and analyse it.</li>
+                      <li>Graduates will be able to design and develop solutions for engineering problems with the aid of modern engineering simulation software tools and verify by hardware experimentation.</li>
+                      <li>Graduates will be able to exhibit professional engineering values and ethics in understanding and assessing contemporary issues of the society.</li>
+                      <li>Graduates will be able to understand the impact of engineering solutions in a global, economic, environmental, engineering and social context.</li>
+                      <li>Graduates will be able to contribute individually and apply engineering as well as managerial skills in multidisciplinary teams to achieve the organization’s objectives.</li>
+                      <li>Graduates will be able to represent the solution to a problem in the form of reports or presentations.</li>
+                      <li>Graduates will be able to apply the skills necessary for research, higher studies and continually update one’s knowledge.</li>
+                    </ul>
+                  </p>
+                    <p><b>Program Outcomes</b></p>
+                    <p>The POs formulated for each program must be consistent with the Graduate Attributes mentioned in Washington Accord. Graduates Attributes (GAs) form a set of individually assessable outcomes that are the components indicative of the graduate’s potential to acquire competence to practice at the appropriate level. The GAs are exemplars of the attributes expected of a graduate of an accredited program. The Graduate Attributes of the NBA are as following:</p>
+                    <p>
+                      <ol>
+                        <li><b>Engineering knowledge:</b><br/>Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization for the solution of complex engineering problems.</li>
+                        <li><b>Problem analysis: </b><br/>Identify, formulate, research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.</li>
+                        <li><b>Design/development of solutions:</b><br/>Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for public health and safety, and cultural, societal, and environmental considerations.</li>
+                        <li><b>Conduct investigations of complex problems: </b><br/>Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.</li>
+                        <li><b>Modern tool usage: </b><br/>Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools, including prediction and modeling to complex engineering activities, with an understanding of the limitations.</li>
+                        <li><b>The engineer and society:</b><br/>Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice. </li>
+                        <li><b>Environment and sustainability:</b><br/>Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.</li>
+                        <li><b>Ethics: </b><br/>Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.</li>
+                        <li><b>Individual and team work:</b><br/>Function effectively as an individual, and as a member or leader in diverse teams, and in multi-disciplinary settings.</li>
+                        <li><b>Communication:</b><br/>Communicate effectively on complex engineering activities with the engineering community and with t h e society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.</li>
+                        <li><b>Project management and finance:</b><br/>Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.</li>
+                        <li><b>Life- long learning:</b><br/>Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change. Graduates will be able to secure employment or be an entrepreneur with ability to apply professional knowledge with ethical responsibility.</li>
+                      </ol>
+                    </P>
+
+              </div>
+
+		<!-- Pranav: Footer -->
+	    <footer class = "site-footer">
+
+	    	<div class="container-fluid">
+
+	    		<div class = "row">
+
+	    			<div class="col-md-4 right mobile-only" style = "text-align: center;">
+	    				<img src="images/SFIT_Black.jpeg" height="200px" width="200px" style="margin-bottom: 15px;">
+	    			</div>
+
+	    			<div class = "col-md-2 col-xs-6 right divs-on-mob" style = "text-align: right;">
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+	    			<div class="col-md-2 right large-device-only " style = "text-align: right;">
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+	    			<div class="col-md-4 right large-device-only " style = "text-align: center;">
+	    				<img src="images/SFIT_Black.jpeg" height="150px" width="150px">
+	    			</div>
+
+	    			<div class = "col-md-2 right large-device-only" >
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+	    			<div class="col-md-2 col-xs-6" >
+	    				<h4>Contact</h4>
+	    				<address>
+	    					Santoshi Mata Rd, Mandapeshwar,<br>
+	    					Dahisar West, Mumbai, Maharashtra<br>
+	    					400103.
+
+	    				</address>
+	    			</div>
+
+
+	    		</div>
+
+	    		<div class = "bottom-footer divs-on-mob" >
+	    			<div class = "col-md-5 col-xs-12"> © 2017 St. Francis Institute of Technology. All Rights Reserved</div>
+
+		    			<div class = "col-md-7 col-xs-12 large-device-only">
+		    				<ul class = "footer-nav" style="list-style: none;">
+		    					<li><a href="#">Home </a></li>
+		    					<li><a href="#">About </a></li>
+		    					<li><a href="#">FAQ </a></li>
+		    					<li><a href="#">Baki bacha wo </a></li>
+		    				</ul>
+		    		</div>
+	    		</div>
+
+	    	</div>
+
+		</footer>
+
+
+
+
+
+
+
+	</body>
+</html>

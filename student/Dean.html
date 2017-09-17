@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html>
+      <head>
+        <title>St. Francis Institute of Technology</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+         <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet"> -->
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Slabo 27px' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="css/profile.css">
+
+		<!-- --------Custom css--------- -->
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/custom_header.css">
+        <link rel="stylesheet" href="css/custom_ccards.css">
+        <link rel="stylesheet" href="css/footer.css">
+
+
+		  	    <!--JS--> 
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+
+
+		 <style type="text/css">
+
+		 	*{
+
+			    font-family: 'Raleway', sans-serif;
+			}
+
+			ul li:hover ul {display: block;}
+         	ul li ul {
+	            position: absolute;
+	            width: 200px;
+	            display: none;
+          	}
+          	ul li ul li a {display:block !important;}
+
+		 </style>
+
+	 <!-- Basic Animations -->
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $(window).scroll(function() {
+
+          if ($(this).scrollTop()>0)
+           {
+              $('.navhide').slideUp();
+           }
+          else
+           {
+            $('.navhide').slideDown();
+           }
+       });
+
+      $('.opening-hours li').eq(new Date().getDay()).addClass('today');
+      });
+     </script>
+
+
+        </head>
+
+
+	<body>
+
+	   <header>
+         <nav class="navbar navbar-custom navbar-fixed-top" >
+            <div >
+            
+            
+            
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                   </button>
+
+                  <!-- Pranav: MobileHeader -->
+                  <a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>SFIT</a>
+
+              </div>
+          
+
+              <div class="collapse navbar-collapse" id="myNavbar">
+              
+              <div class="nav navhide" style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;display: block;">&nbsp;
+                
+                 <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="#"><span class="glyphicon glyphicon-home"> </span> Home</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-star"> </span> Mandatory Disclosure</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-education"> </span> Careers</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-book"> </span> Library</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"> </span> ParentsCorner</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-phone-alt"> </span> Contact Us</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-duplicate"> </span> Archive</a></li>
+
+                        </ul>
+              </div>
+              
+              
+              
+                  
+                
+                
+             <!-- ========= Dropdown============== -->
+                   <ul id ="lalala" class="nav navbar-nav navbar-custom navbar-nav-just" data-spy="affix" data-offset-top="230" >
+                    
+                  <!-- ==============iNSTITUTE================= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown"><span>Institute</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">The Society</a></li>
+                        <li><a href="#">College Emblem & Anthem</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Academic Consultant/ Advisor</a></li>
+                        <li><a href="#">Mandatory Disclosure</a></li>
+                        <li><a href="#">Newsletter  ---- Bits-N-Bytes</a></li>
+                        <li><a href="#">AICTE apprval letter</a></li>
+                        <li><a href="#">NBA Accreditation</a></li>
+                        <li><a href="#">ISO Certification</a></li>
+                        <li><a href="#">Fee Proposal</a></li>
+                        <li><a href="#">Prohibition of Ragging</a></li>
+                        <li><a href="#">Grievance Redressal Committee</a></li>
+                        <li><a href="#">Achievements</a></li>
+                        <li><a href="#">Sister Institutions</a></li>
+
+                      </ul>
+                    </li>
+
+                    <!-- ============Campus Dropdown========= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Campus</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Building </a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Computer Center</a></li>
+                        <li><a href="#">Counselling Cell</a></li>
+                        <li><a href="#">Seminar Room</a></li>
+                        <li><a href="#">Assembly Hall</a></li>
+                        <li><a href="#">Gymkhana</a></li>
+                        <li><a href="#">Canteen</a></li>
+                      </ul>
+                    </li>
+                    
+                    <!-- ================Administration================ -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Administration</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Committeees</a></li>
+                        <li><a href="#">Staff Service Rules</a></li>
+                        <li><a href="#">Code of Ethics</a></li>
+                        <li><a href="#">New Staff Induction Manual</a></li>
+                        <li><a href="#">Staff Working Committees</a></li>
+
+                      </ul>
+                    </li>
+
+                    <!-- ===============Student Info================ -->
+                    <li><a href="../student/Student-Info.html"  typeid="drop" data-toggle="dropdown">Student Info</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="../student/Dean.html">Dean Student Affairs</a></li>
+                        <li><a href="../student/cce.html">Code of Conduct </a></li>
+                        <li><a href="../student/studcouncil.html">Student Council</a></li>
+                        <li><a href="#">Fee Payment</a></li>
+                        <li><a href="#">Academic Examination</a></li>
+                        <li><a href="#">Academic Results</a></li>
+                        <li><a href="#">Academic Calender</a></li>
+                        <li><a href="#">Student Attendance</a></li>
+                        <li><a href="../student/SI-IRIS.html">Annual Programs </a></li>
+                        <li><a href="#">Acitivities</a></li>
+                        <li><a href="#">NPTEL</a></li>
+                        <li><a href="../student/SI-IV2.html">Industrial Visits</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- =============Placement=============== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Placement</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="placement.html">Training And Placement</a></li>
+                        <li><a href="#">Placement Comittee</a></li>
+                        <li><a href="#">placement Policy</a></li>
+                        <li><a href="#">Training Calender</a></li>
+                        <li><a href="#">Training & Placement Activities</a></li>
+                        <li><a href="#">Recruiters</a></li>
+                        <li><a href="#">Feedback for Employers</a></li>
+                        <li><a href="#">Feedback for students</a></li>
+                        <li><a href="#">Record</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ======================R&D====================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">R&D</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">R&D</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">RadLabs</a></li>
+                        <li><a href="#">Robocon</a></li>
+                        <li><a href="#">Consultancy Rules</a></li>
+                        <li><a href="#">Lecture Series</a></li>
+                        <li><a href="#">Sanshodhan</a></li>
+                        <li><a href="#">Research Project</a></li>
+                        <li><a href="#">Faculty Development</a></li>
+                        <li><a href="#">Conferences</a></li>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Notices</a></li>
+                      </ul>
+                    </li>
+
+
+                    <!-- =====================Departments==================== -->  
+                    <li><a href="../All-Departments.html"  typeid="drop" data-toggle="dropdown">Department</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="../compdept.html">Computer Department</a></li>
+                        <li><a href="../ITDEP/IT-Dept2.html">IT Department</a></li>
+                        <li><a href="#">EXTC Department</a></li>
+                        <li><a href="#">Basic Sciences<br>and Humanity</a></li>
+
+                      </ul>
+                    </li>
+                    
+                    <!-- ================Alumini======================= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Alumni Testimonials</a></li>
+                        <li><a href="#">Achievers</a></li>
+                        <li><a href="#">Alumni</a></li>
+                        <li><a href="#">Alumni Feedback Form</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ===================Admissions================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Admissions</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Bachelor of Engineering</a></li>
+                        <li><a href="#">Master of Engineering</a></li>
+                        <li><a href="#">Doctor of Philosophy(Ph.D)</a></li>
+                        <li><a href="#">Noticce on Disclaimer</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ================Events===================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Events</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Prayas 2017</a></li>
+                        <li><a href="#">Technotron</a></li>
+                        <li><a href="#">IRIS 2017</a></li>
+                        <li><a href="#">Graduation day</a></li>
+                        <li><a href="#">Workshop</a></li>
+                        <li><a href="#">CSCITA</a></li>
+                      </ul>
+                    </li>
+
+                     <!-- ====================E-Cell================== -->
+                    <li><a href="#"  >Parent's Corner</a></li>
+
+                  </ul>
+
+
+              <!-- Pranav: header -->
+              
+            <!--  <a class="navbar-brand large-device-only " href="#">
+                <center> St. Francis Institute of Technology</center> <!--span><div class="semi-circle"><img src="images/sfit.png" height="70px" width="70px"></span></div>
+              </ -->
+              
+<!--              <ul class="nav navbar-nav navbar-right">
+                  
+                <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
+                  <ul class="dropdown-menu" aria-labelled-by="drop">
+                    <li><a href="#">Alumini Corner</a></li>
+                    <li><a href="#">Alumini Associstion</a></li>
+                    <li><a href="#">Alumini Website</a></li>
+                    <li><a href="#">Alumini Feedback Form</a></li>
+                   </ul>
+                </li>
+                
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
+              </ul> -->
+
+            </div>
+            </div>
+        </nav>
+        
+       </header>
+
+
+
+
+
+
+
+
+<!-- profile -->
+
+<div class="container" style="margin-bottom: 30px;margin-top: 200px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+<div class="row">
+<div class="col-sm-12 profile-head">
+<h3><center>Dean Student Affairs</center></h3>
+  <b><h4>Roles and Responsibilities of Dean Student Affairs</h4></b>
+<p>
+  <b>Position Title:</b> Dean Students Affairs  <br>
+  <b>Supervisor:</b> Principal and Director of the College <br>
+  <b>Classification:</b> Management <br>
+</p>
+  <b><p>Mission:</p>
+  <p>
+  Under the direction of the Principal and Director, the Dean Student Affairs is responsible for creating and maintaining a safe, healthy, and supportive environment and culture that synthesizes the intellectual, physical, social, emotional, and spiritual development of students in a holistic way.
+</p><p>
+  Characteristic Duties and Responsibilities:
+</p>
+<ol type="A">
+  <li>Co-Curricular Activities/Overall development of the Student:
+</b>
+<p><ol type="1">
+  <li>Responsible to enhance learning and development of students outside the classroom.
+
+  <li>Responsible to supervise activities of student Council, students Chapter and other students’ groups.
+
+  <li>Coordinates with Training and Placement Officer, Head of Departments, Event Co-ordinators (like Mosaic / IRIS), Class Coordinators, other staff, Student council and student groups in developing extracurricular programmes, assuring integration with the academic life of the institution and encouraging student personal growth and development.
+
+  <li>Oversees all nonacademic programs and activities of the students in college, including student activities, athletics, recreation, food service and student housing. Specially, to ensure that all extracurricular program aligns with the mission and educational goals of the college.
+
+  <li>Manages departments that provide student learning and development opportunities: Community Service and Outreach, Student Activities, Athletics, Residential Services, Intramural and Recreation, and Student Leadership.
+
+  <li>To supervise all aspects of the planning, funding, coordinating of students events and evaluate the programs with respect to the activities, attendance issues, students assigned areas of responsibility, expenditure, accounting and related reports.
+  </ol></p>
+  <li><b>Personal development of the Student:</b>
+  <p><ol type="1">
+  <li>Deal effectively, empathetically, diplomatically and fairly with students and provide direction and assistance wherever a need for improvement is identified.
+
+  <li>Helps establish a student culture where diversity is encouraged and where students learn to respect differences, take responsibility for their actions, and exercise leadership.
+
+  <li>Fostering a constructive interaction, and developing brother-like relationships among students, as well as strengthening students’ interaction and cooperation with teaching staff members and all the college personnel.
+
+  <li>Responsible for the development, implementation and evaluation of policies and regulations pertaining to student life, especially those related to alcohol and drug usage and student conduct, in consultation with the Management.
+  </ol></p>
+  <li><b>Channel between Management, Staff and Student Community:</b>
+    <p><ol type="1">
+  <li>To manage the students’ activities according to the policies implemented by the management and ensure that policies and procedures are communicated effectively to the student community.
+
+  <li>Evaluates operations and programs in light of changing needs, competitive services, and current best practices to assure quality and relevance.
+
+  <li>Oversees annual preparations of the Student Handbook which gives guidelines and code of conduct.
+
+  <li>Manages program and staff- related complaints, resolves student complaints, problems, and conflicts; applies and explains laws, regulations, advises student groups and counsels students.
+
+  <li>Chairing the committees for investigation into any offence committed by students on campus, or in the external activities organized by the college.
+
+  <li>Provide platform to discuss student grievances which involve infrastructure, academic and non-academics facility.
+
+  <li>Analyze and manage to resolve the grievances in coordination with the concerned person or Principal/Director.
+
+  <li>To organize students activities with the management/coordination of discipline/cultural/ sports /attendance committee.
+  </ol></p></ol>
+  <p><b>
+  Overall responsibility of the Dean Student Affairs is to serve as a liaison between students, staff, management and the external community for the benefit of all the stake-holders.
+</b></p>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- =====================Content ENds========================== -->
+		<!--=========== PRANAV: START FOOTER SECTION ================-->
+      <footer class = "site-footer" >
+
+        <div class="container-fluid">
+
+          <div class = "row">
+
+            <div class="col-md-12 mobile-only" style = "text-align: center;">
+              <img src="images/SFIT_Black.jpeg" height="200px" width="200px" style="margin-bottom: 15px;">
+            </div>
+
+
+              <div class = "col-md-2 col-sm-6 col-xs-6 right divs-on-mob" style = "text-align: right;">
+                <h4>Links</h4>
+                <address>
+                <ul class = "footer-nav2" style="list-style: none;">
+                    <li><a href="#"> Placement</a></li>
+                    <li><a href="#"> Library</a></li>
+                    <li><a href="#"> Student Info</a></li>
+                    <li><a href="#"> Parents Login</a></li>
+                    <li><a href="#"> Admission</a></li>
+
+                </ul>
+                </address>
+              </div>
+
+              <div class="col-md-2 right large-device-only " style = "text-align: right;">
+                <h4>About Us</h4>
+                <address>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is industry's standard dummy text.
+
+                </address>
+              </div>
+
+              <div class="col-md-4 right large-device-only " style = "text-align: center;">
+                <img src="images/SFIT_Black.jpeg" height="150px" width="150px">
+              </div>
+
+              <div class = "col-md-2 right large-device-only" >
+                <h4>Contact</h4>
+                <address>
+                  Santoshi Mata Rd, Mandapeshwar,<br>
+                  Dahisar West, Mumbai, Maharashtra<br>
+                  400103.
+
+                </address>
+              </div>
+
+              <div class="col-md-2 col-sm-6 col-xs-6" >
+                <h4>Links</h4>
+                <address>
+                <ul class = "footer-nav2" style="list-style: none;padding-left:0;">
+                    <li><a href="#"> Fees</a></li>
+                    <li><a href="#"> Events</a></li>
+                    <li><a href="#"> Iinstitute</a></li>
+                    <li><a href="#top"> Back To Top</a></li>
+                </ul>
+                </address>
+              </div>
+
+
+          </div>
+
+          <div class = "bottom-footer divs-on-mob" >
+            <div class = "col-md-5 col-xs-12">2017 St. Francis Institute of Technology. All Rights Reserved.</div>
+
+              <div class = "col-md-7 col-xs-12 large-device-only">
+                <ul class = "footer-nav" style="list-style: none;">
+                  <li><a href="#">Home </a></li>
+                  <li><a href="#">About </a></li>
+                  <li><a href="#">FAQ </a></li>
+                  <li><a href="#">Baki bacha wo </a></li>
+                </ul>
+
+            </div>
+          </div>
+
+
+        </div>
+
+    </footer>
+    <!--=========== END FOOTER SECTION ================-->
+
+
+
+
+
+
+	</body>
+  </html>

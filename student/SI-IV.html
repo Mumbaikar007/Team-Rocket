@@ -1,0 +1,563 @@
+ 
+<!DOCTYPE html>
+<html>
+      <head>
+        <title>St. Francis Institute of Technology</title>
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+        <!-- Lightbox -->
+        <link href="css/lightbox.css" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Slabo 27px' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+	
+
+         <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet"> -->
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+        <!-- W3CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+ 
+
+		<!-- --------Custom css--------- -->
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/custom_header.css">
+        <link rel="stylesheet" href="css/custom_ccards.css">
+        <link rel="stylesheet" href="css/footer.css">
+		
+		 <style type="text/css">
+		 	.thumbnail img{
+		 		width: 350px;
+		 		height: 200px;
+		 	}
+
+		 	.photos {
+		 		margin-bottom: 
+		 	}
+
+				 		/*From Net*/
+			.panel-image {
+			    position: relative;   
+			}
+			.panel-image img.panel-image-preview {
+			    width: 100%;
+				border-radius: 4px 4px 0px 0px;
+			}
+
+			.panel-image label {
+			    display: block;
+			    position: absolute;
+			    top: 0px;
+			    left: 0px;
+			    height: 100%;
+			    width: 100%;
+			}
+
+			.panel-heading ~ .panel-image img.panel-image-preview {
+				border-radius: 0px;
+			}
+
+			.panel-body {
+			   overflow: hidden;
+			}
+
+			.panel-image ~ input[type=checkbox] {
+			    position:absolute;
+			    top:- 30px;
+			    z-index: -1;   
+			}
+
+			.panel-image ~ input[type=checkbox] ~ .panel-body {
+				height: 0px;
+				padding: 0px;
+			}
+
+			.panel-image ~ input[type=checkbox]:checked ~ .panel-body {
+			    height: auto;
+				padding: 15px;
+			}
+
+			.panel-image ~ .panel-footer a {
+			    padding: 0px 10px;
+				font-size: 1.3em;
+				color: rgb(100, 100, 100);
+			}
+
+			ul li:hover ul {display: block;}
+	     	ul li ul {
+	          position: absolute;
+	          width: 200px;
+	          display: none;
+	      	}
+	      	ul li ul li a {display:block !important;} 
+		 	
+		 </style>
+		  	 <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+		  	
+
+    <!-- Basic Animations -->
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $(window).scroll(function() {
+
+           if ($(this).scrollTop()>0)
+           {
+              $('.navhide').slideUp();
+           }
+          else
+           {
+            $('.navhide').slideDown();
+           }
+       });
+
+      $('.opening-hours li').eq(new Date().getDay()).addClass('today');
+      });
+     </script>
+
+
+        </head>
+
+
+	<body>
+	    
+		<header>
+      	 <nav class="navbar navbar-custom navbar-fixed-top" >
+  					<div >
+						
+						
+						
+    					<div class="navbar-header">
+      						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+							     </button>
+
+    							<!-- Pranav: MobileHeader -->
+    							<a class="navbar-brand mobile-only" href="#"><span><img src="images/sfit.png" height="35px" width="40px"></span>SFIT</a>
+
+    					</div>
+					
+
+    					<div class="collapse navbar-collapse" id="myNavbar">
+							
+							<div class="nav navhide" style="margin-left: -16px;margin-right: -15px;padding-right:20px;padding-left: 10px;background-color: darkslategrey;display: block;">&nbsp;
+								
+								 <ul class="nav navbar-nav navbar-right">
+
+					                  <li><a href="#"><span class="glyphicon glyphicon-home"> </span> Home</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-star"> </span> Mandatory Disclosure</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-education"> </span> Careers</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-book"> </span> Library</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-log-in"> </span> ParentsCorner</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-phone-alt"> </span> Contact Us</a></li>
+					                  <li><a href="#"><span class="glyphicon glyphicon-duplicate"> </span> Archive</a></li>
+
+					              </ul>
+							</div>
+							
+							
+							
+									
+						    
+    						
+		         <!-- ========= Dropdown============== -->
+                   <ul id ="lalala" class="nav navbar-nav navbar-custom navbar-nav-just" data-spy="affix" data-offset-top="230" >
+                    
+                  <!-- ==============iNSTITUTE================= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown"><span>Institute</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">The Society</a></li>
+                        <li><a href="#">College Emblem & Anthem</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Academic Consultant/ Advisor</a></li>
+                        <li><a href="#">Mandatory Disclosure</a></li>
+                        <li><a href="#">Newsletter  ---- Bits-N-Bytes</a></li>
+                        <li><a href="#">AICTE apprval letter</a></li>
+                        <li><a href="#">NBA Accreditation</a></li>
+                        <li><a href="#">ISO Certification</a></li>
+                        <li><a href="#">Fee Proposal</a></li>
+                        <li><a href="#">Prohibition of Ragging</a></li>
+                        <li><a href="#">Grievance Redressal Committee</a></li>
+                        <li><a href="#">Achievements</a></li>
+                        <li><a href="#">Sister Institutions</a></li>
+
+                      </ul>
+                    </li>
+
+                    <!-- ============Campus Dropdown========= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Campus</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Building </a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Computer Center</a></li>
+                        <li><a href="#">Counselling Cell</a></li>
+                        <li><a href="#">Seminar Room</a></li>
+                        <li><a href="#">Assembly Hall</a></li>
+                        <li><a href="#">Gymkhana</a></li>
+                        <li><a href="#">Canteen</a></li>
+                      </ul>
+                    </li>
+                    
+                    <!-- ================Administration================ -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Administration</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Committeees</a></li>
+                        <li><a href="#">Staff Service Rules</a></li>
+                        <li><a href="#">Code of Ethics</a></li>
+                        <li><a href="#">New Staff Induction Manual</a></li>
+                        <li><a href="#">Staff Working Committees</a></li>
+
+                      </ul>
+                    </li>
+
+                    <!-- ===============Student Info================ -->
+                    <li><a href="../student/Student-Info.html"  typeid="drop" data-toggle="dropdown">Student Info</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="../student/Dean.html">Dean Student Affairs</a></li>
+                        <li><a href="../student/cce.html">Code of Conduct </a></li>
+                        <li><a href="../student/studcouncil.html">Student Council</a></li>
+                        <li><a href="#">Fee Payment</a></li>
+                        <li><a href="#">Academic Examination</a></li>
+                        <li><a href="#">Academic Results</a></li>
+                        <li><a href="#">Academic Calender</a></li>
+                        <li><a href="#">Student Attendance</a></li>
+                        <li><a href="../student/SI-IRIS.html">Annual Programs </a></li>
+                        <li><a href="#">Acitivities</a></li>
+                        <li><a href="#">NPTEL</a></li>
+                        <li><a href="../student/SI-IV2.html">Industrial Visits</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- =============Placement=============== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Placement</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="placement.html">Training And Placement</a></li>
+                        <li><a href="#">Placement Comittee</a></li>
+                        <li><a href="#">placement Policy</a></li>
+                        <li><a href="#">Training Calender</a></li>
+                        <li><a href="#">Training & Placement Activities</a></li>
+                        <li><a href="#">Recruiters</a></li>
+                        <li><a href="#">Feedback for Employers</a></li>
+                        <li><a href="#">Feedback for students</a></li>
+                        <li><a href="#">Record</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ======================R&D====================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">R&D</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">R&D</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">RadLabs</a></li>
+                        <li><a href="#">Robocon</a></li>
+                        <li><a href="#">Consultancy Rules</a></li>
+                        <li><a href="#">Lecture Series</a></li>
+                        <li><a href="#">Sanshodhan</a></li>
+                        <li><a href="#">Research Project</a></li>
+                        <li><a href="#">Faculty Development</a></li>
+                        <li><a href="#">Conferences</a></li>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Notices</a></li>
+                      </ul>
+                    </li>
+
+
+                    <!-- =====================Departments==================== -->  
+                    <li><a href="../All-Departments.html"  typeid="drop" data-toggle="dropdown">Department</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="../compdept.html">Computer Department</a></li>
+                        <li><a href="../ITDEP/IT-Dept2.html">IT Department</a></li>
+                        <li><a href="#">EXTC Department</a></li>
+                        <li><a href="#">Basic Sciences<br>and Humanity</a></li>
+
+                      </ul>
+                    </li>
+                    
+                    <!-- ================Alumini======================= -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Alumni Testimonials</a></li>
+                        <li><a href="#">Achievers</a></li>
+                        <li><a href="#">Alumni</a></li>
+                        <li><a href="#">Alumni Feedback Form</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ===================Admissions================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Admissions</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Bachelor of Engineering</a></li>
+                        <li><a href="#">Master of Engineering</a></li>
+                        <li><a href="#">Doctor of Philosophy(Ph.D)</a></li>
+                        <li><a href="#">Noticce on Disclaimer</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- ================Events===================== -->
+                    <li><a href="#"  typeid="drop" data-toggle="dropdown">Events</a>
+                      <ul class="dropdown-menu" aria-labelled-by="drop" ><!-- style=" background-color: white; color: #33aa33" -->
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Prayas 2017</a></li>
+                        <li><a href="#">Technotron</a></li>
+                        <li><a href="#">IRIS 2017</a></li>
+                        <li><a href="#">Graduation day</a></li>
+                        <li><a href="#">Workshop</a></li>
+                        <li><a href="#">CSCITA</a></li>
+                      </ul>
+                    </li>
+
+                     <!-- ====================E-Cell================== -->
+                    <li><a href="#"  >Parent's Corner</a></li>
+
+                  </ul>
+
+							<!-- Pranav: header -->
+							
+						<!--	<a class="navbar-brand large-device-only " href="#">
+								<center> St. Francis Institute of Technology</center> <!--span><div class="semi-circle"><img src="images/sfit.png" height="70px" width="70px"></span></div>
+							</ -->
+							
+<!-- 						 	<ul class="nav navbar-nav navbar-right">
+								  
+								<li><a href="#"  typeid="drop" data-toggle="dropdown">Alumini<span class="caret"></span></a>
+									<ul class="dropdown-menu" aria-labelled-by="drop">
+										<li><a href="#">Alumini Corner</a></li>
+										<li><a href="#">Alumini Associstion</a></li>
+										<li><a href="#">Alumini Website</a></li>
+										<li><a href="#">Alumini Feedback Form</a></li>
+	                 </ul>
+							 	</li>
+								
+								  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Parent's Corner</a></li>
+							</ul> -->
+
+						</div>
+  					</div>
+				</nav>
+        
+	     </header>
+
+	     <!-- ====================Header Ends====================== -->
+
+	    <!-- Pranav: Parallax -->
+	    <div class = "parallax" style="padding-top: 180px;background-image: url('images/bg1	.jpg');" >
+		    	
+		    <div>
+					<div style = "color: #ffffff; text-align: center; font-size: 80px;font-family: 'Raleway', sans-serif;">Industrial<br>Visits</div>    	
+		    </div>
+
+	    </div>
+	    <!-- =========================Parallax======================== -->
+	
+		<!-- ==================Content==================== -->
+ 		<div class="container" style="padding-top: 50px; padding-bottom: 20px;">
+ 			
+ 			<p style="text-align: center; font-family: 'Heebo',sans-serif;font-size: 30px;">"An "Industrial Visit proves to be the most versatile part and plays a phenomenal role of every SFIT students."</p><br><br><br>
+
+ 			<p style="text-align: justify; font-family: 'Heebo',sans-serif;font-size: 22px;">
+
+        <h3>Basic Science and Humanities Department (FE): Industrial Visit 2016-2017 </h3>
+        <br>
+        <ol type="1" style="text-align: justify; font-family: 'Heebo',sans-serif;font-size: 22px;">
+         
+           <li>Industrial Visit to Nashik: </li>  
+           <ul type="circle" >
+              <li>Year: 2016</li>
+              <li>Duration: 23/02/16 to 24/02/16</li>
+              <li>Objective: 252 students and 10 staff visiting to </li>
+              <ul type="square">
+                <li>NEC: Nashik Industrial Cluster</li>
+                <li>Soma Vine (Manufacturing industry)</li>
+                <li>Regiment of Artillery Museum</li>
+                <li>Gargoti Museum (For information of different Zeolite Minerals) </li>
+              </ul>
+              <li>Remark: Completed successfully with good feedback</li>
+           </ul>          
+        </ol>
+
+      </p>
+      <hr>
+      <p style="text-align: justify; font-family: 'Heebo',sans-serif;font-size: 22px;">
+
+        <h3>Information Technology Students Association (ITSA): Industrial Visit 2014-2015 </h3>
+        <br>
+        <ol type="1" style="text-align: justify; font-family: 'Heebo',sans-serif;font-size: 22px;">
+         
+           <li>Industrial Visit to Pune:
+           <ul type="circle" >
+              <li>Year:2014</li>
+              <li>Duration: 14th & 15th September 2014</li>
+              <li>Objective:100 Students visited C-DAC Param Computers </li>
+              
+              <li>Remark: Completed successfully with good feedback</li>
+           </ul>
+           </li>
+
+           <li>Industrial Visit to Mahabaleshwar:
+           <ul type="circle" >
+              <li>Year:2015</li>
+              <li>Duration: 28th February to 2nd March 2015</li>
+              <li>Objective:50 Students visited Mapro Factory </li>
+              
+              <li>Remark: Completed successfully with good feedback</li>
+           </ul>
+           </li>         
+        </ol>
+
+      </p>
+      <hr>
+      <p style="text-align: justify; font-family: 'Heebo',sans-serif;font-size: 22px;">
+
+        <h3>Computer Society of India (CSI): Industrial Visit 2014-2015</h3>
+        <br>
+        <ol type="1" style="text-align: justify; font-family: 'Heebo',sans-serif;font-size: 22px;">
+         
+           <li>Industrial Visit to Delhi-Rishikesh-Nainital: </li>  
+           <ul type="circle" >
+              <li>Year: 2015&2015</li>
+              <li>Duration: 28th December 2014 to 3rd January 2015</li>
+              <li>Objective: 98 Students visited TERI, TCS </li>
+              <li>Remark: Completed successfully with good feedback</li>
+           </ul>          
+        </ol>
+
+      </p>
+      <hr>
+      <p style="text-align: justify; font-family: 'Heebo',sans-serif;font-size: 22px;">
+
+        <h3>Institution of Electronics and Telecommunication Engineering (IETE): Industrial Visit 2014-2015 </h3>
+        <br>
+        <ol type="1" style="text-align: justify; font-family: 'Heebo',sans-serif;font-size: 22px;">
+         
+           <li>Industrial visit to Goa: </li> 
+
+           <ul type="circle" >
+              <li>Year: 2014</li>
+              <li>Duration: 4th to 8thJune 2014</li>
+              <li>Objective: 140 students visited Goa Invest Cast and Pai Kane industries, both based on generators. </li>
+              <li>Remark: Completed successfully with good feedback</li>
+           </ul>          
+          
+          <li>Industrial visit to Dalhousie: </li> 
+          <ul type="circle" >
+              <li>Year: 2015</li>
+              <li>Duration: 1st to 7thJanuary 2015</li>
+              <li>Objective: 100 students visited Dharamshala Tea Factory</li>
+              <li>Remark: Good. Encouraged to oraganize more such visits.</li>
+           </ul>
+
+        </ol>
+
+      </p>
+
+ 		</div>	
+ 		<!-- ================Content Ends=================== -->
+
+ 		<div>
+
+
+
+ 		</div>
+	    
+	    <!--=========== PRANAV: START FOOTER SECTION ================-->
+      <footer class = "site-footer" >
+
+        <div class="container-fluid">
+
+          <div class = "row">
+
+            <div class="col-md-12 mobile-only" style = "text-align: center;">
+              <img src="images/SFIT_Black.jpeg" height="200px" width="200px" style="margin-bottom: 15px;">
+            </div>
+
+
+              <div class = "col-md-2 col-sm-6 col-xs-6 right divs-on-mob" style = "text-align: right;">
+                <h4>Links</h4>
+                <address>
+                <ul class = "footer-nav2" style="list-style: none;">
+                    <li><a href="#"> Placement</a></li>
+                    <li><a href="#"> Library</a></li>
+                    <li><a href="#"> Student Info</a></li>
+                    <li><a href="#"> Parents Login</a></li>
+                    <li><a href="#"> Admission</a></li>
+
+                </ul>
+                </address>
+              </div>
+
+              <div class="col-md-2 right large-device-only " style = "text-align: right;">
+                <h4>About Us</h4>
+                <address>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is industry's standard dummy text.
+
+                </address>
+              </div>
+
+              <div class="col-md-4 right large-device-only " style = "text-align: center;">
+                <img src="images/SFIT_Black.jpeg" height="150px" width="150px">
+              </div>
+
+              <div class = "col-md-2 right large-device-only" >
+                <h4>Contact</h4>
+                <address>
+                  Santoshi Mata Rd, Mandapeshwar,<br>
+                  Dahisar West, Mumbai, Maharashtra<br>
+                  400103.
+
+                </address>
+              </div>
+
+              <div class="col-md-2 col-sm-6 col-xs-6" >
+                <h4>Links</h4>
+                <address>
+                <ul class = "footer-nav2" style="list-style: none;padding-left:0;">
+                    <li><a href="#"> Fees</a></li>
+                    <li><a href="#"> Events</a></li>
+                    <li><a href="#"> Iinstitute</a></li>
+                    <li><a href="#top"> Back To Top</a></li>
+                </ul>
+                </address>
+              </div>
+
+
+          </div>
+
+          <div class = "bottom-footer divs-on-mob" >
+            <div class = "col-md-5 col-xs-12">2017 St. Francis Institute of Technology. All Rights Reserved.</div>
+
+              <div class = "col-md-7 col-xs-12 large-device-only">
+                <ul class = "footer-nav" style="list-style: none;">
+                  <li><a href="#">Home </a></li>
+                  <li><a href="#">About </a></li>
+                  <li><a href="#">FAQ </a></li>
+                  <li><a href="#">Baki bacha wo </a></li>
+                </ul>
+
+            </div>
+          </div>
+
+
+        </div>
+
+    </footer>
+    <!--=========== END FOOTER SECTION ================-->
+
+
+	    <script src="js/lightbox.js"></script>
+	  
+	    
+	</body>
+</html>
